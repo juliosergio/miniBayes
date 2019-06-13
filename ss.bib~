@@ -1,0 +1,2438 @@
+@incollection{Allegranza95,
+	author = {V. Allegranza},
+	crossref = {VanEynde},
+	title = {Discourse representation theories},
+	year = 1995
+}
+
+@incollection{Allegranza95a,
+	author = {V. Allegranza},
+	crossref = {VanEynde},
+	title = {Formal semantics for natural language: a non-technical overview},
+	year = 1995
+}
+
+@incollection{Allen83,
+	author = {J. Allen},
+	crossref = {Brady83},
+	pages = {107--166},
+	title = {Recognizing intentions from natural language utterances},
+	year = {1983}
+}
+
+@book{Allen95,
+	address = {390 Bridge Parkway, Redwood City, CA 94065, U.S.A.},
+	author = {J. Allen},
+	edition = {2nd.},
+	publisher = {The Benjamin/Cummings Publishing Company, Inc.},
+	title = {Natural language understanding},
+	year = 1995
+}
+
+@article{Alpert93,
+	author = {S. R. Alpert},
+	journal = {IEEE Computer Graphics and Applications},
+	number = 2,
+	pages = {82--91},
+	title = {Graceful interaction with graphical constraints},
+	volume = 13,
+	year = 1993
+}
+
+@incollection{Andre93,
+	author = {E. Andr{\'e} and T. Rist},
+	crossref = {Maybury},
+	title = {The design of illustrated documents as a planning task},
+	year = 1993
+}
+
+@incollection{Andre93etal,
+	author = {E. Andr{\'e} and W. Finkler and W. Graf and T. Rist and A. Shauder and W. Wahlster},
+	crossref = {Maybury},
+	title = {{WIP}: The automatic synthesis of multimodal presentations},
+	year = 1993
+}
+
+@inproceedings{Andre94,
+	author = {E. Andr{\'e} and T. Rist},
+	crossref = {COLING94},
+	pages = {530--534},
+	title = {Referring to world objects with text and pictures},
+	year = 1994
+}
+
+@article{Appelt85,
+	author = {D. Appelt},
+	journal = {Artificial Intelligence},
+	pages = {1--33},
+	publisher = {North-Holland Publishing Company},
+	title = {Planning {English} referring expressions},
+	volume = {26},
+	year = {1985}
+}
+
+@inproceedings{Appelt87,
+	author = {D. Appelt and A. Kronfeld},
+	crossref = {IJCAI87},
+	pages = {640--647},
+	title = {A computational model of referring},
+	year = 1987
+}
+
+@book{Aristotle,
+	address = {New York, NY, U.S.A.},
+	author = {Aristotle},
+	edition = {1st Modern Library},
+	note = {Rhetoric; translated by W. Rhys Roberts. Poetics; translated by Ingram Bywater. Introd. by Friedrich Solmsen},
+	number = {246},
+	publisher = {Modern Library},
+	series = {The Modern library of the world's best books},
+	title = {Rhetoric},
+	year = {1954}
+}
+
+@book{Artzy74,
+	author = {Rafael Artzy},
+	note = {ISBN 0-201-00362-7},
+	publisher = {Addison-Wesley Pub. Co. },
+	series = {Addison-Wesley series in mathematics},
+	title = {Linear geometry},
+	year = {1974}
+}
+
+@book{Austin62,
+	address = {New York, NY, U.S.A.},
+	author = {J. L. Austin},
+	publisher = {Oxford University Press},
+	title = {How to do things with words},
+	year = {1962}
+}
+
+@book{Barwise89,
+	address = {Chicago, IL, U.S.A.},
+	author = {J. Barwise and J. Etchemendy},
+	publisher = {University of Chicago Press},
+	series = {CSLI Lecture Notes},
+	title = {The language of first-order logic},
+	volume = 34,
+	year = 1989
+}
+
+@article{Blattner96,
+	address = {U.S.A.},
+	author = {M. M. Blattner and E. P. Glinert},
+	journal = {IEEE Multimedia},
+	number = 4,
+	pages = {14--24},
+	title = {Multimodal intergration},
+	volume = 3,
+	year = 1996
+}
+
+@mastersthesis{BolanMSC,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	author = {J. C. Bol{\'a}n},
+	month = nov,
+	note = {In Spanish},
+	school = {Centro Nacional de Investigaci{\'o}n y Desarrollo Tecnol{\'o}gico. CENIDET/SEP},
+	title = {Generaci{\'o}n din{\'a}mica de presentaciones gr{\'a}ficas a partir de informaci{\'o}n relacional},
+	year = 1995
+}
+
+@book{Boolos,
+	author = {G. S. Boolos and R. C. Jeffrey},
+	edition = {3rd.},
+	publisher = {Cambridge University Press},
+	series = {Open University Set Book},
+	title = {Computability and logic},
+	year = 1989
+}
+
+@article{Borning81,
+	author = {A. Borning},
+	journal = toplas,
+	month = oct,
+	number = 4,
+	pages = {353--387},
+	title = {The programming language aspects of {ThingLab}, a constraint-oriented simulation laboratory},
+	volume = 3,
+	year = 1981
+}
+
+@article{Borning86,
+	author = {A. Borning},
+	journal = {Human Computer Interaction},
+	pages = {269--295},
+	title = {Graphically defining new building blocks in {ThingLab}},
+	volume = 2,
+	year = 1986
+}
+
+@incollection{Brachman85,
+	author = {R. J. Brachman},
+	crossref = {Brachman},
+	pages = {191--215},
+	title = {On the epistemological status of semantic networks},
+	year = 1985
+}
+
+@book{Bratko90,
+	address = {Reading MA, U.S.A.},
+	author = {I. Bratko},
+	edition = {2nd},
+	publisher = {Addison Wesley Publishing Company},
+	series = {International Computing Science Series},
+	title = {Prolog programming for artificial intelligence},
+	year = {1990}
+}
+
+@article{Brown79,
+	address = {U.S.A.},
+	author = {D. C. Brown and S. C. Kwasny and B. Chandrasekaran and N. K. Sondheimer},
+	journal = {Computer and Graphics},
+	pages = {13--22},
+	title = {An experimental graphics system with natural-language input},
+	volume = 4,
+	year = 1979
+}
+
+@article{Brown86,
+	address = {U.S.A.},
+	author = {D. C. Brown and B. Chandrasekaran},
+	journal = {Computer},
+	number = 7,
+	pages = {92--100},
+	title = {Knowledge and control for a mechanical design expert system},
+	volume = 19,
+	year = 1986
+}
+
+@incollection{Brown96,
+	author = {D. C. Brown},
+	crossref = {Waldron96},
+	pages = {195--208},
+	title = {Routineness revisited}
+}
+
+@article{Brown97,
+	address = {U.S.A.},
+	author = {D. C. Brown and W. P. Birmingham},
+	journal = {IEEE Expert},
+	number = 2,
+	pages = {14--16},
+	title = {Guest editor's introduction: understanding the nature of design},
+	volume = 12,
+	year = 1997
+}
+
+@article{Broyden65,
+	author = {C. G. Broyden},
+	journal = {Mathematics of Computation},
+	month = {October},
+	number = {92},
+	pages = {577--593},
+	title = {A Class of Methods for Solving Nonlinear Simultaneous Equations},
+	volume = {19},
+	year = {1965}
+}
+
+@incollection{Buchanan81,
+	author = {B. G. Buchanan and E. A. Feigenbaum},
+	crossref = {Webber81},
+	pages = {313--322},
+	title = {Dendral and {M}etadendral: their applications dimension},
+	year = 1981
+}
+
+@inproceedings{Bunt98,
+	author = {H. Bunt and R. Ahn and L. Kievit and P. Piwek and M. Verlinden and R. J. Beun and T. Borghuis},
+	crossref = {CMC98},
+	title = {Multimodal Cooperation with the DenK System}
+}
+
+@techreport{Calder86,
+	author = {J. Calder and E. Klein and M. Moens and H. Zeevat},
+	institution = {Centre for Cognitive Science, University of Edinburgh, U.K.},
+	title = {Problems of dialogue parsing},
+	type = {ESPRIT ACORD (P393). Project Deliverable T2.1},
+	year = 1986
+}
+
+@book{Carberry90,
+	address = {Cambrige, MA, U.S.A.},
+	author = {S. Carberry},
+	publisher = {The MIT Press},
+	title = {Plan recognition in natural language dialogue},
+	year = {1990}
+}
+
+@techreport{Carbonell70,
+	address = {Cambridge, MA, U.S.A.},
+	author = {J. R. Carbonell},
+	institution = {Bolt, Beranek \& Newman},
+	number = {BBN No. 1971},
+	pages = {387--427},
+	title = {Mixed-initiative man-computer instructional dialogues},
+	year = 1970
+}
+
+@book{Chambers91,
+	edition = {1st},
+	editor = {John M. Chambers and Trevor J. Hastie},
+	note = {ISBN 0-412-05291-1},
+	publisher = {Chapman \& Hall},
+	title = {Statistical models in S},
+	year = {1991}
+}
+
+@article{Chandra86,
+	address = {U.S.A.},
+	author = {B. Chandrasekaran},
+	journal = {IEEE Expert},
+	number = 3,
+	pages = {23--30},
+	title = {Generic tasks in knowledge-based reasoning: high-level building blocks for expert system design},
+	volume = 1,
+	year = 1986
+}
+
+@article{Chandra89,
+	address = {U.S.A.},
+	author = {B. Chandrasekaran and M. C. Tanner and J. R. Josephson},
+	journal = {IEEE Expert},
+	number = 1,
+	pages = {9--24},
+	title = {Explaining control strategies in problem solving},
+	volume = 4,
+	year = 1989
+}
+
+@article{Chandra91,
+	author = {B. Chandrasekaran and W. Swartout},
+	journal = {IEEE Expert},
+	month = jun,
+	number = 3,
+	pages = {47--49},
+	title = {Explanations in knowledge systems: the role of explicit representation of design knowledge},
+	volume = 6,
+	year = 1991
+}
+
+@inproceedings{Chandra97,
+	author = {B. Chandrasekaran},
+	crossref = {AAAI-FSS97},
+	pages = {1--5},
+	title = {Diagrammatic representation and reasoning: some distinctions}
+}
+
+@inproceedings{Chandra98,
+	author = {B. Chandrasekaran},
+	crossref = {4WCES98-WS},
+	pages = {1--5},
+	title = {Diagrammatic representations and how they fit into multimodal perceptual representations and reasoning}
+}
+
+@book{Chang2012,
+	address = {Sebastopol, CA},
+	author = {Winston Chang},
+	edition = {1st},
+	note = {ISBN 978-1-449-31695-2},
+	publisher = {O'Reilly Media},
+	title = {R Graphics Cookbook},
+	year = {2012}
+}
+
+@book{Chapra2010,
+	address = {New York, NY},
+	author = {Steven C. Chapra and Raymond P. Canale},
+	edition = {6th},
+	note = {ISBN 978-0-07-340106-5},
+	publisher = {McGraw-Hill},
+	title = {Numerical methods for engineers},
+	year = {2010}
+}
+
+@techreport{Codd78,
+	address = {San Jose, CA, U.S.A.},
+	author = {E. F. Codd and R. S. Arnold and J. M. Cadiou and C. L. Chang and N. Roussopoulos},
+	institution = {IBM Research Laboratory},
+	month = jan,
+	number = {RJ2144(29407)},
+	title = {Rendezvous {V}ersion 1: an experimental {E}nglish-language query formulation system for casual users of relational data bases},
+	year = 1978
+}
+
+@article{Cohen79,
+	author = {P. R. Cohen and C. R. Perrault},
+	journal = {Cognitive Science},
+	number = {3},
+	pages = {177--212},
+	publisher = {Ablex Publishing Corporation},
+	title = {Elements of a plan-based theory of speech acts},
+	volume = {3},
+	year = {1979}
+}
+
+@inproceedings{Cohen89,
+	author = {P. R. Cohen and M. Dalrymple and D. B. Moran and F. C. N. Pereira and J. W. Sullivan and Gargan, Jr., R. A. and J. L. Schlossberg and S. W. Tyler},
+	crossref = {CHI89},
+	pages = {227--233},
+	title = {Synergistic use of direct manipulation and natural language},
+	year = 1989
+}
+
+@article{Cohen90,
+	author = {J. Cohen},
+	journal = {Communications of the ACM},
+	month = {July},
+	number = {7},
+	pages = {52--68},
+	title = {Constraint logic programming languages},
+	volume = {33},
+	year = {1990}
+}
+
+@phdthesis{CohenPHD,
+	address = {Canada},
+	author = {P. R. Cohen},
+	month = {January},
+	note = {Published by University of Toronto as Technical Report 118},
+	school = {Departament of Computer Science, University of Toronto},
+	title = {On knowing what to say: planning speech acts},
+	year = {1978}
+}
+
+@incollection{Colmerauer78,
+	author = {A. Colmerauer},
+	crossref = {Bolc78},
+	pages = {133--189},
+	title = {Metamorphosis grammars},
+	year = 1978
+}
+
+@article{Colmerauer90,
+	author = {A. Colmerauer},
+	journal = {Communications of the ACM},
+	month = jul,
+	number = {7},
+	pages = {69--90},
+	title = {An introduction to {Prolog III}},
+	volume = {33},
+	year = {1990}
+}
+
+@mastersthesis{CoronadoMSC,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	author = {I. Coronado},
+	note = {In Spanish (forthcoming)},
+	school = {Centro Nacional de Investigaci{\'o}n y Desarrollo Tecnol{\'o}gico. CENIDET/SEP},
+	title = {Generaci{\'o}n de presentaciones coordinadas gr{\'a}ficas y ling{\"u}\'{\i}sticas}
+}
+
+@article{Dale95,
+	author = {R. Dale and E. Reiter},
+	journal = {Cognitive Science},
+	pages = {233--263},
+	title = {Computational Interpretations of the Gricean Maxims in the Generation of Referring Expressions},
+	volume = {19},
+	year = {1995}
+}
+
+@article{Davis77,
+	address = {U.S.A},
+	author = {R. Davis and B. G. Buchanan and E. H. Shortliffe},
+	journal = {Artificial Intelligence},
+	number = 1,
+	title = {Production rules as a representation for a knowledge-based consultation program},
+	volume = 8,
+	year = 1977
+}
+
+@incollection{DeHoop95,
+	author = {H. De Hoop},
+	crossref = {VanEynde},
+	title = {Dynamic discourse semantics},
+	year = 1995
+}
+
+@article{Dijkstra60,
+	author = {Edsger W. Dijkstra},
+	journal = {Numerische Mathematik},
+	number = {1},
+	pages = {312--318},
+	title = {Recursive Programming},
+	volume = {2},
+	year = {1960}
+}
+
+@book{Dowty81,
+	address = {P.O.Box 17, 3300 AA Dordrecht, Holland},
+	author = {D. R. Dowty and R. E. Wall and S. Peters},
+	publisher = {D. Reidel Publishing Company},
+	series = {Studies in Linguistics and Philosophy},
+	title = {Introduction to {M}ontague semantics},
+	volume = 11,
+	year = 1981
+}
+
+@article{Earley70,
+	author = {J. Earley},
+	journal = cacm,
+	note = {Reprinted in \cite{GroszNLP}, pp. 25--33},
+	number = 2,
+	pages = {94--102},
+	title = {An efficient context-free parsing algorithm},
+	volume = 13,
+	year = 1970
+}
+
+@techreport{Elhadad89,
+	address = {U.S.A.},
+	author = {M. Elhadad},
+	institution = {Department of Computer Science, Columbia University},
+	number = {CUC-420-89},
+	title = {Extended functional programmars},
+	year = 1989
+}
+
+@phdthesis{ElhadadPHD,
+	address = {New York, NY, U.S.A.},
+	author = {M. Elhadad},
+	school = {Columbia University},
+	title = {Using argumentation to control lexical choice: a unification-based implementation},
+	year = {1993}
+}
+
+@article{Feiner91,
+	address = {U.S.A},
+	author = {S. K. Feiner and K. R. McKeown},
+	journal = {IEEE Computer},
+	month = oct,
+	number = 10,
+	pages = {33--41},
+	title = {Automating the generation of coordinated multimedia explanations},
+	volume = 24,
+	year = 1991
+}
+
+@book{Foley94,
+	address = {Reading, MA, U.S.A.},
+	author = {J. D. Foley and A. van Dam and S. K. Feiner and J. F. Hughes and R. L. Phillips},
+	publisher = {Addison-Wesley Publishing Company, Inc.},
+	title = {Introduction to computer graphics},
+	year = {1994}
+}
+
+@article{Fox91,
+	address = {U.S.A},
+	author = {E. A. Fox},
+	journal = {IEEE Computer},
+	month = oct,
+	number = 10,
+	pages = {9--21},
+	title = {Advances in interactive digital multimedia systems},
+	volume = 24,
+	year = 1991
+}
+
+@incollection{Frege892,
+	author = {G. Frege},
+	crossref = {Geach52},
+	pages = {56--78},
+	title = {On sense and reference},
+	year = 1892
+}
+
+@book{Gallier88,
+	address = {New York, U.S.A.},
+	author = {J. H. Gallier},
+	publisher = {John Wiley \& Sons, Inc.},
+	title = {Logic for computer science},
+	year = 1988
+}
+
+@inproceedings{Garza95,
+	author = {G. Garza and L. A. Pineda},
+	crossref = {RNIA95},
+	month = sep,
+	pages = {9--18},
+	title = {A qualitative procedure for the production of solid models of polyhedra from their orthogonal views: a case of study in reasoning with graphical representations},
+	year = 1995
+}
+
+@mastersthesis{GarzaMSC,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	author = {E. G. Garza},
+	month = jun,
+	note = {In Spanish},
+	school = {Instituto Tecnol{\'o}gico y de Estudios Superiores de Monterrey. Campus Morelos},
+	title = {S\'{\i}ntesis de poliedros a partir de sus vistas ortogonales: un caso de estudio acerca del razonamiento gr{\'a}fico},
+	year = 1995
+}
+
+@book{Gazdar89,
+	address = {U.S.A.},
+	author = {G. Gazdar and C. Mellish},
+	publisher = {Addison-Wesley},
+	title = {Natural language processing in {PROLOG}},
+	year = 1989
+}
+
+@manual{Gilbert2012,
+	author = {Paul Gilbert and Ravi Varadhan},
+	note = {R package version 2012.9-1},
+	title = {numDeriv: Accurate Numerical Derivatives},
+	url = {http://CRAN.R-project.org/package=numDeriv},
+	year = {2012}
+}
+
+@article{Goel97,
+	address = {U.S.A.},
+	author = {A. K. Goel},
+	journal = {IEEE Expert},
+	number = 3,
+	pages = {62--70},
+	title = {Design, analogy, and creativity},
+	volume = 12,
+	year = 1997
+}
+
+@incollection{Goguen78,
+	author = {J. A. Goguen and J. W. Thatcher and E. G. Wagner},
+	crossref = {Yeh78},
+	pages = {80--149},
+	title = {An initial algebra approach to the specification, correctness and implementation of abstract data types},
+	year = 1978
+}
+
+@article{Gorry78,
+	author = {G. A. Gorry and H. Silverman and S. G. Pauker},
+	journal = {American Journal of Medicine},
+	pages = {452--460},
+	title = {Capturing clinical expertise: a computer program that considers clinical responses to digitalis},
+	volume = 64,
+	year = 1978
+}
+
+@article{Grice57,
+	author = {H. P. Grice},
+	journal = {Philosophical Review},
+	month = {July},
+	pages = {377--388},
+	title = {Meaning},
+	volume = {66},
+	year = {1957}
+}
+
+@book{Grimes75,
+	address = {The Hague, The Netherlands},
+	author = {J. E. Grimes},
+	publisher = {Mouton},
+	title = {The thread of discourse},
+	year = 1975
+}
+
+@techreport{Grosz77,
+	address = {Menlo Park, CA, U.S.A.},
+	author = {B. J. Grosz},
+	institution = {Stanford Research Institute},
+	number = {Technical note 151},
+	title = {The representation and use of focus in dialogue understanding},
+	year = {1977}
+}
+
+@article{Grosz86,
+	author = {B. J. Grosz and C. L. Sidner},
+	journal = {Computational Linguistics},
+	month = {July/September},
+	number = 3,
+	pages = {175--204},
+	title = {Attention, intentions, and the structure of discourse},
+	volume = 12,
+	year = 1986
+}
+
+@book{GroszNLP,
+	address = {Los Altos, U.S.A.},
+	booktitle = {Readings in natural language processing},
+	editor = {B. J. Grosz and K. S. Jones and B. L. Webber},
+	publisher = {Morgan Kaufmann},
+	title = {Readings in natural language processing},
+	year = 1986
+}
+
+@book{Gusgen89,
+	address = {128 Long Acre, London WC2E 9AN, U.K.},
+	author = {H. W. G{\"u}sgen},
+	edition = {1st},
+	publisher = {Pitman Publishing},
+	series = {Research notes in artificial intelligence},
+	title = {{CONSAT:} a system for constraint satisfaction},
+	year = {1989}
+}
+
+@book{Halliday2005,
+	author = {David Halliday and Robert Resnick and Jearl Walker},
+	edition = {7th, extended},
+	note = {ISBN 0-471-23231-9},
+	publisher = {Wiley},
+	title = {Fundamentals of physics },
+	year = {2005}
+}
+
+@book{Hazewinkel2001,
+	author = {Michiel Hazewinkel},
+	note = {ISBN 978-1-55608-010-4},
+	publisher = {Springer},
+	title = {Encyclopaedia of Mathematics (Encyclopaedia of Mathematics) },
+	year = {2001}
+}
+
+@techreport{Hilton90,
+	address = {Rome, U.S.A.},
+	author = {M. L. Hilton and C. S. Anken},
+	institution = {Rome Air Development Center},
+	number = {90-54},
+	title = {Map display system: an object-oriented design and implementation},
+	year = 1990
+}
+
+@incollection{Hintikka69,
+	author = {J. Hintikka},
+	crossref = {Davis69},
+	title = {Semantics for propositional attitudes},
+	year = {1969}
+}
+
+@inproceedings{Hovy88,
+	author = {E. H. Hovy},
+	crossref = {ACL88},
+	pages = {163--169},
+	title = {Planning coherent multisentencial text},
+	year = 1988
+}
+
+@incollection{Hovy91,
+	author = {E. H. Hovy},
+	crossref = {Paris91},
+	pages = {83--102},
+	title = {Approaches to the planning of coherent text}
+}
+
+@article{Hovy93,
+	author = {E. H. Hovy},
+	journal = {Artificial Intelligence},
+	pages = {341--385},
+	title = {Automated discourse generation using discourse structure relations},
+	volume = 63,
+	year = 1993
+}
+
+@proceedings{IFIP91,
+	booktitle = {Modeling in computer graphics : proceedings of the IFIP WG 5.10 Working Conference},
+	editor = {T. L. Kunii},
+	month = {Tokyo, Japan, April 8-12},
+	organization = {International Federation for Information Processing},
+	publisher = {Springer-Verlag},
+	series = {IFIP series on computer graphics},
+	title = {Modeling in computer graphics : proceedings of the IFIP WG 5.10 Working Conference},
+	year = {1991}
+}
+
+@techreport{ILOG97,
+	address = {1901 Landings Drive, Mountain View, CA, 94043, U.S.A.},
+	author = {ILOG},
+	institution = {ILOG, Inc.},
+	note = {This document can be retrieved from \verb+http://www.ilog.com/+},
+	title = {Optimization technology white paper: a comparative study of optimization techniques},
+	year = {1997}
+}
+
+@techreport{Ihaka98,
+	address = {Auckland, New Zealand},
+	author = {Ross Ihaka},
+	institution = {Statistics Department, The University of Auckland},
+	title = {R : Past and Future History},
+	year = {1998}
+}
+
+@article{Iwasaki97,
+	address = {U.S.A.},
+	author = {Y. Iwasaki},
+	journal = {IEEE Expert},
+	number = 3,
+	pages = {2--4},
+	title = {Qualitative reasoning and the science of design},
+	volume = 12,
+	year = 1997
+}
+
+@incollection{Jaffar87,
+	author = {J. Jaffar and S. Michaylov},
+	crossref = {Lassez87},
+	title = {Methodology and implementation of a {CLP} system}
+}
+
+@incollection{Joshi85,
+	author = {A. K. Joshi},
+	crossref = {Dowty85},
+	title = {Tree-adjoining grammars: How much context sensitivity is required to provide reasonable structural descriptions},
+	year = 1985
+}
+
+@article{Kamada89,
+	address = {Singapore},
+	author = {T. Kamada},
+	journal = {World Scientific},
+	title = {Visualizing abstract objects and relations, a constraint based approach},
+	year = 1989
+}
+
+@article{Kamada91,
+	address = {U.S.A.},
+	author = {T. Kamada and S. Kawai},
+	journal = tog,
+	month = jan,
+	number = 1,
+	pages = {1--39},
+	title = {A general framework for visualizing abstract objects and relations},
+	volume = 10,
+	year = 1991
+}
+
+@incollection{Kamp81,
+	author = {H. Kamp},
+	crossref = {Groen81},
+	pages = {277--322},
+	title = {A theory of truth and semantic representation},
+	year = 1981
+}
+
+@book{Kamp93,
+	address = {P.O.Box 17,3300 AA Dordrecht, Holland},
+	author = {H. Kamp and U. Reyle},
+	publisher = {Kluwer Academic Publishers},
+	series = {Studies in linguistics and philosophy},
+	title = {From discourse to logic. Introduction to modeltheoretic semantics of natural language, formal logic and discourse representation theory},
+	volume = 42,
+	year = 1993
+}
+
+@incollection{Kaplan73,
+	author = {R. M. Kaplan},
+	crossref = {Rustin73},
+	pages = {193--241},
+	title = {A general syntactic processor},
+	year = 1973
+}
+
+@article{Kaplan78,
+	author = {D. Kaplan},
+	journal = {Syntax and Semantics},
+	note = {Vol. 9},
+	title = {DTHAT},
+	volume = {9},
+	year = {1978}
+}
+
+@incollection{Kautz91,
+	author = {H. A. Kautz},
+	chapter = {2},
+	crossref = {Allen91},
+	title = {A Formal Theory of Plan Recognition and its Implementation}
+}
+
+@incollection{Kay73,
+	author = {M. Kay},
+	crossref = {Rustin73},
+	pages = {155--188},
+	title = {The {MIND} system},
+	year = 1973
+}
+
+@inproceedings{Kay79,
+	author = {M. Kay},
+	crossref = {BLS79},
+	pages = {142--158},
+	title = {Functional grammar},
+	year = 1979
+}
+
+@inproceedings{Klein90,
+	author = {E. Klein and L. A. Pineda},
+	crossref = {Interact90},
+	title = {Semantics and graphical information},
+	year = 1990
+}
+
+@book{Lang87,
+	address = {New Yoirk},
+	author = {Serge Lang},
+	edition = {3rd},
+	note = {ISBN 0-387-96412-6},
+	publisher = {Springer-Verlag},
+	series = {Undergraduate texts in mathematics},
+	title = {Linear Algebra},
+	year = {1987}
+}
+
+@inproceedings{Lee90,
+	author = {J. Lee and H. Zeevat},
+	crossref = {Interact90},
+	pages = {479--484},
+	title = {Integrating natural language and graphics in dialogue},
+	year = 1990
+}
+
+@book{Leler,
+	author = {W. Leler},
+	publisher = {Addison-Wesley, U.S.A.},
+	title = {Constraint programming languages: their specification and generation},
+	year = 1988
+}
+
+@article{Lester97,
+	author = {J. C. Lester and B. W. Porter},
+	journal = {Computational Linguistics},
+	number = 1,
+	pages = {65--101},
+	title = {Developing and empirically evaluating robust explanation generators: the {KNIGHT} experiments},
+	volume = 23,
+	year = 1997
+}
+
+@inproceedings{MacGregor92,
+	author = {R. M. MacGregor and D. Brill},
+	crossref = {NCAI92},
+	pages = {774--779},
+	title = {Recognition algorithms for the {L}oom classifier},
+	year = 1992
+}
+
+@book{MacLane67,
+	address = {New York, NY, U.S.A.},
+	author = {S. MacLane and G. Birkhoff},
+	publisher = {The MacMillan Company},
+	title = {Algebra},
+	year = {1967}
+}
+
+@phdthesis{MackinlayPHD,
+	author = {J. D. Mackinlay},
+	school = {Stanford University, U.S.A.},
+	title = {Automatic design of graphical presentations},
+	year = 1987
+}
+
+@techreport{Mann75,
+	address = {Marina del Rey, California, U.S.A.},
+	author = {W. C. Mann and M. A. Moore and J. A. Levin and J. H. Carlisle},
+	institution = {Information Sciences Institute},
+	number = {RR/75/33},
+	title = {Observation methods for human dialogue},
+	year = 1975
+}
+
+@article{MannThompson88,
+	author = {W. C. Mann and S. A. Thompson},
+	journal = {Text},
+	number = 3,
+	pages = {243--281},
+	title = {Rhetorical structure theory: towards a functional theory of text organization},
+	volume = 8,
+	year = 1988
+}
+
+@techreport{MasseBSC,
+	address = {M{\'e}xico City, M{\'e}xico},
+	author = {J. A. Mass{\'e}},
+	institution = {Universidad Nacional Aut{\'o}noma de M{\'e}xico},
+	note = {In Spanish},
+	title = {Satisfacci{\'o}n de restricciones por referencia simb{\'o}lica en dibujos geom{\'e}tricos},
+	type = {{BSc} Thesis},
+	year = 1994
+}
+
+@article{Matsuoka92,
+	address = {U.S.A},
+	author = {S. Matsuoka and S. Takahashi and T. Kamada and A. Yonezawa},
+	journal = {ACM Transactions on Information Systems},
+	month = oct,
+	number = 4,
+	pages = {408--437},
+	title = {A general framework for bidirectional translation between abstract and pictorial data},
+	volume = 10,
+	year = 1992
+}
+
+@inproceedings{Maybury91,
+	author = {M. T. Maybury},
+	crossref = {NCAI91},
+	pages = {61--66},
+	title = {Planning multimedia explanations using communicative acts},
+	year = 1991
+}
+
+@article{Maybury92,
+	author = {M. T. Maybury},
+	journal = {International Journal of Man-Machine Studies},
+	number = 2,
+	pages = {135--172},
+	title = {Communicative acts for explanation generation},
+	volume = 37,
+	year = 1992
+}
+
+@incollection{Maybury93,
+	author = {M. T. Maybury},
+	crossref = {Maybury},
+	title = {Planning multimedia explanations using communicative acts},
+	year = 1993
+}
+
+@phdthesis{MayburyPHD,
+	author = {M. T. Maybury},
+	note = {Available as Rome Air Development Center TR 90-411, In-House Report, December 1990, or as Cambridge University Computer Laboratory TR-239, December, 1991},
+	school = {University of Cambridge, U.K.},
+	title = {Planning multisentential English text using communicative acts},
+	year = 1990
+}
+
+@article{McDermott78,
+	author = {D. V. McDermott},
+	journal = {Cognitive Science},
+	pages = {71--109},
+	title = {Planning and acting},
+	volume = {2},
+	year = {1978}
+}
+
+@book{McKeon41,
+	address = {New York, NY, U.S.A.},
+	editor = {R. McKeon},
+	publisher = {Random House},
+	title = {The basic works of {Aristotle}},
+	year = {1941}
+}
+
+@book{McKeown85,
+	address = {Cambridge, U.K.},
+	author = {K. R. McKeown},
+	publisher = {Cambridge University Press},
+	series = {Studies in Natural Language Processing},
+	title = {Text generation: using discourse strategies and focus constraints to generate natural language text},
+	year = 1985
+}
+
+@inproceedings{McKeown87,
+	author = {K. R. McKeown and C. L. Paris},
+	crossref = {ACL87},
+	pages = {97--103},
+	title = {Functional unification grammar revisited},
+	year = 1987
+}
+
+@incollection{McKeown90,
+	author = {K. R. McKeown and M. Elhadad and Y. Fukumoto and J. Lim and C. Lombardi and J. Robin and F. Smadja},
+	crossref = {Mellish90},
+	pages = {103--136},
+	title = {Natural language generation in {COMET}},
+	year = 1990
+}
+
+@phdthesis{McKeownPHD,
+	author = {K. R. McKeown},
+	school = {University of Pennsylvania, U.S.A.},
+	title = {Generating natural language text in response to questions about database structure},
+	year = 1982
+}
+
+@incollection{MontagueEFL,
+	author = {R. Montague},
+	crossref = {Montague74},
+	pages = {188--221},
+	title = {English as a formal language}
+}
+
+@incollection{MontaguePIL,
+	author = {R. Montague},
+	crossref = {Montague74},
+	pages = {119--147},
+	title = {Pragmatics and intensional logic}
+}
+
+@incollection{MontaguePTQ,
+	author = {R. Montague},
+	crossref = {Montague74},
+	pages = {247--270},
+	title = {The proper treatment of quantification in ordinary {E}nglish}
+}
+
+@incollection{MontagueUG,
+	author = {R. Montague},
+	crossref = {Montague74},
+	pages = {222--246},
+	title = {Universal grammar}
+}
+
+@inproceedings{Moore89,
+	author = {J. D. Moore and C. L. Paris},
+	crossref = {ACL89},
+	pages = {203--211},
+	title = {Planning text for advisory dialogues}
+}
+
+@book{Moore95,
+	address = {Cambrige, MA, U.S.A.},
+	author = {J. D. Moore},
+	publisher = {A Bradford Book. The MIT Press},
+	series = {ACL-MIT Press Series in Natural Language Processing},
+	title = {Participating in explanatory dialogues: interpreting and responding to questions in context},
+	year = 1995
+}
+
+@phdthesis{MoorePHD,
+	author = {J. D. Moore},
+	school = {University of California at Los Angeles, U.S.A.},
+	title = {A Reactive approach to explanation in expert and advice giving systems},
+	year = 1989
+}
+
+@inproceedings{Morales95,
+	author = {R. Morales L. A. Pineda},
+	crossref = {RNIA95},
+	month = sep,
+	note = {In Spanish},
+	pages = {19--26},
+	title = {Pizarrones interactivos multimodales para la ense\~nanza de conceptos matem{\'a}ticos},
+	year = 1995
+}
+
+@mastersthesis{MoralesMSC,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	author = {R. Morales},
+	month = nov,
+	note = {In Spanish},
+	school = {Instituto Tecnol{\'o}gico y de Estudios Superiores de Monterrey. Campus Morelos},
+	title = {Pizarrones interactivos multimodales para la ense\~nanza de conceptos matem{\'a}ticos},
+	year = 1994
+}
+
+@techreport{MorenoBSC,
+	address = {M{\'e}xico},
+	author = {M. Moreno},
+	institution = {Universidad Ju{\'a}rez del Estado de Durango},
+	note = {In Spanish},
+	title = {Programaci{\'o}n matem{\'a}tica en redes no dirigidas en el espacio euclideano aplicada al dise\~no asistido por computadora},
+	type = {{BSc} Thesis},
+	year = 1993
+}
+
+@book{Murrell2006,
+	address = {London, UK},
+	author = {Paul Murrell},
+	note = {ISBN 1-58488-486-X},
+	publisher = {Chapman \& Hall/CRC},
+	series = {Computer Science and Data Analysis Series},
+	title = {R graphics},
+	year = {2006}
+}
+
+@incollection{Neal91,
+	author = {J. G. Neal and S. C. Shapiro},
+	crossref = {Sullivan},
+	title = {Intelligent multimedia interface technology},
+	year = 1991
+}
+
+@book{Newman79,
+	address = {New York, U.S.A.},
+	author = {W. M. Newman and R. F. Sproull},
+	edition = {Second Edition},
+	publisher = {McGraw-Hill Book Company},
+	series = {Computer Science},
+	title = {Principles of interactive computer graphics},
+	year = 1979
+}
+
+@inproceedings{Older93,
+	author = {W. J. Older and F. Benhamou},
+	crossref = {PPCP93},
+	title = {Programming in {CLP(BNR)}}
+}
+
+@incollection{Older93a,
+	author = {W. J. Older and A. Vellino},
+	crossref = {Benhamou93},
+	pages = {175--195},
+	title = {Constraint arithmetic on real intervals}
+}
+
+@book{Oxford,
+	address = {Walton Street, Oxford, OX2 6DP, U.K.},
+	edition = {9th},
+	editor = {D. Thompson and H. W. Fowler and F. G. Fowler},
+	publisher = {Oxford University Press},
+	title = {The concise {Oxford} dictionary of current {English}},
+	year = {1995}
+}
+
+@article{Paris88,
+	author = {C. L. Paris},
+	journal = {Computational Linguistics},
+	number = 3,
+	pages = {64--78},
+	title = {Tailoring object descriptions to the user's level of expertise},
+	volume = 14,
+	year = 1988
+}
+
+@article{Pilkington96,
+	author = {R. Pilkington and A. Grierson},
+	journal = {International Journal of Human-Computer Studies},
+	pages = {527--551},
+	title = {Generating explanations in a simulation-based learning environment},
+	volume = {45},
+	year = {1996}
+}
+
+@article{Pineda92,
+	author = {L. A. Pineda},
+	journal = {Computer Graphics Forum},
+	number = 3,
+	pages = {333--344},
+	title = {Reference, synthesis and constraint satisfaction},
+	volume = 11,
+	year = 1992
+}
+
+@inproceedings{Pineda92a,
+	author = {L. A. Pineda},
+	crossref = {SamosWkshp},
+	title = {Sketching, graphical anaphora and constraint satisfaction},
+	year = 1992
+}
+
+@techreport{Pineda92b,
+	author = {L. A. Pineda and J. R. Lee},
+	institution = {EdCADD and Centre for Cognitive Sciences, University of Edinburgh, U.K.},
+	title = {Logical representations in drafting and {CAD} systems},
+	year = 1992
+}
+
+@article{Pineda93,
+	author = {L. A. Pineda},
+	journal = {Design Studies},
+	number = 2,
+	pages = {124--156},
+	title = {On computational models of drafting and design},
+	volume = 14,
+	year = 1993
+}
+
+@inproceedings{Pineda94,
+	author = {L. A. Pineda and J. S. Santana and A. Mass{\'e}},
+	crossref = {XI-RNIA},
+	note = {In Spanish},
+	pages = {105--123},
+	title = {Satisfacci{\'o}n de restricciones geom{\'e}tricas: ?`problema num{\'e}rico o simb{\'o}lico?},
+	year = 1994
+}
+
+@techreport{Pineda94a,
+	author = {L. A. Pineda and J. S. Santana and A. Mass{\'e}},
+	institution = {Instituto de Investigaciones El{\'e}ctricas, Cuernavaca, Mor., M{\'e}xico},
+	note = {Submitted for publication to {\em Research in Engineering Design}},
+	title = {Symbolic versus numeric solutions to geometric constraint satisfaction problems},
+	year = 1994
+}
+
+@inproceedings{Pineda97,
+	author = {L. A. Pineda and E. G. Garza},
+	crossref = {ACL-WS-97},
+	pages = {99--117},
+	title = {A model for multimodal reference resolution},
+	year = {1997}
+}
+
+@techreport{Pineda98,
+	address = {M{\'e}xico},
+	author = {L. A. Pineda and E. G. Garza},
+	institution = {IIMAS, National Autonomous University of M{\'e}xico},
+	note = {Submitted to {\em Computational Linguistics}. This report can be obtained from \verb+http://leibniz.iimas.unam.mx/~luis/papers/cling-v98.ps+},
+	title = {A model for multimodal reference resolution},
+	year = {1998}
+}
+
+@phdthesis{PinedaPHD,
+	author = {L. A. Pineda},
+	school = {University of Edinburgh, U.K.},
+	title = {GRAFLOG: a theory of semantics for graphics with applications to human-computer interaction and CAD systems},
+	year = 1989
+}
+
+@techreport{Pollard85,
+	author = {C. J. Pollard},
+	institution = {Stanford University, U.S.A.},
+	title = {Categorial grammar and phrase structure grammar: an excursion on the syntax-semantics frontier},
+	year = 1985
+}
+
+@inproceedings{Puget94,
+	author = {J. F. Puget},
+	crossref = {SPICIS94},
+	title = {A {C++} implementation of CLP}
+}
+
+@article{Ramsey94,
+	author = {N. Ramsey},
+	journal = ieees,
+	month = sep,
+	number = 5,
+	pages = {97--105},
+	title = {Literate programming simplified},
+	volume = 11,
+	year = 1994
+}
+
+@phdthesis{ReichmanPHD,
+	author = {R. Reichman},
+	note = {Also, BBN Report No. 4681, Bolt Beranek and Newman Inc., Cambridge, Massachusetts, U.S.A.},
+	school = {Harvard University},
+	title = {Plain-speaking: a theory and grammar of spontaneous discourse},
+	year = 1981
+}
+
+@incollection{Roth93,
+	author = {S. F. Roth and W. E. Hefley},
+	crossref = {Maybury},
+	title = {Intelligent multimedia presentation systems: research and principles},
+	year = 1993
+}
+
+@techreport{Ruggieri96,
+	author = {S. Ruggieri and M. Bordegoni and T. Rist and P. Trahanias and W. Wilson},
+	institution = {Council for the Central Laboratory of Research Councils, Rutherford Appleton Laboratories},
+	number = {RAL-TR-96-011},
+	title = {Intelligent multimedia presentation systems: a proposal of reference model},
+	year = 1996
+}
+
+@techreport{Santana-01,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = jul,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-01},
+	title = {{\noopsort{07}}{N}atural language and graphics systems},
+	year = {1994}
+}
+
+@techreport{Santana-02,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = aug,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-02},
+	title = {{\noopsort{08}}{B}asic syntactic analysis techniques for natural language processing},
+	year = {1994}
+}
+
+@techreport{Santana-03,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = sep,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme. This report can be obtained via anonymous ftp from ftp://sgi.iie.org.mx/pub/checo/r3ss.ps.gz},
+	number = {IIE/Salford-SS-03},
+	title = {{\noopsort{09}}{P}arsing strategies},
+	year = {1994}
+}
+
+@techreport{Santana-04,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = oct,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-04},
+	title = {{\noopsort{10}}{U}nification categorial grammar: another grammatical formalism and semantics},
+	year = {1994}
+}
+
+@techreport{Santana-05,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = nov,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-05},
+	title = {{\noopsort{11}}{A}ttaching semantics to a geometrical design system},
+	year = {1994}
+}
+
+@techreport{Santana-06,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = jan,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-06},
+	title = {{\noopsort{01}}{N}atural language and graphical coordinated explanations and discourse structure},
+	year = {1995}
+}
+
+@techreport{Santana-07,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = feb,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-07},
+	title = {{\noopsort{02}}{P}roducing coordinated natural language and graphical explanations in the context of a geometric problem-solving task},
+	year = {1995}
+}
+
+@techreport{Santana-08,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = mar,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-08},
+	title = {{\noopsort{03}}{S}alient perspectives about discourse structure},
+	year = {1995}
+}
+
+@techreport{Santana-09,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = apr,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-09},
+	title = {{\noopsort{04}}{T}extual and graphical explanations for geometric problem-solving systems},
+	year = {1995}
+}
+
+@techreport{Santana-10,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = may,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-10},
+	title = {{\noopsort{05}}{C}oordinated linguistic and graphical rhetorical acts},
+	year = {1995}
+}
+
+@techreport{Santana-11,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = aug,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-11},
+	title = {{\noopsort{08}}{S}tructures to relate pictures and language},
+	year = {1995}
+}
+
+@techreport{Santana-12,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = sep,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-12},
+	title = {{\noopsort{09}}{R}esearch proposal},
+	year = {1995}
+}
+
+@techreport{Santana-13,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = oct,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-13},
+	title = {{\noopsort{10}}{A} graphical language},
+	year = {1995}
+}
+
+@techreport{Santana-14,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = nov,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme. This report can be obtained via anonymous ftp from ftp://sgi.iie.org.mx/pub/checo/r14ss.ps.gz},
+	number = {IIE/Salford-SS-14},
+	title = {{\noopsort{11}}{Quantification} issues in a graphical language},
+	year = {1995}
+}
+
+@techreport{Santana-15,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = jan,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-15},
+	title = {{\noopsort{01}}{An} interpreter of a graphical language},
+	year = {1996}
+}
+
+@techreport{Santana-16,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = feb,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-16},
+	title = {{\noopsort{02}}{An} intelligent editor for overhead transmission line towers},
+	year = {1996}
+}
+
+@techreport{Santana-17,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = mar,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme. This report can be obtained via anonymous ftp from ftp://sgi.iie.org.mx/pub/checo/r17ss.ps.gz},
+	number = {IIE/Salford-SS-17},
+	title = {{\noopsort{03}}{Quantification} revisited},
+	year = {1996}
+}
+
+@techreport{Santana-18,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = apr,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-18},
+	title = {{\noopsort{04}}{Generation} of natural language and graphical discourses for geometric problem-solving tasks},
+	year = {1996}
+}
+
+@techreport{Santana-19,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = may,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-19},
+	title = {{\noopsort{05}}{Coordinated} linguistic and graphical semantic units},
+	year = {1996}
+}
+
+@techreport{Santana-20,
+	address = {Apdo. 1-475, Cuernavaca, Mor., CP 62001, M{\'e}xico},
+	author = {J. S. Santana},
+	institution = {Instituto de Investigaciones El{\'e}ctricas},
+	month = jun,
+	note = {A monthly progress report on the IIE/University of Salford in-house PhD Programme},
+	number = {IIE/Salford-SS-20},
+	title = {{\noopsort{06}}{An} architecture for a prototype geometric problem-solving system with coordinated linguistic and graphical explanations},
+	year = {1996}
+}
+
+@inproceedings{Santana95,
+	author = {S. Santana and L. A. Pineda},
+	crossref = {IMMI-1},
+	month = jul,
+	title = {{\noopsort{07}}{P}roducing coordinated natural language and graphical explanations in the context of a geometric problem-solving task},
+	year = 1995
+}
+
+@inproceedings{Santana95etal,
+	author = {S. Santana and L. A. Pineda and S. Vadera},
+	crossref = {RNIA95},
+	month = sep,
+	pages = {106--112},
+	title = {{\noopsort{09}}{T}extual and graphical explanations for geometric problem-solving systems},
+	year = 1995
+}
+
+@inproceedings{Santana98,
+	author = {S. Santana and L. A. Pineda and S. Vadera},
+	crossref = {4WCES98},
+	pages = {270--277},
+	title = {An intelligent design system for overhead transmission line towers}
+}
+
+@inproceedings{Santana98a,
+	author = {S. Santana},
+	crossref = {4WCES98-WS},
+	pages = {22--49},
+	title = {A conceptual survey of natural language and multimodal explanation systems}
+}
+
+@mastersthesis{SantanaMSC,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	author = {J. S. Santana},
+	note = {In Spanish},
+	school = {Instituto Tecnol{\'o}gico y de Estudios Superiores de Monterrey (ITESM), Campus Morelos},
+	title = {La manipulaci{\'o}n de un modelo geom{\'e}trico bidimensional para el dise\~no de torres de transmisi{\'o}n},
+	year = 1987
+}
+
+@incollection{Scott84,
+	author = {A. C. Scott and W. J. Clancey and R. Davis and E. H. Shortliffe},
+	crossref = {Buchanan84},
+	pages = {338--362},
+	title = {Methods for generating explanations},
+	year = 1984
+}
+
+@book{Searle69,
+	address = {Cambridge, MA, U.S.A.},
+	author = {J. R. Searle},
+	publisher = {Cambridge University Press},
+	title = {Speech acts: an essay in the philosophy of language},
+	year = 1969
+}
+
+@book{Searle79,
+	address = {Cambridge, MA, U.S.A.},
+	author = {J. R. Searle},
+	publisher = {Cambridge University Press},
+	title = {Expression and meaning: studies in the theory of speech acts},
+	year = 1979
+}
+
+@book{Shepherd26,
+	address = {New York, NY, U.S.A.},
+	author = {H. R. Shepherd},
+	publisher = {The Macmillan Co.},
+	title = {The fine art of writing},
+	year = 1926
+}
+
+@book{Shieber86,
+	address = {Chicago, U.S.A.},
+	author = {S. M. Shieber},
+	publisher = {Chicago University Press},
+	title = {An introduction to unification-based approaches to grammar},
+	year = 1986
+}
+
+@article{Shneiderman83,
+	author = {B. Shneiderman},
+	journal = {IEEE Computer},
+	month = aug,
+	number = 8,
+	pages = {57--69},
+	title = {Direct manipulation: a step beyond programming languages},
+	volume = 16,
+	year = 1983
+}
+
+@book{Shortliffe76,
+	address = {New York, U.S.A.},
+	author = {E. H. Shortliffe},
+	publisher = {Elsevier},
+	title = {Computer-based medical consultations: {MYCIN}},
+	year = 1976
+}
+
+@book{Simon81,
+	address = {Cambridge, MA, U.S.A.},
+	author = {H. A. Simon},
+	publisher = {MIT Press},
+	title = {The sciences of the artificial},
+	year = {1981}
+}
+
+@phdthesis{Steele80,
+	address = {Cambridge, MA, U.S.A.},
+	author = {G. L. Steele},
+	month = aug,
+	note = {Artificial Intelligence Tech. Rep. AITR.595},
+	school = {Massachusetts Institute of Technology},
+	title = {The definition and implentation of a computer programming language based on constraints},
+	year = {1980}
+}
+
+@article{Sutherland63,
+	address = {Baltimore, U.S.A.},
+	author = {I. E. Sutherland},
+	journal = {Proc. Spring Joint Computer Conference. SJCC},
+	pages = {329--346},
+	publisher = {Spartan Books},
+	title = {{SKETCHPAD}: a man-machine graphical communication system},
+	volume = 23,
+	year = 1963
+}
+
+@techreport{Swartout77,
+	address = {MA, U.S.A.},
+	author = {W. R. Swartout},
+	institution = {Massachusetts Institute of Technology},
+	month = jun,
+	number = {TR-176},
+	title = {A digitalis therapy advisor with explanations},
+	year = {1977}
+}
+
+@article{Swartout83,
+	author = {W. R. Swartout},
+	journal = {Artificial Intelligence},
+	number = {3},
+	pages = {285--325},
+	title = {{XPLAIN: A} system for creating and explaining expert consulting systems},
+	volume = {21},
+	year = {1983}
+}
+
+@inproceedings{Swartout90,
+	address = {Boston, MA, U.S.A.},
+	author = {W. R. Swartout},
+	booktitle = {AAAI90 Workshop on Evaluation of Natural Language Generation Systems},
+	organization = {American Association for Artificial Intelligence},
+	title = {Evaluation criteria for expert system explanation},
+	year = {1990}
+}
+
+@article{Swartout91,
+	author = {W. R. Swartout and C. L. Paris and J. D. Moore},
+	journal = {IEEE Expert},
+	month = jun,
+	number = {3},
+	pages = {58--64},
+	title = {Design for explainable expert systems},
+	volume = {6},
+	year = {1991}
+}
+
+@article{Tanner91,
+	author = {M. C. Tanner and A. M. Keuneke},
+	journal = {IEEE Expert},
+	month = jun,
+	number = 3,
+	pages = {50--57},
+	title = {The roles of the task structure and domain functional models},
+	volume = 6,
+	year = 1991
+}
+
+@techreport{Tarau97,
+	author = {P. Tarau},
+	institution = {Departament d'Informatique, Universit{\'e} de Moncton, Canada, E1A 3E9},
+	month = apr,
+	note = {This document can be obtained via ftp at clement.info.umoncton.ca /pub/BinProlog},
+	title = {{BinProlog} 5.75 user guide},
+	year = 1997
+}
+
+@article{Tarski,
+	author = {A. Tarski},
+	journal = {Philosophy and Phenomenological Research},
+	note = {Reprinted in {\em Semantics and the Philosophy of Language}, pp. 13--47, edited by L. Linsky, Urbana, University of Illinois Press, U.S.A.},
+	pages = {341--375},
+	title = {The semantic conception of truth},
+	volume = 4,
+	year = 1944
+}
+
+@incollection{Tate90,
+	author = {A. Tate and J. Hendler and M. Drummond},
+	crossref = {Allen90},
+	pages = {26--49},
+	title = {A review of {AI} planning techniques}
+}
+
+@incollection{Thomas95,
+	author = {S. Thomas},
+	crossref = {VanEynde},
+	title = {Speech act theory and its relevance for computational linguistics},
+	year = 1995
+}
+
+@incollection{Thomas95a,
+	author = {S. Thomas},
+	crossref = {VanEynde},
+	title = {Rhetorical structure theory},
+	year = 1995
+}
+
+@inproceedings{Thompson77,
+	author = {H. Thompson},
+	crossref = {13-Chicago},
+	title = {Strategy and tactics: a model for language production},
+	year = 1977
+}
+
+@article{Thomson86,
+	address = {U.S.A},
+	author = {C. Thomson},
+	journal = {Texas Engineering Journal},
+	pages = {140--150},
+	title = {Building menu-based natural language interfaces},
+	volume = 3,
+	year = 1986
+}
+
+@article{Turing,
+	author = {A. M. Turing},
+	journal = {Mind},
+	note = {Reprinted under the title {\em Can a Machine Think}, in {\em The World of Mathematics}, ed. James R. Newman, pp 2099-2123, Simon \& Schuster (1956)},
+	pages = {433--460},
+	title = {Computing Machinery and Intelligence},
+	volume = 49,
+	year = 1950
+}
+
+@book{Vajda61,
+	address = {New York, NY, U.S.A.},
+	author = {S. Vajda},
+	edition = {1st},
+	publisher = {Addison-Wesley},
+	title = {Mathematical Programming},
+	year = {1961}
+}
+
+@book{Venables2012,
+	address = {New York, NY},
+	author = {W. N. Venables and B. D. Ripley},
+	edition = {4th},
+	note = {ISBN 0-387-95457-0},
+	publisher = {Springer},
+	title = {Modern Applied Statistics with S},
+	url = {http://www.stats.ox.ac.uk/pub/MASS4},
+	year = {2002}
+}
+
+@article{Wahlster86,
+	author = {W. Wahlster and A. Kobsa},
+	editor = {G. Ferrari},
+	journal = {Proceedings of the {IEEE}},
+	number = {7},
+	pages = {948--960},
+	title = {Dialog-based user models},
+	volume = {74},
+	year = {1986}
+}
+
+@article{Wahlster88,
+	author = {W. Wahlster},
+	journal = {Computational Linguistics},
+	number = {3},
+	pages = {101--103},
+	title = {Distinguishing user models from discourse models},
+	volume = {14},
+	year = {1988}
+}
+
+@incollection{Wahlster91,
+	author = {W. Wahlster},
+	crossref = {Sullivan},
+	title = {User and discourse models for multimodal communication},
+	year = 1991
+}
+
+@article{Wahlster93,
+	author = {W. Wahlster and E. Andr{\'e} and W. Finkler and H. J. Profitlich and T. Rist},
+	journal = {Artificial Intelligence},
+	pages = {387--427},
+	title = {Plan-based integration of natural language and graphics generation},
+	volume = 63,
+	year = 1993
+}
+
+@book{Walpole2012,
+	address = {Boston, MA},
+	author = {Ronald E. Walpole and Raymond H. Myers and Sharon L. Myers and Keying Ye},
+	edition = {9th},
+	note = {ISBN 10: 0-321-62911-6},
+	publisher = {Prentice Hall / Pearson Education, Inc.},
+	title = {Probability \& Statistics for Engineers \& Scientists },
+	year = {2012}
+}
+
+@article{Waltz78,
+	author = {D. L. Waltz},
+	journal = {Communications of the ACM},
+	number = 7,
+	title = {An {E}nglish language question answering system for a large relational database},
+	volume = 21,
+	year = 1978
+}
+
+@inproceedings{Wazinski92,
+	author = {P. Wazinski},
+	crossref = {ANLP92},
+	pages = {56--63},
+	title = {Generating spatial descriptions for cross-modal references},
+	year = 1992
+}
+
+@article{Weizenbaum66,
+	author = {J. Weizenbaum},
+	journal = {Communications of the ACM},
+	number = 1,
+	pages = {36--45},
+	title = {{ELIZA} -- a computer program for the study of natural language communication between man and machine},
+	volume = 9,
+	year = 1966
+}
+
+@book{Welch95,
+	address = {New Jersey, U.S.A.},
+	author = {B. B. Welch},
+	publisher = {Prentice Hall PTR},
+	title = {Practical programming in {Tcl and Tk}},
+	year = {1995}
+}
+
+@book{Williams1893,
+	address = {Boston, MA, U.S.A.},
+	author = {W. Williams},
+	publisher = {D. C. Heath and Co.},
+	title = {Composition and rhetoric},
+	year = {1893}
+}
+
+@book{Winograd72,
+	address = {New York, U.S.A.},
+	author = {T. Winograd},
+	publisher = {Academic Press},
+	title = {Understanding natural language},
+	year = 1972
+}
+
+@incollection{Winograd73,
+	author = {T. Winograd},
+	crossref = {Schank73},
+	pages = {152--186},
+	title = {A procedural model of language understanding},
+	year = 1973
+}
+
+@book{Wood2006,
+	address = {Boca Raton, Florida},
+	author = {Simon N. Wood},
+	edition = {First},
+	note = {ISBN 1-58488-474-6},
+	publisher = {Chapman \& Hall/CRC },
+	title = {Generalized Additive Models: An Introduction with R },
+	year = {2006}
+}
+
+@article{Woods70,
+	author = {W. A. Woods},
+	journal = {Communications of the ACM},
+	month = {October},
+	number = {10},
+	pages = {591--606},
+	title = {Transition network grammars for natural language analysis},
+	volume = {13},
+	year = {1970}
+}
+
+@incollection{Woods87,
+	author = {W. A. Woods},
+	crossref = {Shapiro87},
+	pages = {323--333},
+	title = {Augmented transition network grammar},
+	year = 1987
+}
+
+@book{Xie2013,
+	author = {Yihui Xie},
+	note = {ISBN 978-1482203530},
+	publisher = {Chapman \& Hall/CRC },
+	series = {The R Series},
+	title = {Dynamic Documents with R and knitr},
+	year = {2013}
+}
+
+@article{Younger67,
+	address = {U.S.A.},
+	author = {D. H. Younger},
+	journal = {Information and Control},
+	pages = {189--208},
+	title = {Recognition and parsing of context-free languages in time $n^{3}$},
+	volume = 10,
+	year = 1967
+}
+
+@techreport{Zeevat86,
+	author = {H. Zeevat},
+	institution = {Centre for Cognitive Science, University of Edinburgh, U.K.},
+	number = {EUCCS/RP-26},
+	title = {A specification of {InL}},
+	type = {Research Paper},
+	year = 1986
+}
+
+@techreport{Zeevat86a,
+	author = {H. Zeevat and E. Klein and J. Calder},
+	institution = {Centre for Cognitive Science, University of Edinburgh, U.K},
+	title = {Unification categorial grammar},
+	year = 1986
+}
+
+@book{xie2015,
+	address = {Boca Raton, Florida},
+	author = {Yihui Xie},
+	edition = {2nd},
+	note = {ISBN 978-1498716963},
+	publisher = {Chapman and Hall/CRC},
+	title = {Dynamic Documents with {R} and knitr},
+	url = {http://yihui.name/knitr/},
+	year = {2015}
+}
+
+@book{Miller65,
+	author = {Irwin Miller and John E. Freund},
+	booktitle = {Probability and statistics for engineers},
+	edition = {1st},
+	libraryofcongressccn = {65-10075},
+	pages = {432},
+	publisher = {Prentice-Hall. Englewood Cliffs, NJ, U.S.A.},
+	series = {Prentice-Hall Mathematics Series},
+	year = {1965}
+}
+
+@book{Santana14,
+	address = {Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México},
+	author = {Julio Sergio {Santana Sepúlveda} and Efraín {Mateos Farfán}},
+	booktitle = {El arte de programar en R: un lenguage para la estadística},
+	edition = {1a},
+	howpublished = {Digital},
+	institution = {Instituto Mexicano de Tecnología del Agua},
+	isbn = {978-607-9368-15-9},
+	location = {Jiutepec, Mor, México},
+	month = nov,
+	pages = {193},
+	publisher = {Instituto Mexicano de Tecnología del Agua},
+	year = {2014}
+}
+
+@proceedings{13-Chicago,
+	booktitle = {13th. Regional Meeting},
+	organization = {Chicago Linguistics Society, U.S.A.},
+	title = {13th. Regional Meeting},
+	year = 1977
+}
+
+@proceedings{4WCES98,
+	address = {Mexico City, Mexico},
+	booktitle = {Proceedings of the 4th World Congress on Expert Systems},
+	month = {March},
+	organization = {International Society for Intelligent Systems, Mexican Society for Artificial Intelligence, and Instituto Tecnol{\'o}gico y de Estudios Superiores de Monterrey (ITESM)},
+	title = {Proceedings of the 4th World Congress on Expert Systems},
+	year = {1998}
+}
+
+@proceedings{4WCES98-WS,
+	address = {Mexico City, Mexico},
+	booktitle = {Proceedings of the Workshop on Interpretation and Generation in Intelligent Multimodal Systems and Graphical Reasoning in Expert Systems, in conjunction with the 4th World Congress on Expert Systems},
+	month = {March},
+	organization = {International Society for Intelligent Systems, Mexican Society for Artificial Intelligence, and Instituto Tecnol{\'o}gico y de Estudios Superiores de Monterrey (ITESM)},
+	title = {Proceedings of the Workshop on Interpretation and Generation in Intelligent Multimodal Systems and Graphical Reasoning in Expert Systems, in conjunction with the 4th World Congress on Expert Systems},
+	year = {1998}
+}
+
+@proceedings{AAAI-FSS97,
+	address = {Cambridge, MA, U.S.A.},
+	booktitle = {Proceedings of the {AAAI-97 Fall Symposium} on reasoning with diagrammatic representations},
+	editor = {M. Anderson},
+	month = {November 8--10},
+	organization = {American Association for Artificial Intelligence / MIT},
+	title = {Proceedings of the {AAAI-97 Fall Symposium} on reasoning with diagrammatic representations},
+	year = {1997}
+}
+
+@proceedings{ACL-WS-97,
+	booktitle = {Proceedings of the workshop referring phenomena in a multimedia context and their computational treatment},
+	editor = {Elisabeth Andre},
+	month = {July 11th},
+	note = {In conjunction with ACL/EACL-97. Universidad Nacional de Educaci{\'o}n a Distancia, Madird, Spain},
+	organization = {ACL Special Interest Group on Multimedia Language Processing},
+	title = {Proceedings of the workshop referring phenomena in a multimedia context and their computational treatment},
+	year = {1997}
+}
+
+@proceedings{ACL87,
+	address = {Stanford University, U.S.A },
+	booktitle = {Proceedings of the 25th. Conference of the {ACL}},
+	month = jul,
+	organization = {Association for Computational Linguistics},
+	title = {Proceedings of the 25th. Conference of the {ACL}},
+	year = 1987
+}
+
+@proceedings{ACL88,
+	address = {Buffalo, NY, U.S.A },
+	booktitle = {Proceedings of the 26th. Conference of the {ACL}},
+	organization = {Association for Computational Linguistics},
+	title = {Proceedings of the 26th. Conference of the {ACL}},
+	year = 1988
+}
+
+@proceedings{ACL89,
+	address = {Vancouver, B.C., Canada},
+	booktitle = {Proceedings of the 27th. Conference of the {ACL}},
+	organization = {Association for Computational Linguistics},
+	title = {Proceedings of the 27th. Conference of the {ACL}},
+	year = 1989
+}
+
+@proceedings{ANLP92,
+	address = {Trento, Italy},
+	booktitle = {3rd. Conference on Applied Natural Language Processing (ANLP-92)},
+	month = apr,
+	title = {3rd. Conference on Applied Natural Language Processing (ANLP-92)},
+	year = 1992
+}
+
+@book{Allen90,
+	booktitle = {Readings in planning},
+	editor = {J. Allen and J. Hendler and A. Tate},
+	publisher = {Morgan Kaufmann Publishers, Inc.},
+	series = {The Morgan Kaufmann Series in Representation and Reasoning},
+	title = {Readings in planning},
+	year = {1990}
+}
+
+@book{Allen91,
+	address = {San Mateo, CA, U.S.A.},
+	author = {J. Allen and H. A. Kautz and R. N. Pelavin and J. D. Tenenberg},
+	booktitle = {Reasoning about plans},
+	publisher = {Morgan Kaufmann Publishers Inc.},
+	series = {The Morgan Kaufmann Series in Representation and Reasoning},
+	title = {Reasoning about plans},
+	year = {1991}
+}
+
+@proceedings{BLS79,
+	address = {Berkeley, CA, U.S.A.},
+	booktitle = {Proceedings of the Fifth Annual Meeting of the {B}erkeley {L}inguistics {S}ociety},
+	month = feb,
+	organization = {Berkeley Linguistics Society},
+	title = {Proceedings of the Fifth Annual Meeting of the {B}erkeley {L}inguistics {S}ociety},
+	year = 1979
+}
+
+@book{Benhamou93,
+	address = {Cambridge, MA, U.S.A.},
+	booktitle = {Constraint logic programming: selected research},
+	editor = {F. Benhamou and A. Colmerauer},
+	publisher = {The MIT Press},
+	series = {Logic Programming},
+	title = {Constraint logic programming: selected research},
+	year = {1993}
+}
+
+@book{Bolc78,
+	address = {Berlin, Germany},
+	booktitle = {Natural language communication with computers},
+	editor = {L. Bolc},
+	publisher = {Springer Verlag},
+	title = {Natural language communication with computers},
+	year = 1978
+}
+
+@book{Brachman,
+	address = {San Mateo, CA, U.S.A.},
+	booktitle = {Readings in knowledge representation},
+	editor = {R. J. Brachman and H. J. Levesque},
+	publisher = {Morgan Kaufmann Publishers, Inc.},
+	title = {Readings in knowledge representation},
+	year = 1985
+}
+
+@book{Brady83,
+	address = {Cambridge, MA, U.S.A.},
+	booktitle = {Computational models of discourse},
+	editor = {M. Brady and R. C. Berwick},
+	publisher = {The MIT Press},
+	series = {Artificial Intelligence},
+	title = {Computational models of discourse},
+	year = {1983}
+}
+
+@book{Buchanan84,
+	address = {Reading, MA, U.S.A.},
+	booktitle = {Rule-based expert systems: The {MYCIN} experiments of the {Stanford} heuristic programming project},
+	editor = {B. G. Buchanan and E. H. Shortliffe},
+	publisher = {Addison-Wesley},
+	title = {Rule-based expert systems: The {MYCIN} experiments of the {Stanford} heuristic programming project},
+	year = 1984
+}
+
+@proceedings{CHI89,
+	address = {New York, NY, U.S.A.},
+	booktitle = {Proceedings of the conference on {Computer Human Interaction}: {CHI'89}},
+	note = {(Austin, TX, April 30 -- May 4)},
+	organization = {ACM SIGCHI},
+	publisher = {Addison-Wesley},
+	title = {Proceedings of the conference on {Computer Human Interaction}: {CHI'89}},
+	year = 1989
+}
+
+@proceedings{CMC98,
+	address = {Tilburg, The Netherlands},
+	booktitle = {Proc. of the Second International Conference on Cooperative Multimodal Communication {(CMC98)}},
+	month = {January, 28--30},
+	organization = {The Computational Linguistics and Artificial Intelligence Group at Tilburg University,},
+	title = {Second International Conference on Cooperative Multimodal Communication},
+	year = {1998}
+}
+
+@proceedings{COLING94,
+	address = {Kyoto, Japan},
+	booktitle = {Proc. International Conference on Computational Linguistics. COLING},
+	organization = {Association of Computational Linguistics. ACL},
+	title = {Proc. International Conference on Computational Linguistics. COLING},
+	year = 1994
+}
+
+@book{Davis69,
+	address = {P.O.Box 17, 3300 AA Dordrecht, Holland},
+	booktitle = {Philosophical logic},
+	editor = {J. W. Davis and D. J. Hockney and K. W. Wilson},
+	publisher = {D. Reidel Publishing Company},
+	title = {Philosophical logic},
+	year = {1969}
+}
+
+@book{Dowty85,
+	address = {New York, U.S.A.},
+	booktitle = {Natural language parsing},
+	editor = {D. R. Dowty and L. Karttunen and A. Zwicky},
+	publisher = {Cambridge University Press},
+	title = {Natural language parsing},
+	year = 1985
+}
+
+@book{Geach52,
+	address = {Oxford, U.K.},
+	booktitle = {Translations from the philosophical writings of {G}ottlob {F}rege},
+	editor = {P. T. Geach and M. Black},
+	publisher = {Basil Blackwell},
+	title = {Translations from the philosophical writings of {G}ottlob {F}rege},
+	year = 1952
+}
+
+@book{Groen81,
+	address = {Holland},
+	booktitle = {Formal methods in the study of language},
+	editor = {J. Groenendijk and T. Janssen and M. Stokhof},
+	number = 135,
+	publisher = {Amsterdam Press},
+	series = {Mathematical Centre Tracts},
+	title = {Formal methods in the study of language},
+	year = 1981
+}
+
+@proceedings{IJCAI87,
+	address = {Milan, Italy},
+	booktitle = {Proc. of the 10th. IJCAI},
+	organization = ijcai,
+	title = {Proc. of the 10th. IJCAI},
+	year = 1987
+}
+
+@proceedings{IMMI-1,
+	address = {2 Buccleuch Place, Edinburgh EH8 9LW, Scotland, U.K.},
+	booktitle = {Proc. of the First International Workshop on Intelligence and Multimodality in Multimedia Interfaces: Research and Applications. IMMI-1},
+	editor = {J. Lee},
+	month = jul,
+	organization = {Human Communication Research Centre},
+	title = {Proc. of the First International Workshop on Intelligence and Multimodality in Multimedia Interfaces: Research and Applications},
+	year = 1995
+}
+
+@proceedings{Interact90,
+	address = {Amsterdam, Holland},
+	booktitle = {Human-computer Interaction. Interact'90},
+	editor = {D. Diaper and D. Gilmore and G. Cockton and B. Shackel},
+	organization = {IFIP},
+	publisher = {North-Holland},
+	title = {Human-computer Interaction. Interact'90},
+	year = 1990
+}
+
+@book{Lassez87,
+	address = {Cambridge, MA, U.S.A.},
+	booktitle = {Logic programming:{The 4th International Conference}},
+	editor = {Jean-Louis Lassez},
+	publisher = {The MIT Press},
+	series = {Logic Programming},
+	title = {Logic programming:{The 4th International Conference}},
+	year = {1987}
+}
+
+@book{Maybury,
+	address = {Menlo Park, U.S.A.},
+	booktitle = {Intelligent Multimedia Interfaces},
+	editor = {M. T. Maybury},
+	publisher = {AAAI Press/The MIT Press},
+	title = {Intelligent multimedia interfaces},
+	year = 1993
+}
+
+@book{Mellish90,
+	address = {London, U.K.},
+	booktitle = {Current research in language generation},
+	editor = {C. Mellish and R. Dale and M. Zock},
+	publisher = {Academic Press},
+	title = {Current research in language generation},
+	year = 1990
+}
+
+@book{Montague74,
+	address = {London, U.K.},
+	author = {R. Montague},
+	booktitle = {Formal philosophy: selected papers of {Richard Montague}},
+	note = {Compiled and edited by R. H. Thomason},
+	publisher = {Yale University Press},
+	title = {Formal philosophy: selected papers of {Richard Montague}},
+	year = {1974}
+}
+
+@proceedings{NCAI91,
+	address = {Anaheim, CA, U.S.A.},
+	booktitle = {Proc. of the Ninth National Conference on Artificial Intelligence (NCAI91)},
+	organization = aaai,
+	title = {Proc. of the Ninth National Conference on Artificial Intelligence (NCAI91)},
+	year = 1991
+}
+
+@proceedings{NCAI92,
+	booktitle = {Proc. of the Tenth National Conference on Artificial Intelligence (NCAI92)},
+	organization = aaai,
+	title = {Proc. of the Tenth National Conference on Artificial Intelligence (NCAI92)},
+	year = 1992
+}
+
+@proceedings{PPCP93,
+	address = {Box 1910, Providence, RI 02912, U.S.A.},
+	booktitle = {Proc. of the First Workshop on Principles and Practice of Constraint Programming, PPCP'93},
+	editor = {Paris Kanellakis and Jean-Louis Lassez and Vijay Saraswat},
+	month = {April},
+	note = {This document can be retrieved from \verb+http://www.cs.unh.edu/ccc/archive/ppcp.html+},
+	organization = {Brown University},
+	title = {Proc. of the First Workshop on Principles and Practice of Constraint Programming, PPCP'93},
+	year = {1993}
+}
+
+@book{Paris91,
+	address = {Boston, MA, U.S.A.},
+	booktitle = {Natural language generation in artificial intelligence and computational linguistics},
+	editor = {C. L. Paris and W. R. Swartout and W. C. Mann},
+	publisher = {Kluwer},
+	title = {Natural language generation in artificial intelligence and computational linguistics},
+	year = {1991}
+}
+
+@proceedings{RNIA95,
+	address = {Cuernavaca, Mor., M{\'e}xico},
+	booktitle = {XII Reuni{\'o}n Nacional de Inteligencia Artificial},
+	editor = {L. E. Sucar and E. Morales},
+	month = sep,
+	organization = {Sociedad Mexicana de Inteligencia Artificial},
+	publisher = {Noriega Editores},
+	title = {XII Reuni{\'o}n Nacional de Inteligencia Artificial},
+	year = 1995
+}
+
+@book{Rustin73,
+	address = {New York, U.S.A.},
+	booktitle = {Natural language processing},
+	editor = {R. Rustin},
+	publisher = {Algorithmics Press},
+	title = {Natural language processing},
+	year = 1973
+}
+
+@proceedings{SPICIS94,
+	booktitle = {Proc. of the Second {Singapore} International Conference on Intelligent Systems},
+	month = nov,
+	title = {Second Singapore International Conference on Intelligent Systems},
+	year = {1994}
+}
+
+@proceedings{SamosWkshp,
+	address = {Samos, Greece},
+	booktitle = {Proc. of the {S}amos workshop on task based explanation},
+	month = {28th {J}une--1st July},
+	organization = {Research Laboratory of Samos, University of the Aegean},
+	title = {Samos workshop on task based explanation},
+	year = 1992
+}
+
+@book{Schank73,
+	address = {New York, U.S.A.},
+	booktitle = {Computer models of thought and language},
+	editor = {R. C. Schank and K. M. Colby},
+	publisher = {W. H. Freeman and Company, Publishers},
+	title = {Computer models of thought and language},
+	year = 1973
+}
+
+@book{Shapiro87,
+	address = {New York, U.S.A.},
+	booktitle = {Encyclopaedia of artificial intelligence},
+	editor = {S. C. Shapiro},
+	publisher = {Wiley},
+	title = {Encyclopaedia of artificial intelligence},
+	year = 1987
+}
+
+@book{Sullivan,
+	booktitle = {Intelligent user interfaces},
+	editor = {J. W. Sullivan and S. W. Tyler},
+	publisher = {ACM Press/Addison-Wesley. New York, U.S.A.},
+	title = {Intelligent user interfaces},
+	year = 1991
+}
+
+@book{VanEynde,
+	booktitle = {Semantics and discourse: a {NLP} perspective},
+	editor = {F. Van Eynde and V. Allegranza},
+	publisher = {Office for Official Publications of the European Communities, Luxembourg},
+	series = {Studies in machine translation and natural language processing},
+	title = {Semantics and discourse: a {NLP} perspective},
+	volume = 9,
+	year = 1995
+}
+
+@book{Waldron96,
+	booktitle = {Mechanical design: theory and methodology},
+	editor = {M. Waldron and K Waldron},
+	publisher = {Springer-Verlag},
+	title = {Mechanical design: theory and methodology},
+	year = {1996}
+}
+
+@book{Webber81,
+	address = {Palo Alto, CA, U.S.A.},
+	booktitle = {Readings in artificial intelligence},
+	editor = {B. L. Webber and N. J. Nilsson},
+	publisher = {Tioga},
+	title = {Readings in artificial intelligence},
+	year = 1981
+}
+
+@proceedings{XI-RNIA,
+	address = {Universidad de Guadalajara, Guadalajara, Jal., M{\'e}xico},
+	booktitle = {XI Reuni{\'o}n Nacional de Inteligencia Artificial},
+	editor = {V. Estivill-Castro},
+	organization = {Sociedad Mexicana de Inteligencia Artificial},
+	title = {XI Reuni{\'o}n Nacional de Inteligencia Artificial},
+	year = 1994
+}
+
+@book{Yeh78,
+	booktitle = {Current trends in programming methodology},
+	editor = {R. T. Yeh},
+	publisher = {Prentice-Hall. Englewood Cliffs, NJ, U.S.A.},
+	title = {Current trends in programming methodology},
+	year = 1978
+}
+

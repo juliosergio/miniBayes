@@ -20,6 +20,10 @@ language:
     proof: 'Prueba. '
     remark: 'Remark. '
     solution: 'Solución. '
+    refname: 'Referencias '
+    bibname: 'Referencias '
   ui:
     edit: Edit
     chapter_name: "Capítulo "
+    references_name: "Referncias "
+

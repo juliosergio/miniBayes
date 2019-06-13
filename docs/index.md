@@ -1,17 +1,17 @@
 --- 
 title: "El Teorema de Bayes con Diagramas de Venn"
 author: "Julio Sergio Santana"
-date: "2019-06-12"
+date: "2019-06-13"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib]
+bibliography: [ss.bib]
 # header-includes:
 #   \usepackage[spanish]{babel}
 biblio-style: apalike
 link-citations: yes
-github-repo: juliosergio/bookdown-start
+github-repo: juliosergio/miniBayes
 url: 'http\://seankross.com/bookdown-start/'
-description: "Everything you need (and nothing more) to start a bookdown book."
+description: "Explicaciones del Teorema de Bayes"
 ---
 
 # Prólogo {-}

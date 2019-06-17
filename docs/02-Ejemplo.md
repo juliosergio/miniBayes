@@ -7,7 +7,7 @@ Por razones de pagos en publicidad, un piloto de autos usa un Corvette en el 50%
 a. Haciendo uso de esa información para estimar las probabilidades, indique cuál es la probabilidad de que el piloto gane la reciente carrera en la que participará en Le Mans.
 a. Suponiendo que llega la notificación de que, en efecto, ganó la carrera, ¿cuál es la probabilidad de que haya manejado el Corvette?
 
-NOTA: Este ejemplo fue tomado de los ejercicios del libro @Miller65 pp. 32-34.
+NOTA: Este ejemplo fue tomado de los ejercicios del libro de @Miller65 pp. 32-34.
 
 ### Solución {-}
 
@@ -43,10 +43,11 @@ print(datos)
 ## Jaguar     0.3 0.2666667
 ## Alfa_Romeo 0.2 0.4000000
 ```
-algo
+
+Esta misma información se puede ver en la Tabla \@ref(tab:tabla-info), donde la columna **P.B** representa la probabilidad del conjunto $B$ en el renglón correspondiente, y la columna **P.A_B** es la probabilidad de que se ganó la carrera dado que se usó el auto en el renglón correspondiente.
 
 
-Table: (\#tab:unnamed-chunk-2)Inormación del piloto de autos
+Table: (\#tab:tabla-info)Información del piloto de autos
 
               P.B       P.A_B
 -----------  ----  ----------
@@ -59,14 +60,21 @@ La solución del inciso **a** del problema se obtiene por medio de la aplicació
 
 ```r
 datos$Prod <- datos$P.B * datos$P.A_B
-knitr::kable(datos)
 ```
+
+El resultado de este producto se puede ver en la columna **Prod** de la Tabla \@ref(tab:tabla-c-prod)
+
+
+Table: (\#tab:tabla-c-prod)Productos de probabilidades
 
               P.B       P.A_B   Prod
 -----------  ----  ----------  -----
 Corvette      0.5   0.2000000   0.10
 Jaguar        0.3   0.2666667   0.08
 Alfa_Romeo    0.2   0.4000000   0.08
+
+Ahora se procede a hacer la suma de los valores en la columna **Prod** de la Tabla \@ref(tab:tabla-c-prod) con
+
 
 ```r
 (Prob.A <- sum(datos$Prod))
@@ -75,6 +83,7 @@ Alfa_Romeo    0.2   0.4000000   0.08
 ```
 ## [1] 0.26
 ```
+
 Asi entonces, la **probabilidad de que el piloto gane su carrera** es del 26%.
 
 Para resolver el inciso **b** del problema se aplica el Teorema \@ref(thm:bayes0) de Bayes. En este caso es simplemente dividir el producto en el renglón correspondiente al auto "Corvette" entre la probabilidad recien obtenida, así:
@@ -87,4 +96,4 @@ Para resolver el inciso **b** del problema se aplica el Teorema \@ref(thm:bayes0
 ```
 ## [1] 0.3846154
 ```
-Esto es, la **probabilidad de que haya usado el Corvette** es de 38.4615385%.
+Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que haya usado el Corvette** es de 38.4615385%.

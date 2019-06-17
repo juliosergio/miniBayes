@@ -1,5 +1,5 @@
 book_filename: "Bayes con Venn"
-repo: https://github.com/juliosergio/bookdown-start
+repo: https://github.com/juliosergio/miniBayes
 output_dir: docs
 rmd_files: ["index.Rmd", "01-BayesExplicado.Rmd", "02-Ejemplo.Rmd"]
 clean: [packages.bib, bookdown.bbl]
@@ -23,7 +23,7 @@ language:
     refname: 'Referencias '
     bibname: 'Referencias '
   ui:
-    edit: Edit
+    edit: "Edit"
     chapter_name: "Capítulo "
     references_name: "Referncias "
 

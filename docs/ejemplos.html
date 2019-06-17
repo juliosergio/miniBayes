@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Sergio Santana" />
 
 
-<meta name="date" content="2019-06-13" />
+<meta name="date" content="2019-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,7 +172,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Haciendo uso de esa información para estimar las probabilidades, indique cuál es la probabilidad de que el piloto gane la reciente carrera en la que participará en Le Mans.</li>
 <li>Suponiendo que llega la notificación de que, en efecto, ganó la carrera, ¿cuál es la probabilidad de que haya manejado el Corvette?</li>
 </ol>
-<p>NOTA: Este ejemplo fue tomado de los ejercicios del libro <span class="citation">Miller and Freund (<a href="#ref-Miller65">1965</a>)</span> pp. 32-34.</p>
+<p>NOTA: Este ejemplo fue tomado de los ejercicios del libro de <span class="citation">Miller and Freund (<a href="#ref-Miller65">1965</a>)</span> pp. 32-34.</p>
 <div id="solucion" class="section level3 unnumbered">
 <h3>Solución</h3>
 <p>La Figura <a href="ejemplos.html#fig:Autos1">2.1</a> representa esquemáticamente algunos de los elementos del problema, en esta figura:</p>
@@ -201,9 +201,9 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 ## Corvette   0.5 0.2000000
 ## Jaguar     0.3 0.2666667
 ## Alfa_Romeo 0.2 0.4000000</code></pre>
-<p>algo</p>
+<p>Esta misma información se puede ver en la Tabla <a href="ejemplos.html#tab:tabla-info">2.1</a>, donde la columna <strong>P.B</strong> representa la probabilidad del conjunto <span class="math inline">\(B\)</span> en el renglón correspondiente, y la columna <strong>P.A_B</strong> es la probabilidad de que se ganó la carrera dado que se usó el auto en el renglón correspondiente.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-2">Tabla 2.1: </span>Inormación del piloto de autos</caption>
+<caption><span id="tab:tabla-info">Tabla 2.1: </span>Información del piloto de autos</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -230,9 +230,10 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 </tbody>
 </table>
 <p>La solución del inciso <strong>a</strong> del problema se obtiene por medio de la aplicación del Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la tabla anterior y sumar todos los resultados.</p>
-<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
-knitr<span class="op">::</span><span class="kw">kable</span>(datos)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B</code></pre>
+<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.2</a></p>
 <table>
+<caption><span id="tab:tabla-c-prod">Tabla 2.2: </span>Productos de probabilidades</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -262,13 +263,14 @@ knitr<span class="op">::</span><span class="kw">kable</span>(datos)</code></pre>
 </tr>
 </tbody>
 </table>
+<p>Ahora se procede a hacer la suma de los valores en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.2</a> con</p>
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.A &lt;-<span class="st"> </span><span class="kw">sum</span>(datos<span class="op">$</span>Prod))</code></pre>
 <pre><code>## [1] 0.26</code></pre>
 <p>Asi entonces, la <strong>probabilidad de que el piloto gane su carrera</strong> es del 26%.</p>
 <p>Para resolver el inciso <strong>b</strong> del problema se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. En este caso es simplemente dividir el producto en el renglón correspondiente al auto “Corvette” entre la probabilidad recien obtenida, así:</p>
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.Corvette &lt;-<span class="st"> </span>datos[<span class="st">&quot;Corvette&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>Prob.A)</code></pre>
 <pre><code>## [1] 0.3846154</code></pre>
-<p>Esto es, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
+<p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
 
 <div id="refs" class="references">
 <div>

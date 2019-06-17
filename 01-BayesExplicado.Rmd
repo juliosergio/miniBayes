@@ -4,7 +4,7 @@ Antes de proceder a la explicación del teorema, se enunciará éste de una mane
 
 ## El teorema de Bayes
 
-```{theorem bayes0}
+```{theorem bayes0, name="Teorema de Bayes"}
 Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
 
 \begin{align*}
@@ -107,7 +107,7 @@ P\left( X\cap Y \right) &=P\left( X \right) \cdot P\left( Y|X \right) \\
 Si se aplica esto a la Ecuación \@ref(eq:PA-in-Bi), se tiene el   
 
 
-```{theorem ptotal}
+```{theorem ptotal, name="Teorema de la probabilidad total"}
 Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
 
 \begin{align*}

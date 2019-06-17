@@ -4,7 +4,7 @@ Antes de proceder a la explicación del teorema, se enunciará éste de una mane
 
 ## El teorema de Bayes
 
-\BeginKnitrBlock{theorem}<div class="theorem"><span class="theorem" id="thm:bayes0"><strong>(\#thm:bayes0) </strong></span>Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
+\BeginKnitrBlock{theorem}\iffalse{-91-84-101-111-114-101-109-97-32-100-101-32-66-97-121-101-115-93-}\fi{}<div class="theorem"><span class="theorem" id="thm:bayes0"><strong>(\#thm:bayes0)  \iffalse (Teorema de Bayes) \fi{} </strong></span>Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
 
 \begin{align*}
 S &= \bigcup _{ i=1 }^{ k }{ { B }_{ i } } \\
@@ -108,7 +108,7 @@ P\left( X\cap Y \right) &=P\left( X \right) \cdot P\left( Y|X \right) \\
 Si se aplica esto a la Ecuación \@ref(eq:PA-in-Bi), se tiene el   
 
 
-\BeginKnitrBlock{theorem}<div class="theorem"><span class="theorem" id="thm:ptotal"><strong>(\#thm:ptotal) </strong></span>Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
+\BeginKnitrBlock{theorem}\iffalse{-91-84-101-111-114-101-109-97-32-100-101-32-108-97-32-112-114-111-98-97-98-105-108-105-100-97-100-32-116-111-116-97-108-93-}\fi{}<div class="theorem"><span class="theorem" id="thm:ptotal"><strong>(\#thm:ptotal)  \iffalse (Teorema de la probabilidad total) \fi{} </strong></span>Dados los conjuntos (eventos)  $B_1, B_2, ... B_k$, disjuntos,  y los conjuntos $S$, que representa el universo, y $A$, tales que,
 
 \begin{align*}
 S &= \bigcup _{ i=1 }^{ k }{ { B }_{ i } } \\

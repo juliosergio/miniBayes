@@ -92,7 +92,7 @@ Primeramente se procede a identificar los distintos eventos del problema.
 
 La asignación total del volumen de correos por marca de *software* se muestra en la Figura \@ref(fig:Correos1).
 
-```{r Correos1, echo=F, out.width='60.8%', fig.show='hold', fig.cap='Diagrama de Venn que muestra la asignación de correos por marca de *software*'}
+```{r Correos1, echo=F, out.width='60.8%', fig.show='hold', fig.cap='Diagrama de Venn que muestra la asignación de correos por marca de software'}
 knitr::include_graphics('images/Pcorreos1.png')
 ```
 

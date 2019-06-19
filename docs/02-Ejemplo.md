@@ -121,8 +121,8 @@ Primeramente se procede a identificar los distintos eventos del problema.
 La asignación total del volumen de correos por marca de *software* se muestra en la Figura \@ref(fig:Correos1).
 
 <div class="figure">
-<img src="images/Pcorreos1.png" alt="Diagrama de Venn que muestra la asignación de correos por marca de *software*" width="60.8%" />
-<p class="caption">(\#fig:Correos1)Diagrama de Venn que muestra la asignación de correos por marca de *software*</p>
+<img src="images/Pcorreos1.png" alt="Diagrama de Venn que muestra la asignación de correos por marca de software" width="60.8%" />
+<p class="caption">(\#fig:Correos1)Diagrama de Venn que muestra la asignación de correos por marca de software</p>
 </div>
 
 Por otra parte, el evento *A* que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura \@ref(fig:Correos2).

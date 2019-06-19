@@ -1997,17 +1997,17 @@
 }
 
 @book{Santana14,
-	address = {Paseo Cuauhn{\'a}huac 8532, Col. Progreso, Jiutepec, Mor., M{\'e}xico},
-	author = {Julio Sergio {Santana Sep{\'u}lveda} and Efra{\'{\i}}}n {Mateos Farf{\'a}n}},
-	booktitle = {El arte de programar en R: un lenguage para la estad{\'{\i}}stica},
+	address = {Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México},
+	author = {Julio Sergio {Santana Sepúlveda} and Efraín {Mateos Farfán}},
+	booktitle = {El arte de programar en R: un lenguage para la estadística},
 	edition = {1a},
 	howpublished = {Digital},
-	institution = {Instituto Mexicano de Tecnolog{\'{\i}}a del Agua},
+	institution = {Instituto Mexicano de Tecnología del Agua},
 	isbn = {978-607-9368-15-9},
-	location = {Jiutepec, Mor, M{\'e}xico},
+	location = {Jiutepec, Mor, México},
 	month = nov,
 	pages = {193},
-	publisher = {Instituto Mexicano de Tecnolog{\'{\i}}a del Agua},
+	publisher = {Instituto Mexicano de Tecnología del Agua},
 	year = {2014}
 }
 

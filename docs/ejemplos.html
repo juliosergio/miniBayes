@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Sergio Santana" />
 
 
-<meta name="date" content="2019-06-18" />
+<meta name="date" content="2019-06-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -194,10 +194,10 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 </div>
 <p>Para resolver el problema se usará el lenguaje de programación R <span class="citation">(Santana Sepúlveda and Mateos Farfán <a href="#ref-Santana14">2014</a>)</span>. El primer paso es la construcción de una tabla con la información</p>
 <pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
-      <span class="co">#             Corvette    Jaguar    Alfa_Romeo</span>
-      <span class="dt">P.B     =</span>  <span class="kw">c</span>(    <span class="fl">0.5</span>   ,    <span class="fl">0.3</span>   ,    <span class="fl">0.2</span>       ),  <span class="co"># P(B)</span>
-      <span class="dt">P.A_B   =</span>  <span class="kw">c</span>(   <span class="dv">5</span><span class="op">/</span><span class="dv">25</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">15</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">10</span>       ),  <span class="co"># P(A|B)</span>
-  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;Corvette&quot;</span>, <span class="st">&quot;Jaguar&quot;</span> , <span class="st">&quot;Alfa_Romeo&quot;</span> )
+  <span class="co">#                 Corvette    Jaguar    Alfa_Romeo</span>
+  <span class="dt">P.B         =</span>  <span class="kw">c</span>(    <span class="fl">0.5</span>   ,    <span class="fl">0.3</span>   ,    <span class="fl">0.2</span>      ), <span class="co"># P(B)</span>
+  <span class="dt">P.A_B       =</span>  <span class="kw">c</span>(   <span class="dv">5</span><span class="op">/</span><span class="dv">25</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">15</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">10</span>      ), <span class="co"># P(A|B)</span>
+  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;Corvette&quot;</span>, <span class="st">&quot;Jaguar&quot;</span> , <span class="st">&quot;Alfa_Romeo&quot;</span>)
 )
 <span class="kw">print</span>(datos)</code></pre>
 <pre><code>##            P.B     P.A_B
@@ -278,7 +278,7 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 </div>
 <div id="ejemplo-2" class="section level2">
 <h2><span class="header-section-number">2.2</span> Ejemplo 2</h2>
-<p>Una compañía utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo spam: la marca <strong>Ms</strong>
+<p>Una empresa utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo spam: la marca <strong>Ms</strong>
 y la marca <strong>G</strong>. Estadísticamente se ha determinado a nivel mundial que <strong>Ms</strong> clasifica correctamente
 sólo el 70% de los correos como <em>spam</em> o <em>no-spam</em>, mientras que <strong>G</strong> alcanza el 98%. Sin embargo,
 como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean
@@ -312,10 +312,10 @@ FIGURA 2.3: Diagrama de Venn que muestra el evento <span class="math inline">\(A
 </div>
 <p>Se hará una tabla (<em>data.frame</em>) para capturar toda la información del problema:</p>
 <pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
-      <span class="co">#             marca.Ms      marca.G</span>
-      <span class="dt">P.B     =</span>  <span class="kw">c</span>(    <span class="fl">0.65</span>   ,    <span class="fl">0.35</span>     ),  <span class="co"># P(B)</span>
-      <span class="dt">P.A_B   =</span>  <span class="kw">c</span>(    <span class="fl">0.70</span>   ,    <span class="fl">0.98</span>     ),  <span class="co"># P(A|B)</span>
-  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;marca.Ms&quot;</span> , <span class="st">&quot;marca.G&quot;</span>   )
+  <span class="co">#               marca.Ms      marca.G</span>
+  <span class="dt">P.B       =</span>  <span class="kw">c</span>(    <span class="fl">0.65</span>   ,    <span class="fl">0.35</span>     ),  <span class="co"># P(B)</span>
+  <span class="dt">P.A_B     =</span>  <span class="kw">c</span>(    <span class="fl">0.70</span>   ,    <span class="fl">0.98</span>     ),  <span class="co"># P(A|B)</span>
+  <span class="dt">row.names =</span>  <span class="kw">c</span>(<span class="st">&quot;marca.Ms&quot;</span> , <span class="st">&quot;marca.G&quot;</span>   )
 )
 <span class="kw">print</span>(datos)</code></pre>
 <pre><code>##           P.B P.A_B
@@ -359,7 +359,7 @@ sumas &lt;-<span class="st"> </span><span class="kw">apply</span>(datos, <span c
 datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span>sumas</code></pre>
 <p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-correos-prod">2.4</a></p>
 <table>
-<caption><span id="tab:tabla-correos-prod">Tabla 2.4: </span>Productos de probabilidades</caption>
+<caption><span id="tab:tabla-correos-prod">Tabla 2.4: </span>Productos de probabilidades en el caso de correos</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -391,16 +391,85 @@ datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span
 </table>
 <p>De acuerdo con este resultado, la probabilidad de que, en general, un correo sea clasificado correctamente es
 del 79.8%.</p>
+<p>Para averiguar la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>, se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. Para ello se divide el producto en el renglón correspondiente a <strong>Ms</strong> entre la probabilidad recien obtenida, así:</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
+<pre><code>## [1] 0.5701754</code></pre>
+<p>Esto es, dado que se clasificó correctamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 57.02%.</p>
+<p>Después de presentar estos resultados a la junta directiva de la empresa, la respuesta que Roberto recibió no fue muy amable, como se puede ver en la ilustración de la Figura <a href="ejemplos.html#fig:Caricat1">2.5</a>.</p>
+<div class="figure"><span id="fig:Caricat1"></span>
+<img src="images/Prob2Caric1.png" alt="Respuesta de los directivos de la empresa" width="80.8%" />
+<p class="caption">
+FIGURA 2.5: Respuesta de los directivos de la empresa
+</p>
+</div>
+<p>Aunque en un principio la respuesta lo tomó por sorpresa, en vez de desanimarse, Roberto trató de replantear el problema desde una prespectiva diferente, tal como se ilustra en la Figura <a href="ejemplos.html#fig:Caricat2">2.6</a>.</p>
+<div class="figure"><span id="fig:Caricat2"></span>
+<img src="images/Prob2Caric2.png" alt="El problema visto desde otra perspectiva" width="80.8%" />
+<p class="caption">
+FIGURA 2.6: El problema visto desde otra perspectiva
+</p>
+</div>
+<p>Esto da lugar a la segunda parte de este problema, cuya descripción se hace en seguida:</p>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Esta es la parte b</li>
+<li>Determinar la probabilidad que que un correo mal clasificado, ya sea como <em>spam</em> o <em>no-spam</em>, provenga del <em>software</em> provisto por <strong>Ms</strong>.</li>
 </ol>
+<p>Con el propósito de responder a esta pregunta, debe notarse que ahora el tema ya no es el evento <span class="math inline">\(A\)</span> sino su complemento, <span class="math inline">\(\bar{A}\)</span>. Para resolver el problema, solamente es necesario modificar la columna “P.A_B”, de la tabla anterior, de acuerdo con los nuevos datos mostrados en la Figura <a href="ejemplos.html#fig:Correos4">2.7</a> y proceder a los cálculos correspondientes.</p>
+<div class="figure"><span id="fig:Correos4"></span>
+<img src="images/Pcorreos4.png" alt="Diagrama de Venn que muestra la porción que ocupa $\bar { A }$ : de cada una de las áreas $B$" width="60.8%" />
+<p class="caption">
+FIGURA 2.7: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(\bar { A }\)</span> : de cada una de las áreas <span class="math inline">\(B\)</span>
+</p>
+</div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#                 marca.Ms      marca.G  SUMA</span>
+datos<span class="op">$</span>P.A_B &lt;-<span class="st"> </span><span class="kw">c</span>(    <span class="fl">0.30</span>   ,    <span class="fl">0.02</span>,    <span class="ot">NA</span> ) <span class="co"># P(A|B)</span>
+<span class="co"># Se corrigen los productos</span>
+datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
+
+<span class="co"># Se agregan las sumas corregidas como el renglón final:</span>
+datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span><span class="kw">apply</span>(datos[<span class="op">-</span><span class="dv">3</span>, ], <span class="dv">2</span>, sum)</code></pre>
+<p>En la Tabla <a href="ejemplos.html#tab:tabla-correos-final">2.5</a> se pueden ver los resultados de estas operaciones.</p>
+<table>
+<caption><span id="tab:tabla-correos-final">Tabla 2.5: </span>Productos de probabilidades en el caso de correos mal clasificados</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+<th align="right">Prod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.30</td>
+<td align="right">0.195</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.02</td>
+<td align="right">0.007</td>
+</tr>
+<tr class="odd">
+<td>SUMAS</td>
+<td align="right">1.00</td>
+<td align="right">0.32</td>
+<td align="right">0.202</td>
+</tr>
+</tbody>
+</table>
+<p>Finalmente, se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. Para ello se divide el producto en el renglón correspondiente a <strong>Ms</strong> entre la probabilidad total, registrada el renglón “SUMAS” y columna “Prod”, así:</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
+<pre><code>## [1] 0.9653465</code></pre>
+<p>Esto es, dado que se clasificó incorrectamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de <em>software</em>.</p>
 
 <div id="refs" class="references">
 <div>
 <p>Miller, Irwin, and John E. Freund. 1965. <em>Probability and Statistics for Engineers</em>. 1st ed. Prentice-Hall Mathematics Series. Prentice-Hall. Englewood Cliffs, NJ, U.S.A.</p>
 </div>
 <div>
-<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguage Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
+<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
 </div>
 </div>
 </div>
@@ -412,7 +481,7 @@ del 79.8%.</p>
 <p>Miller, Irwin, and John E. Freund. 1965. <em>Probability and Statistics for Engineers</em>. 1st ed. Prentice-Hall Mathematics Series. Prentice-Hall. Englewood Cliffs, NJ, U.S.A.</p>
 </div>
 <div id="ref-Santana14">
-<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguage Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
+<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
 </div>
 </div>
             </section>

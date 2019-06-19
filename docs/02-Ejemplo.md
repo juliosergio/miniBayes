@@ -29,10 +29,10 @@ Para resolver el problema se usará el lenguaje de programación R [@Santana14].
 
 ```r
 datos <- data.frame(
-      #             Corvette    Jaguar    Alfa_Romeo
-      P.B     =  c(    0.5   ,    0.3   ,    0.2       ),  # P(B)
-      P.A_B   =  c(   5/25   ,   4/15   ,   4/10       ),  # P(A|B)
-  row.names   =  c("Corvette", "Jaguar" , "Alfa_Romeo" )
+  #                 Corvette    Jaguar    Alfa_Romeo
+  P.B         =  c(    0.5   ,    0.3   ,    0.2      ), # P(B)
+  P.A_B       =  c(   5/25   ,   4/15   ,   4/10      ), # P(A|B)
+  row.names   =  c("Corvette", "Jaguar" , "Alfa_Romeo")
 )
 print(datos)
 ```
@@ -100,7 +100,7 @@ Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que
 
 ## Ejemplo 2
 
-Una compañía utiliza filtros procedentes de dos marcas de *software* para detectar correo spam: la marca **Ms**
+Una empresa utiliza filtros procedentes de dos marcas de *software* para detectar correo spam: la marca **Ms**
 y la marca **G**. Estadísticamente se ha determinado a nivel mundial que **Ms** clasifica correctamente 
 sólo el 70% de los correos como *spam* o *no-spam*, mientras que **G** alcanza el 98%. Sin embargo, 
 como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean 
@@ -137,10 +137,10 @@ Se hará una tabla (*data.frame*) para capturar toda la información del problem
 
 ```r
 datos <- data.frame(
-      #             marca.Ms      marca.G
-      P.B     =  c(    0.65   ,    0.35     ),  # P(B)
-      P.A_B   =  c(    0.70   ,    0.98     ),  # P(A|B)
-  row.names   =  c("marca.Ms" , "marca.G"   )
+  #               marca.Ms      marca.G
+  P.B       =  c(    0.65   ,    0.35     ),  # P(B)
+  P.A_B     =  c(    0.70   ,    0.98     ),  # P(A|B)
+  row.names =  c("marca.Ms" , "marca.G"   )
 )
 print(datos)
 ```
@@ -183,7 +183,7 @@ datos["SUMAS", ] <- sumas
 El resultado de este producto se puede ver en la columna **Prod** de la Tabla \@ref(tab:tabla-correos-prod)
 
 
-Table: (\#tab:tabla-correos-prod)Productos de probabilidades
+Table: (\#tab:tabla-correos-prod)Productos de probabilidades en el caso de correos
 
              P.B   P.A_B    Prod
 ---------  -----  ------  ------
@@ -194,6 +194,79 @@ SUMAS       1.00    1.68   0.798
 De acuerdo con este resultado, la probabilidad de que, en general, un correo sea clasificado correctamente es 
 del 79.8%.
 
-b. Esta es la parte b
+Para averiguar la probabilidad de que un correo bien detectado, ya sea como *spam* o *no-spam*, proceda de **Ms**, se aplica el Teorema \@ref(thm:bayes0) de Bayes. Para ello se divide el producto en el renglón correspondiente a **Ms** entre la probabilidad recien obtenida, así:
+
+
+```r
+(Prob.Ms <- datos["marca.Ms","Prod"]/datos["SUMAS","Prod"])
+```
+
+```
+## [1] 0.5701754
+```
+Esto es, dado que se clasificó correctamente el correo, la **probabilidad de que para esta operación se haya usado el _software_ de Ms** es de 57.02%.
+
+Después de presentar estos resultados a la junta directiva de la empresa, la respuesta que Roberto recibió no fue muy amable, como se puede ver en la ilustración de la Figura \@ref(fig:Caricat1).
+
+<div class="figure">
+<img src="images/Prob2Caric1.png" alt="Respuesta de los directivos de la empresa" width="80.8%" />
+<p class="caption">(\#fig:Caricat1)Respuesta de los directivos de la empresa</p>
+</div>
+
+Aunque en un principio la respuesta lo tomó por sorpresa, en vez de desanimarse, Roberto trató de replantear el problema desde una prespectiva diferente, tal como se ilustra en la Figura \@ref(fig:Caricat2).
+
+<div class="figure">
+<img src="images/Prob2Caric2.png" alt="El problema visto desde otra perspectiva" width="80.8%" />
+<p class="caption">(\#fig:Caricat2)El problema visto desde otra perspectiva</p>
+</div>
+Esto da lugar a la segunda parte de este problema, cuya descripción se hace en seguida:
+
+
+b. Determinar la probabilidad que que un correo mal clasificado, ya sea como *spam* o *no-spam*, provenga del *software* provisto por **Ms**.
+
+Con el propósito de responder a esta pregunta, debe notarse que ahora el tema ya no es el evento $A$ sino su complemento, $\bar{A}$. Para resolver el problema, solamente es necesario modificar la columna "P.A_B", de la tabla anterior, de acuerdo con los nuevos datos mostrados en la Figura \@ref(fig:Correos4) y proceder a los cálculos correspondientes.
+
+<div class="figure">
+<img src="images/Pcorreos4.png" alt="Diagrama de Venn que muestra la porción que ocupa $\bar { A }$ : de cada una de las áreas $B$" width="60.8%" />
+<p class="caption">(\#fig:Correos4)Diagrama de Venn que muestra la porción que ocupa $\bar { A }$ : de cada una de las áreas $B$</p>
+</div>
+
+
+```r
+#                 marca.Ms      marca.G  SUMA
+datos$P.A_B <- c(    0.30   ,    0.02,    NA ) # P(A|B)
+# Se corrigen los productos
+datos$Prod <- datos$P.B * datos$P.A_B
+
+# Se agregan las sumas corregidas como el renglón final:
+datos["SUMAS", ] <- apply(datos[-3, ], 2, sum)
+```
+En la Tabla \@ref(tab:tabla-correos-final) se pueden ver los resultados de estas operaciones.
+
+
+Table: (\#tab:tabla-correos-final)Productos de probabilidades en el caso de correos mal clasificados
+
+             P.B   P.A_B    Prod
+---------  -----  ------  ------
+marca.Ms    0.65    0.30   0.195
+marca.G     0.35    0.02   0.007
+SUMAS       1.00    0.32   0.202
+
+Finalmente, se aplica el Teorema \@ref(thm:bayes0) de Bayes. Para ello se divide el producto en el renglón correspondiente a **Ms** entre la probabilidad total, registrada el renglón "SUMAS" y columna "Prod", así:
+
+
+```r
+(Prob.Ms <- datos["marca.Ms","Prod"]/datos["SUMAS","Prod"])
+```
+
+```
+## [1] 0.9653465
+```
+
+Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de que para esta operación se haya usado el _software_ de Ms** es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de *software*.
+
+
+
+
 
 

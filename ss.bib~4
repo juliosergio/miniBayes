@@ -1986,7 +1986,7 @@
 }
 
 @book{Miller65,
-	library of congress catalog card number = 65-10075,
+	libraryOfCongressCCN = {65-10075},
 	author = {Irwin Miller and John E. Freund},
 	booktitle = {Probability and statistics for engineers},
 	edition = {1st},

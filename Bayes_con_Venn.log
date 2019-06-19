@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  14 JUN 2019 19:32
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  18 JUN 2019 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,34 +834,46 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 475.
 LaTeX Info: Redefining \. on input line 511.
 LaTeX Info: Redefining \% on input line 511.
-[16] (./Bayes_con_Venn.bbl
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+[16]
+LaTeX Info: Redefining \. on input line 578.
+LaTeX Info: Redefining \% on input line 578.
 [17]
+File: images/Pcorreos1.png Graphic file (type bmp)
+<images/Pcorreos1.png>
+File: images/Pcorreos2.png Graphic file (type bmp)
+<images/Pcorreos2.png>
+LaTeX Info: Redefining \. on input line 627.
+LaTeX Info: Redefining \% on input line 627.
+[18]
+File: images/Pcorreos3.png Graphic file (type bmp)
+<images/Pcorreos3.png>
+LaTeX Info: Redefining \. on input line 689.
+LaTeX Info: Redefining \% on input line 689.
+[19] (./Bayes_con_Venn.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[18
+[20])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
+[21
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
 (./Bayes_con_Venn.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 565.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 694.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
 Package rerunfilecheck Info: File `Bayes_con_Venn.out' has not changed.
-(rerunfilecheck)             Checksum: 08B08E57894A11EFBC8B03A11FD260AE.
+(rerunfilecheck)             Checksum: 61288610D2D0928E17431A1FE20FDDC2.
  ) 
 Here is how much of TeX's memory you used:
- 23883 strings out of 494880
- 439389 string characters out of 6176392
- 544510 words of memory out of 5000000
- 27589 multiletter control sequences out of 15000+600000
+ 23902 strings out of 494880
+ 439756 string characters out of 6176392
+ 545094 words of memory out of 5000000
+ 27605 multiletter control sequences out of 15000+600000
  591759 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 46i,17n,47p,906b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,17n,47p,906b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bayes_con_Venn.pdf (19 pages).
+Output written on Bayes_con_Venn.pdf (21 pages).

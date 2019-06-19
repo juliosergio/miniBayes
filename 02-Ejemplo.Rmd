@@ -69,3 +69,85 @@ Para resolver el inciso **b** del problema se aplica el Teorema \@ref(thm:bayes0
 (Prob.Corvette <- datos["Corvette","Prod"]/Prob.A)
 ```
 Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que haya usado el Corvette** es de `r Prob.Corvette*100`%.
+
+## Ejemplo 2
+
+Una compañía utiliza filtros procedentes de dos marcas de *software* para detectar correo spam: la marca **Ms**
+y la marca **G**. Estadísticamente se ha determinado a nivel mundial que **Ms** clasifica correctamente 
+sólo el 70% de los correos como *spam* o *no-spam*, mientras que **G** alcanza el 98%. Sin embargo, 
+como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean 
+filtrados por el *software* de **Ms**, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por **G**. 
+
+a. Roberto, el ingeniero de sistemas de la compañía, que es mucho más conciente de la realidad, quiere convencer
+al cuerpo de directores de cambiar su política de asignación y para ello se ha propuesto responder a la
+pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como *spam* o *no-spam*, proceda de **Ms**?
+
+### Solución {-}
+
+Primeramente se procede a identificar los distintos eventos del problema. 
+
+1. $A=$ se ha clasificado correctamente el correo, ya sea como *spam* o como *no-spam*.
+1. $B_{Ms}=$ se ha asignado al *software* de la marca **Ms** para filtrar el correo.
+1. $B_{G}=$ se ha asignado al *software* de la marca **G** para filtrar el correo.
+
+La asignación total del volumen de correos por marca de *software* se muestra en la Figura \@ref(fig:Correos1).
+
+```{r Correos1, echo=F, out.width='60.8%', fig.show='hold', fig.cap='Diagrama de Venn que muestra la asignación de correos por marca de *software*'}
+knitr::include_graphics('images/Pcorreos1.png')
+```
+
+Por otra parte, el evento *A* que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura \@ref(fig:Correos2).
+
+```{r Correos2, echo=F, out.width='60.8%', fig.show='hold', fig.cap='Diagrama de Venn que muestra el evento $A$: el correo ha sido clasificado correctamente'}
+knitr::include_graphics('images/Pcorreos2.png')
+```
+
+
+Se hará una tabla (*data.frame*) para capturar toda la información del problema:
+```{r}
+datos <- data.frame(
+      #             marca.Ms      marca.G
+      P.B     =  c(    0.65   ,    0.35     ),  # P(B)
+      P.A_B   =  c(    0.70   ,    0.98     ),  # P(A|B)
+  row.names   =  c("marca.Ms" , "marca.G"   )
+)
+print(datos)
+```
+
+Esta información se muestra en la Tabla \@ref(tab:tabla-correos1) a continuación.
+
+```{r tabla-correos1, echo=FALSE}
+knitr::kable(datos, caption = "Información distribución de correos",
+             booktabs = T)
+```
+
+En la tabla anterior, la columna P.A_B, es $P\left( A | B \right)$, o sea la probabilidad de que se haya clasificado bien el correo, dado que la clasificación se hizo con el *software* correspondiente al renglón de la tabla. Esto es, en términos de *relaciones de áreas*, la porción que ocupa *A* del conjunto *B* correspondiente. Esta situación se muestra gráficamente en la Figura \@ref(fig:Correos3)
+
+```{r Correos3, echo=F, out.width='60.8%', fig.show='hold', fig.cap='Diagrama de Venn que muestra la porción que ocupa $A$: de cada una de las áreas $B$'}
+knitr::include_graphics('images/Pcorreos3.png')
+```
+
+A continuación se procede a aplicar el Teorema \@ref(thm:ptotal) de la probabilidad total. Esto es multiplicar las columnas "P.B" y "P.A_B" de la Tabla \@ref(tab:tabla-correos1) y sumar todos los resultados.
+
+
+```{r}
+datos$Prod <- datos$P.B * datos$P.A_B
+# La suma de las columnas
+sumas <- apply(datos, 2, sum)
+# Se agrega el resultado como un renglón al final:
+datos["SUMAS", ] <- sumas
+```
+
+El resultado de este producto se puede ver en la columna **Prod** de la Tabla \@ref(tab:tabla-correos-prod)
+
+```{r tabla-correos-prod, echo=FALSE}
+knitr::kable(datos, caption = "Productos de probabilidades",
+             booktabs = T)
+```
+
+De acuerdo con este resultado, la probabilidad de que, en general, un correo sea clasificado correctamente es 
+del `r datos["SUMAS", "Prod"]*100`%.
+
+b. Esta es la parte b
+
+

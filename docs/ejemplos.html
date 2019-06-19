@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Sergio Santana" />
 
 
-<meta name="date" content="2019-06-14" />
+<meta name="date" content="2019-06-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -141,6 +141,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="ejemplos.html"><a href="ejemplos.html"><i class="fa fa-check"></i><b>2</b> Ejemplos</a><ul>
 <li class="chapter" data-level="2.1" data-path="ejemplos.html"><a href="ejemplos.html#ejemplo-1"><i class="fa fa-check"></i><b>2.1</b> Ejemplo 1</a><ul>
 <li class="chapter" data-level="" data-path="ejemplos.html"><a href="ejemplos.html#solucion"><i class="fa fa-check"></i>Solución</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="ejemplos.html"><a href="ejemplos.html#ejemplo-2"><i class="fa fa-check"></i><b>2.2</b> Ejemplo 2</a><ul>
+<li class="chapter" data-level="" data-path="ejemplos.html"><a href="ejemplos.html#solucion-1"><i class="fa fa-check"></i>Solución</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -271,6 +274,126 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.Corvette &lt;-<span class="st"> </span>datos[<span class="st">&quot;Corvette&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>Prob.A)</code></pre>
 <pre><code>## [1] 0.3846154</code></pre>
 <p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
+</div>
+</div>
+<div id="ejemplo-2" class="section level2">
+<h2><span class="header-section-number">2.2</span> Ejemplo 2</h2>
+<p>Una compañía utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo spam: la marca <strong>Ms</strong>
+y la marca <strong>G</strong>. Estadísticamente se ha determinado a nivel mundial que <strong>Ms</strong> clasifica correctamente
+sólo el 70% de los correos como <em>spam</em> o <em>no-spam</em>, mientras que <strong>G</strong> alcanza el 98%. Sin embargo,
+como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean
+filtrados por el <em>software</em> de <strong>Ms</strong>, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por <strong>G</strong>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Roberto, el ingeniero de sistemas de la compañía, que es mucho más conciente de la realidad, quiere convencer
+al cuerpo de directores de cambiar su política de asignación y para ello se ha propuesto responder a la
+pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>?</li>
+</ol>
+<div id="solucion-1" class="section level3 unnumbered">
+<h3>Solución</h3>
+<p>Primeramente se procede a identificar los distintos eventos del problema.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(A=\)</span> se ha clasificado correctamente el correo, ya sea como <em>spam</em> o como <em>no-spam</em>.</li>
+<li><span class="math inline">\(B_{Ms}=\)</span> se ha asignado al <em>software</em> de la marca <strong>Ms</strong> para filtrar el correo.</li>
+<li><span class="math inline">\(B_{G}=\)</span> se ha asignado al <em>software</em> de la marca <strong>G</strong> para filtrar el correo.</li>
+</ol>
+<p>La asignación total del volumen de correos por marca de <em>software</em> se muestra en la Figura <a href="ejemplos.html#fig:Correos1">2.2</a>.</p>
+<div class="figure"><span id="fig:Correos1"></span>
+<img src="images/Pcorreos1.png" alt="Diagrama de Venn que muestra la asignación de correos por marca de *software*" width="60.8%" />
+<p class="caption">
+FIGURA 2.2: Diagrama de Venn que muestra la asignación de correos por marca de <em>software</em>
+</p>
+</div>
+<p>Por otra parte, el evento <em>A</em> que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura <a href="ejemplos.html#fig:Correos2">2.3</a>.</p>
+<div class="figure"><span id="fig:Correos2"></span>
+<img src="images/Pcorreos2.png" alt="Diagrama de Venn que muestra el evento $A$: el correo ha sido clasificado correctamente" width="60.8%" />
+<p class="caption">
+FIGURA 2.3: Diagrama de Venn que muestra el evento <span class="math inline">\(A\)</span>: el correo ha sido clasificado correctamente
+</p>
+</div>
+<p>Se hará una tabla (<em>data.frame</em>) para capturar toda la información del problema:</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
+      <span class="co">#             marca.Ms      marca.G</span>
+      <span class="dt">P.B     =</span>  <span class="kw">c</span>(    <span class="fl">0.65</span>   ,    <span class="fl">0.35</span>     ),  <span class="co"># P(B)</span>
+      <span class="dt">P.A_B   =</span>  <span class="kw">c</span>(    <span class="fl">0.70</span>   ,    <span class="fl">0.98</span>     ),  <span class="co"># P(A|B)</span>
+  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;marca.Ms&quot;</span> , <span class="st">&quot;marca.G&quot;</span>   )
+)
+<span class="kw">print</span>(datos)</code></pre>
+<pre><code>##           P.B P.A_B
+## marca.Ms 0.65  0.70
+## marca.G  0.35  0.98</code></pre>
+<p>Esta información se muestra en la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.3</a> a continuación.</p>
+<table>
+<caption><span id="tab:tabla-correos1">Tabla 2.3: </span>Información distribución de correos</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.70</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.98</td>
+</tr>
+</tbody>
+</table>
+<p>En la tabla anterior, la columna P.A_B, es <span class="math inline">\(P\left( A | B \right)\)</span>, o sea la probabilidad de que se haya clasificado bien el correo, dado que la clasificación se hizo con el <em>software</em> correspondiente al renglón de la tabla. Esto es, en términos de <em>relaciones de áreas</em>, la porción que ocupa <em>A</em> del conjunto <em>B</em> correspondiente. Esta situación se muestra gráficamente en la Figura <a href="ejemplos.html#fig:Correos3">2.4</a></p>
+<div class="figure"><span id="fig:Correos3"></span>
+<img src="images/Pcorreos3.png" alt="Diagrama de Venn que muestra la porción que ocupa $A$: de cada una de las áreas $B$" width="60.8%" />
+<p class="caption">
+FIGURA 2.4: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(A\)</span>: de cada una de las áreas <span class="math inline">\(B\)</span>
+</p>
+</div>
+<p>A continuación se procede a aplicar el Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.3</a> y sumar todos los resultados.</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
+<span class="co"># La suma de las columnas</span>
+sumas &lt;-<span class="st"> </span><span class="kw">apply</span>(datos, <span class="dv">2</span>, sum)
+<span class="co"># Se agrega el resultado como un renglón al final:</span>
+datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span>sumas</code></pre>
+<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-correos-prod">2.4</a></p>
+<table>
+<caption><span id="tab:tabla-correos-prod">Tabla 2.4: </span>Productos de probabilidades</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+<th align="right">Prod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.70</td>
+<td align="right">0.455</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.98</td>
+<td align="right">0.343</td>
+</tr>
+<tr class="odd">
+<td>SUMAS</td>
+<td align="right">1.00</td>
+<td align="right">1.68</td>
+<td align="right">0.798</td>
+</tr>
+</tbody>
+</table>
+<p>De acuerdo con este resultado, la probabilidad de que, en general, un correo sea clasificado correctamente es
+del 79.8%.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Esta es la parte b</li>
+</ol>
 
 <div id="refs" class="references">
 <div>

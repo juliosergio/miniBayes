@@ -1986,10 +1986,10 @@
 }
 
 @book{Miller65,
-	libraryOfCongressCCN = {65-10075},
 	author = {Irwin Miller and John E. Freund},
 	booktitle = {Probability and statistics for engineers},
 	edition = {1st},
+	libraryofcongressccn = {65-10075},
 	pages = {432},
 	publisher = {Prentice-Hall. Englewood Cliffs, NJ, U.S.A.},
 	series = {Prentice-Hall Mathematics Series},
@@ -1998,16 +1998,16 @@
 
 @book{Santana14,
 	address = {Paseo Cuauhn{\'a}huac 8532, Col. Progreso, Jiutepec, Mor., M{\'e}xico},
-	author = {Julio Sergio {Santana Sep{\'u}lveda} and Efra\'{\i}n {Mateos Farf{\'a}n}},
-	booktitle = {El arte de programar en R: un lenguage para la estad\'{\i}stica},
+	author = {Julio Sergio {Santana Sep{\'u}lveda} and Efra{\'{\i}}}n {Mateos Farf{\'a}n}},
+	booktitle = {El arte de programar en R: un lenguage para la estad{\'{\i}}stica},
 	edition = {1a},
 	howpublished = {Digital},
-	institution = {Instituto Mexicano de Tecnolog\'{\i}a del Agua},
+	institution = {Instituto Mexicano de Tecnolog{\'{\i}}a del Agua},
 	isbn = {978-607-9368-15-9},
 	location = {Jiutepec, Mor, M{\'e}xico},
 	month = nov,
 	pages = {193},
-	publisher = {Instituto Mexicano de Tecnolog\'{\i}a del Agua},
+	publisher = {Instituto Mexicano de Tecnolog{\'{\i}}a del Agua},
 	year = {2014}
 }
 

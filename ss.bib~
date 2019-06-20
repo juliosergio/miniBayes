@@ -2000,7 +2000,7 @@
 @book{Santana14,
 	address = {Paseo Cuauhn{\'a}huac 8532, Col. Progreso, Jiutepec, Mor., M{\'e}xico},
 	author = {Julio Sergio {Santana Sep{\'u}lveda} and Efra\'{\i}n {Mateos Farf{\'a}n}},
-	booktitle = {El arte de programar en R: un lenguage para la estad\'{\i}stica},
+	booktitle = {El arte de programar en R: un lenguaje para la estad\'{\i}stica},
 	edition = {1a},
 	howpublished = {Digital},
 	institution = {Instituto Mexicano de Tecnolog\'{\i}a del Agua},
@@ -2009,9 +2009,25 @@
 	month = nov,
 	pages = {193},
 	publisher = {Instituto Mexicano de Tecnolog\'{\i}a del Agua},
-	title = {El arte de programar en R: un lenguage para la estad\'{\i}stica},
+	title = {El arte de programar en R: un lenguaje para la estad\'{\i}stica},
 	year = {2014}
 }
+
+@book{Santana2014,
+	abstract = {This is a book in Spanish that presents the basics of the R programming language and its uses in the statistics field},
+	address = {Jiutepec, Mor., M{\'{e}}xico},
+	author = {Santana, Julio Sergio and {Mateos Farf{\'{a}}n}, Efra{\'{i}}n},
+	edition = {1},
+	isbn = {9786079368159},
+	keywords = {R-languaje,statistics,tutorial},
+	mendeley-tags = {R-languaje,statistics,tutorial},
+	pages = {193},
+	publisher = {Instituto Mexicano de Tecnolog{\'{i}}a del Agua},
+	title = {{El arte de programar en R: un lenguaje para la estad{\'{i}}stica}},
+	url = {https://www.imta.gob.mx/biblioteca/libros{\_}html/el-arte-de-programar-en-r/ https://cran.r-project.org/doc/contrib/Santana{\_}El{\_}arte{\_}de{\_}programar{\_}en{\_}R.pdf},
+	year = {2014}
+}
+
 
 @proceedings{13-Chicago,
 	booktitle = {13th. Regional Meeting},

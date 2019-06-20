@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  19 JUN 2019 18:43
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  20 JUN 2019 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -866,10 +866,10 @@ Package rerunfilecheck Info: File `Bayes_con_Venn.out' has not changed.
 (rerunfilecheck)             Checksum: 61288610D2D0928E17431A1FE20FDDC2.
  ) 
 Here is how much of TeX's memory you used:
- 23860 strings out of 494880
- 439170 string characters out of 6176392
- 547145 words of memory out of 5000000
- 27559 multiletter control sequences out of 15000+600000
+ 23867 strings out of 494880
+ 439293 string characters out of 6176392
+ 547163 words of memory out of 5000000
+ 27566 multiletter control sequences out of 15000+600000
  545089 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  46i,17n,47p,906b,465s stack positions out of 5000i,500n,10000p,200000b,80000s

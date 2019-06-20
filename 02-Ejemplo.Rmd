@@ -23,7 +23,7 @@ La Figura \@ref(fig:Autos1) representa esquemáticamente algunos de los elemento
 knitr::include_graphics('images/Autos1.png')
 ```
 
-Para resolver el problema se usará el lenguaje de programación R [@Santana14]. El primer paso es la construcción de una tabla con la información
+Para resolver el problema se usará el lenguaje de programación R [@Santana2014]. El primer paso es la construcción de una tabla con la información
 
 ```{r}
 datos <- data.frame(
@@ -72,14 +72,14 @@ Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que
 
 ## Ejemplo 2
 
-Una empresa utiliza filtros procedentes de dos marcas de *software* para detectar correo spam: la marca **Ms**
+Una empresa utiliza filtros procedentes de dos marcas de *software* para detectar correo *spam*: la marca **Ms**
 y la marca **G**. Estadísticamente se ha determinado a nivel mundial que **Ms** clasifica correctamente 
 sólo el 70% de los correos como *spam* o *no-spam*, mientras que **G** alcanza el 98%. Sin embargo, 
-como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean 
-filtrados por el *software* de **Ms**, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por **G**. 
+como la junta directiva se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean 
+filtrados por el *software* de **Ms**, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por el *software* de la marca **G**. 
 
-a. Roberto, el ingeniero de sistemas de la compañía, que es mucho más conciente de la realidad, quiere convencer
-al cuerpo de directores de cambiar su política de asignación y para ello se ha propuesto responder a la
+a. Roberto, el ingeniero de sistemas de la empresa, que es mucho más consciente de la realidad, quiere convencer
+a la junta directiva de cambiar su política de asignación y para ello se ha propuesto responder a la
 pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como *spam* o *no-spam*, proceda de **Ms**?
 
 ### Solución {-}

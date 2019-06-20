@@ -94,7 +94,7 @@ P\left( A \right) &=P\left( A\cap { B }_{ 1 } \right) + P\left( A\cap { B }_{ 2 
 (\#eq:PA-in-Bi)
 \end{equation}
 
-El teorema del producto de probabilidades de eventos dependientes 
+El teorema del producto de probabilidades de eventos dependientes [@Walpole2012, pp. 66]
 establece que
 
 \begin{equation}

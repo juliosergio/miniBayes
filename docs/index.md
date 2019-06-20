@@ -1,7 +1,7 @@
 --- 
 title: "El Teorema de Bayes con Diagramas de Venn"
 author: "Julio Sergio Santana"
-date: "2019-06-19"
+date: "2019-06-20"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [ss.bib]

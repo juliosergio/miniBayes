@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Sergio Santana" />
 
 
-<meta name="date" content="2019-06-19" />
+<meta name="date" content="2019-06-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -192,7 +192,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 </p>
 </div>
-<p>Para resolver el problema se usará el lenguaje de programación R <span class="citation">(Santana Sepúlveda and Mateos Farfán <a href="#ref-Santana14">2014</a>)</span>. El primer paso es la construcción de una tabla con la información</p>
+<p>Para resolver el problema se usará el lenguaje de programación R <span class="citation">(Santana and Mateos Farfán <a href="#ref-Santana2014">2014</a>)</span>. El primer paso es la construcción de una tabla con la información</p>
 <pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
   <span class="co">#                 Corvette    Jaguar    Alfa_Romeo</span>
   <span class="dt">P.B         =</span>  <span class="kw">c</span>(    <span class="fl">0.5</span>   ,    <span class="fl">0.3</span>   ,    <span class="fl">0.2</span>      ), <span class="co"># P(B)</span>
@@ -278,14 +278,14 @@ FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
 </div>
 <div id="ejemplo-2" class="section level2">
 <h2><span class="header-section-number">2.2</span> Ejemplo 2</h2>
-<p>Una empresa utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo spam: la marca <strong>Ms</strong>
+<p>Una empresa utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo <em>spam</em>: la marca <strong>Ms</strong>
 y la marca <strong>G</strong>. Estadísticamente se ha determinado a nivel mundial que <strong>Ms</strong> clasifica correctamente
 sólo el 70% de los correos como <em>spam</em> o <em>no-spam</em>, mientras que <strong>G</strong> alcanza el 98%. Sin embargo,
-como el cuerpo de directores se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean
-filtrados por el <em>software</em> de <strong>Ms</strong>, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por <strong>G</strong>.</p>
+como la junta directiva se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean
+filtrados por el <em>software</em> de <strong>Ms</strong>, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por el <em>software</em> de la marca <strong>G</strong>.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Roberto, el ingeniero de sistemas de la compañía, que es mucho más conciente de la realidad, quiere convencer
-al cuerpo de directores de cambiar su política de asignación y para ello se ha propuesto responder a la
+<li>Roberto, el ingeniero de sistemas de la empresa, que es mucho más consciente de la realidad, quiere convencer
+a la junta directiva de cambiar su política de asignación y para ello se ha propuesto responder a la
 pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>?</li>
 </ol>
 <div id="solucion-1" class="section level3 unnumbered">
@@ -469,7 +469,10 @@ datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span
 <p>Miller, Irwin, and John E. Freund. 1965. <em>Probability and Statistics for Engineers</em>. 1st ed. Prentice-Hall Mathematics Series. Prentice-Hall. Englewood Cliffs, NJ, U.S.A.</p>
 </div>
 <div>
-<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
+<p>Santana, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1st ed. Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Instituto Mexicano de Tecnologı'a del Agua. <a href="https://www.imta.gob.mx/biblioteca/libros">https://www.imta.gob.mx/biblioteca/libros</a>.</p>
+</div>
+<div>
+<p>Walpole, Ronald E., Raymond H. Myers, Sharon L. Myers, and Keying Ye. 2012. <em>Probability &amp; Statistics for Engineers &amp; Scientists</em>. 9th ed. Boston, MA: Prentice Hall / Pearson Education, Inc.</p>
 </div>
 </div>
 </div>
@@ -480,8 +483,8 @@ datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span
 <div id="ref-Miller65">
 <p>Miller, Irwin, and John E. Freund. 1965. <em>Probability and Statistics for Engineers</em>. 1st ed. Prentice-Hall Mathematics Series. Prentice-Hall. Englewood Cliffs, NJ, U.S.A.</p>
 </div>
-<div id="ref-Santana14">
-<p>Santana Sepúlveda, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1a ed. Paseo Cuauhnáhuac 8532, Col. Progreso, Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Digital; Instituto Mexicano de Tecnologı'a del Agua.</p>
+<div id="ref-Santana2014">
+<p>Santana, Julio Sergio, and Efraı'n Mateos Farfán. 2014. <em>El Arte de Programar En R: Un Lenguaje Para La Estadı'stica</em>. 1st ed. Jiutepec, Mor., México: Instituto Mexicano de Tecnologı'a del Agua; Instituto Mexicano de Tecnologı'a del Agua. <a href="https://www.imta.gob.mx/biblioteca/libros">https://www.imta.gob.mx/biblioteca/libros</a>.</p>
 </div>
 </div>
             </section>

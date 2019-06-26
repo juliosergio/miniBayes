@@ -167,6 +167,19 @@ Finalmente, se aplica el Teorema \@ref(thm:bayes0) de Bayes. Para ello se divide
 
 Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de que para esta operación se haya usado el _software_ de Ms** es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de *software*.
 
+¿**Qué hubiera pasado si las estadísticas del problema fueran diferentes**? Intrigado por esta pregunta, Roberto decidió resolver el problema de una manera más general. A continuación se muestra una aplicación que permite jugar con los valores de las distintas variables del problema.
+
+
+
+
+```
+## 
+## Listening on http://127.0.0.1:3079
+```
+
+![](02-Ejemplo_files/figure-epub3/unnamed-chunk-7-1.png)<!-- -->
+
+
 ## Ejemplo 2
 
 Por razones de pagos en publicidad, un piloto de autos usa un Corvette en el 50% de las carreras en las que participa, un Jaguar, en el 30% de esas carreras y un Alfa Romeo, en el 20% de las mismas. De 25 carreras en las que ha participado con el Corvette, ha ganado 5; de 15, en las que ha participado con el Jaguar, ha ganado 4; y de 10, en las que ha participado con el Alfa Romeo, ha ganado 4.

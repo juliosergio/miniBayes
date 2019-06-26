@@ -12,6 +12,8 @@ link-citations: yes
 github-repo: juliosergio/miniBayes
 url: 'http\://seankross.com/bookdown-start/'
 description: "Explicaciones del Teorema de Bayes"
+# runtime: shiny
+# output: html_document
 ---
 
 # Prólogo {-}

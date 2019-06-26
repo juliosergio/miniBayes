@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="2.1 Ejemplo 1 | El Teorema de Bayes con Diagramas de Venn" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="http://seankross.com/bookdown-start/" />
+
+<meta property="og:description" content="Explicaciones del Teorema de Bayes" />
+<meta name="github-repo" content="juliosergio/miniBayes" />
+
+<meta name="author" content="Julio Sergio Santana" />
+
+<meta name="date" content="2019-06-26" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="Explicaciones del Teorema de Bayes">
+
+<title>2.1 Ejemplo 1 | El Teorema de Bayes con Diagramas de Venn</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#prologo">Prólogo</a></li>
+<li class="has-sub"><a href="1-teorema-de-bayes-explicado.html#teorema-de-bayes-explicado"><span class="toc-section-number">1</span> Teorema de Bayes Explicado</a><ul>
+<li><a href="1-1-el-teorema-de-bayes.html#el-teorema-de-bayes"><span class="toc-section-number">1.1</span> El teorema de Bayes</a></li>
+<li class="has-sub"><a href="1-2-explicacion-grafica-del-teorema.html#explicacion-grafica-del-teorema"><span class="toc-section-number">1.2</span> Explicación gráfica del teorema</a><ul>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#situacion-inicial"><span class="toc-section-number">1.2.1</span> Situación inicial</a></li>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#el-teorema-de-la-probabilidad-total"><span class="toc-section-number">1.2.2</span> El teorema de la probabilidad total</a></li>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#el-teorema-de-bayes-deduccion-y-explicacion-analitica"><span class="toc-section-number">1.2.3</span> El teorema de Bayes: deducción y explicación analítica</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-ejemplos.html#ejemplos"><span class="toc-section-number">2</span> Ejemplos</a><ul>
+<li class="has-sub"><a href="2-1-ejemplo-1.html#ejemplo-1"><span class="toc-section-number">2.1</span> Ejemplo 1</a><ul>
+<li><a href="2-1-ejemplo-1.html#solucion">Solución</a></li>
+</ul></li>
+<li class="has-sub"><a href="2-2-ejemplo-2.html#ejemplo-2"><span class="toc-section-number">2.2</span> Ejemplo 2</a><ul>
+<li><a href="2-2-ejemplo-2.html#solucion-1">Solución</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="ejemplo-1" class="section level2">
+<h2><span class="header-section-number">2.1</span> Ejemplo 1</h2>
+<p>Una empresa utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo <em>spam</em>: la marca <strong>Ms</strong>
+y la marca <strong>G</strong>. Estadísticamente se ha determinado a nivel mundial que <strong>Ms</strong> clasifica correctamente
+sólo el 70% de los correos como <em>spam</em> o <em>no-spam</em>, mientras que <strong>G</strong> alcanza el 98%. Sin embargo,
+como la junta directiva se ha dejado llevar por la marca, ha determinado que 65% de sus correos sean
+filtrados por el <em>software</em> de <strong>Ms</strong>, mientras que el resto, o sea, el 35%, sean asignados para ser filtrados por el <em>software</em> de la marca <strong>G</strong>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Roberto, el ingeniero de sistemas de la empresa, que es mucho más consciente de la realidad, quiere convencer
+a la junta directiva de cambiar su política de asignación y para ello se ha propuesto responder a la
+pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>?</li>
+</ol>
+<div id="solucion" class="section level3 unnumbered">
+<h3>Solución</h3>
+<p>Primeramente se procede a identificar los distintos eventos del problema.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(A=\)</span> se ha clasificado correctamente el correo, ya sea como <em>spam</em> o como <em>no-spam</em>.</li>
+<li><span class="math inline">\(B_{Ms}=\)</span> se ha asignado al <em>software</em> de la marca <strong>Ms</strong> para filtrar el correo.</li>
+<li><span class="math inline">\(B_{G}=\)</span> se ha asignado al <em>software</em> de la marca <strong>G</strong> para filtrar el correo.</li>
+</ol>
+<p>La asignación total del volumen de correos por marca de <em>software</em> se muestra en la Figura <a href="2-1-ejemplo-1.html#fig:Correos1">1.5</a>.</p>
+<div class="figure"><span id="fig:Correos1"></span>
+<img src="images/Pcorreos1.png" alt="Diagrama de Venn que muestra la asignación de correos por marca de software" width="60.8%" />
+<p class="caption">
+FIGURA 1.5: Diagrama de Venn que muestra la asignación de correos por marca de software
+</p>
+</div>
+<p>Por otra parte, el evento <em>A</em> que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura <a href="2-1-ejemplo-1.html#fig:Correos2">1.6</a>.</p>
+<div class="figure"><span id="fig:Correos2"></span>
+<img src="images/Pcorreos2.png" alt="Diagrama de Venn que muestra el evento $A$: el correo ha sido clasificado correctamente" width="60.8%" />
+<p class="caption">
+FIGURA 1.6: Diagrama de Venn que muestra el evento <span class="math inline">\(A\)</span>: el correo ha sido clasificado correctamente
+</p>
+</div>
+<p>Se hará una tabla (<em>data.frame</em>) para capturar toda la información del problema:</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
+  <span class="co">#               marca.Ms      marca.G</span>
+  <span class="dt">P.B       =</span>  <span class="kw">c</span>(    <span class="fl">0.65</span>   ,    <span class="fl">0.35</span>     ),  <span class="co"># P(B)</span>
+  <span class="dt">P.A_B     =</span>  <span class="kw">c</span>(    <span class="fl">0.70</span>   ,    <span class="fl">0.98</span>     ),  <span class="co"># P(A|B)</span>
+  <span class="dt">row.names =</span>  <span class="kw">c</span>(<span class="st">&quot;marca.Ms&quot;</span> , <span class="st">&quot;marca.G&quot;</span>   )
+)
+<span class="kw">print</span>(datos)</code></pre>
+<pre><code>##           P.B P.A_B
+## marca.Ms 0.65  0.70
+## marca.G  0.35  0.98</code></pre>
+<p>Esta información se muestra en la Tabla <a href="2-1-ejemplo-1.html#tab:tabla-correos1">1.1</a> a continuación.</p>
+<table>
+<caption><span id="tab:tabla-correos1">Tabla 1.1: </span>Información distribución de correos</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.70</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.98</td>
+</tr>
+</tbody>
+</table>
+<p>En la tabla anterior, la columna P.A_B, es <span class="math inline">\(P\left( A | B \right)\)</span>, o sea la probabilidad de que se haya clasificado bien el correo, dado que la clasificación se hizo con el <em>software</em> correspondiente al renglón de la tabla. Esto es, en términos de <em>relaciones de áreas</em>, la porción que ocupa <em>A</em> del conjunto <em>B</em> correspondiente. Esta situación se muestra gráficamente en la Figura <a href="2-1-ejemplo-1.html#fig:Correos3">1.7</a></p>
+<div class="figure"><span id="fig:Correos3"></span>
+<img src="images/Pcorreos3.png" alt="Diagrama de Venn que muestra la porción que ocupa $A$: de cada una de las áreas $B$" width="60.8%" />
+<p class="caption">
+FIGURA 1.7: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(A\)</span>: de cada una de las áreas <span class="math inline">\(B\)</span>
+</p>
+</div>
+<p>A continuación se procede a aplicar el Teorema <a href="1-2-explicacion-grafica-del-teorema.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la Tabla <a href="2-1-ejemplo-1.html#tab:tabla-correos1">1.1</a> y sumar todos los resultados.</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
+<span class="co"># La suma de las columnas</span>
+sumas &lt;-<span class="st"> </span><span class="kw">apply</span>(datos, <span class="dv">2</span>, sum)
+<span class="co"># Se agrega el resultado como un renglón al final:</span>
+datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span>sumas</code></pre>
+<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="2-1-ejemplo-1.html#tab:tabla-correos-prod">1.2</a></p>
+<table>
+<caption><span id="tab:tabla-correos-prod">Tabla 1.2: </span>Productos de probabilidades en el caso de correos</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+<th align="right">Prod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.70</td>
+<td align="right">0.455</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.98</td>
+<td align="right">0.343</td>
+</tr>
+<tr class="odd">
+<td>SUMAS</td>
+<td align="right">1.00</td>
+<td align="right">1.68</td>
+<td align="right">0.798</td>
+</tr>
+</tbody>
+</table>
+<p>De acuerdo con este resultado, la probabilidad de que, en general, un correo sea clasificado correctamente es
+del 79.8%.</p>
+<p>Para averiguar la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>, se aplica el Teorema <a href="1-1-el-teorema-de-bayes.html#thm:bayes0">1.1</a> de Bayes. Para ello se divide el producto en el renglón correspondiente a <strong>Ms</strong> entre la probabilidad recien obtenida, así:</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
+<pre><code>## [1] 0.5701754</code></pre>
+<p>Esto es, dado que se clasificó correctamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 57.02%.</p>
+<p>Después de presentar estos resultados a la junta directiva de la empresa, la respuesta que Roberto recibió no fue muy amable, como se puede ver en la ilustración de la Figura <a href="2-1-ejemplo-1.html#fig:Caricat1">1.8</a>.</p>
+<div class="figure"><span id="fig:Caricat1"></span>
+<img src="images/Prob2Caric1.png" alt="Respuesta de los directivos de la empresa" width="80.8%" />
+<p class="caption">
+FIGURA 1.8: Respuesta de los directivos de la empresa
+</p>
+</div>
+<p>Aunque en un principio la respuesta lo tomó por sorpresa, en vez de desanimarse, Roberto trató de replantear el problema desde una prespectiva diferente, tal como se ilustra en la Figura <a href="2-1-ejemplo-1.html#fig:Caricat2">1.9</a>.</p>
+<div class="figure"><span id="fig:Caricat2"></span>
+<img src="images/Prob2Caric2.png" alt="El problema visto desde otra perspectiva" width="80.8%" />
+<p class="caption">
+FIGURA 1.9: El problema visto desde otra perspectiva
+</p>
+</div>
+<p>Esto da lugar a la segunda parte de este problema, cuya descripción se hace en seguida:</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Determinar la probabilidad que que un correo mal clasificado, ya sea como <em>spam</em> o <em>no-spam</em>, provenga del <em>software</em> provisto por <strong>Ms</strong>.</li>
+</ol>
+<p>Con el propósito de responder a esta pregunta, debe notarse que ahora el tema ya no es el evento <span class="math inline">\(A\)</span> sino su complemento, <span class="math inline">\(\bar{A}\)</span>. Para resolver el problema, solamente es necesario modificar la columna “P.A_B”, de la tabla anterior, de acuerdo con los nuevos datos mostrados en la Figura <a href="2-1-ejemplo-1.html#fig:Correos4">1.10</a> y proceder a los cálculos correspondientes.</p>
+<div class="figure"><span id="fig:Correos4"></span>
+<img src="images/Pcorreos4.png" alt="Diagrama de Venn que muestra la porción que ocupa $\bar { A }$ : de cada una de las áreas $B$" width="60.8%" />
+<p class="caption">
+FIGURA 1.10: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(\bar { A }\)</span> : de cada una de las áreas <span class="math inline">\(B\)</span>
+</p>
+</div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#                 marca.Ms      marca.G  SUMA</span>
+datos<span class="op">$</span>P.A_B &lt;-<span class="st"> </span><span class="kw">c</span>(    <span class="fl">0.30</span>   ,    <span class="fl">0.02</span>,    <span class="ot">NA</span> ) <span class="co"># P(A|B)</span>
+<span class="co"># Se corrigen los productos</span>
+datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
+
+<span class="co"># Se agregan las sumas corregidas como el renglón final:</span>
+datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span><span class="kw">apply</span>(datos[<span class="op">-</span><span class="dv">3</span>, ], <span class="dv">2</span>, sum)</code></pre>
+<p>En la Tabla <a href="2-1-ejemplo-1.html#tab:tabla-correos-final">1.3</a> se pueden ver los resultados de estas operaciones.</p>
+<table>
+<caption><span id="tab:tabla-correos-final">Tabla 1.3: </span>Productos de probabilidades en el caso de correos mal clasificados</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+<th align="right">Prod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>marca.Ms</td>
+<td align="right">0.65</td>
+<td align="right">0.30</td>
+<td align="right">0.195</td>
+</tr>
+<tr class="even">
+<td>marca.G</td>
+<td align="right">0.35</td>
+<td align="right">0.02</td>
+<td align="right">0.007</td>
+</tr>
+<tr class="odd">
+<td>SUMAS</td>
+<td align="right">1.00</td>
+<td align="right">0.32</td>
+<td align="right">0.202</td>
+</tr>
+</tbody>
+</table>
+<p>Finalmente, se aplica el Teorema <a href="1-1-el-teorema-de-bayes.html#thm:bayes0">1.1</a> de Bayes. Para ello se divide el producto en el renglón correspondiente a <strong>Ms</strong> entre la probabilidad total, registrada el renglón “SUMAS” y columna “Prod”, así:</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
+<pre><code>## [1] 0.9653465</code></pre>
+<p>Esto es, dado que se clasificó incorrectamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de <em>software</em>.</p>
+<p>¿<strong>Qué hubiera pasado si las estadísticas del problema fueran diferentes</strong>? Intrigado por esta pregunta, Roberto decidió resolver el problema de una manera más general. A continuación se muestra una aplicación que permite jugar con los valores de las distintas variables del problema.</p>
+<pre><code>## 
+## Listening on http://127.0.0.1:7371</code></pre>
+<p><img src="02-Ejemplo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="2-ejemplos.html"><button class="btn btn-default">Previous</button></a>
+<a href="2-2-ejemplo-2.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

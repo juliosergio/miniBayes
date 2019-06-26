@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="1.2 Explicación gráfica del teorema | El Teorema de Bayes con Diagramas de Venn" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="http://seankross.com/bookdown-start/" />
+
+<meta property="og:description" content="Explicaciones del Teorema de Bayes" />
+<meta name="github-repo" content="juliosergio/miniBayes" />
+
+<meta name="author" content="Julio Sergio Santana" />
+
+<meta name="date" content="2019-06-26" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="Explicaciones del Teorema de Bayes">
+
+<title>1.2 Explicación gráfica del teorema | El Teorema de Bayes con Diagramas de Venn</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#prologo">Prólogo</a></li>
+<li class="has-sub"><a href="1-teorema-de-bayes-explicado.html#teorema-de-bayes-explicado"><span class="toc-section-number">1</span> Teorema de Bayes Explicado</a><ul>
+<li><a href="1-1-el-teorema-de-bayes.html#el-teorema-de-bayes"><span class="toc-section-number">1.1</span> El teorema de Bayes</a></li>
+<li class="has-sub"><a href="1-2-explicacion-grafica-del-teorema.html#explicacion-grafica-del-teorema"><span class="toc-section-number">1.2</span> Explicación gráfica del teorema</a><ul>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#situacion-inicial"><span class="toc-section-number">1.2.1</span> Situación inicial</a></li>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#el-teorema-de-la-probabilidad-total"><span class="toc-section-number">1.2.2</span> El teorema de la probabilidad total</a></li>
+<li><a href="1-2-explicacion-grafica-del-teorema.html#el-teorema-de-bayes-deduccion-y-explicacion-analitica"><span class="toc-section-number">1.2.3</span> El teorema de Bayes: deducción y explicación analítica</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-ejemplos.html#ejemplos"><span class="toc-section-number">2</span> Ejemplos</a><ul>
+<li class="has-sub"><a href="2-1-ejemplo-1.html#ejemplo-1"><span class="toc-section-number">2.1</span> Ejemplo 1</a><ul>
+<li><a href="2-1-ejemplo-1.html#solucion">Solución</a></li>
+</ul></li>
+<li class="has-sub"><a href="2-2-ejemplo-2.html#ejemplo-2"><span class="toc-section-number">2.2</span> Ejemplo 2</a><ul>
+<li><a href="2-2-ejemplo-2.html#solucion-1">Solución</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="explicacion-grafica-del-teorema" class="section level2">
+<h2><span class="header-section-number">1.2</span> Explicación gráfica del teorema</h2>
+<div id="situacion-inicial" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Situación inicial</h3>
+<p>La Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:bayes-venn1">1.1</a> muestra, en un diagrama de Venn, más o menos la situación inicial planteada en el Teorema <a href="1-1-el-teorema-de-bayes.html#thm:bayes0">1.1</a>. Aquí se puede ver, por ejemplo, que todos los conjuntos disjuntos, <span class="math inline">\(B_i\)</span>, representados por los triángulos de la figura, componen al conjunto <span class="math inline">\(S\)</span>, representado por el rectángulo mayor de la figura, o que el conjunto <span class="math inline">\(A\)</span>, representado por el óvalo rojo, está contenido en el conjunto <span class="math inline">\(S\)</span>.</p>
+<div class="figure"><span id="fig:bayes-venn1"></span>
+<img src="images/Bayes1.png" alt="Diagrama de Venn para el teorema de Bayes" width="60.8%" />
+<p class="caption">
+FIGURA 1.1: Diagrama de Venn para el teorema de Bayes
+</p>
+</div>
+<p>Si se hiciera un símil entre las relaciones de áreas de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:bayes-venn1">1.1</a>, con las probabilidades de los eventos, por ejemplo, la probabilidad del evento <span class="math inline">\(B_2\)</span>, estaría dada por la relación de áreas que responde a la pregunta: <em>¿qué porción de <span class="math inline">\(S\)</span> ocupa <span class="math inline">\(B_2\)</span>?</em>, y que se muestra en la siguiente fórmula y en la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:areas1">1.2</a>:</p>
+<p><span class="math display">\[
+P\left( { B }_{ 2 } \right) =\frac { area\left( { B }_{ 2 } \right)  }{ area\left( S \right)  } 
+\]</span>
+Con el fin de simplificar, la fórmula anterior la denotaremos sólo con
+<span class="math display" id="eq:rel-areas">\[\begin{equation}
+P\left( { B }_{ 2 } \right) =\frac {  { B }_{ 2 }  }{  S  } 
+\tag{1.2}
+\end{equation}\]</span></p>
+<div class="figure"><span id="fig:areas1"></span>
+<img src="images/Bayes3.png" alt="Relación de áreas: ¿qué porción de $S$ ocupa $B_2$?" width="60.8%" />
+<p class="caption">
+FIGURA 1.2: Relación de áreas: ¿qué porción de <span class="math inline">\(S\)</span> ocupa <span class="math inline">\(B_2\)</span>?
+</p>
+</div>
+<p>Estrictamente hablando, el lado izquierdo de la igualdad en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:rel-areas">(1.2)</a>, debería haberse escrito como <span class="math inline">\(P\left( { B }_{ 2 }| S \right)\)</span>. Sin embargo, como <span class="math inline">\(S\)</span> representa el universo o espacio total de muestreo, se obvia en la fórmula, y se escribe simplemente como <span class="math inline">\(P\left( { B }_{ 2 } \right)\)</span>.</p>
+<p>En el mismo tenor, y tomando como referencia la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:areas2">1.3</a>, si <span class="math inline">\(({ B }_{ j }\cap A) = { b }_{ j }= a_j\)</span>, hay dos preguntas interesantes aquí, a saber:</p>
+<ol style="list-style-type: decimal">
+<li><em>¿Qué porción de <span class="math inline">\(A\)</span> ocupa <span class="math inline">\(b_j\)</span>?</em>, o lo que es lo mismo, <em>¿Cuánto de <span class="math inline">\(A\)</span> está ocupando <span class="math inline">\(B_j\)</span>?</em>, y en términos de probabilidad:</li>
+</ol>
+<p><span class="math display" id="eq:B-rel-A">\[\begin{equation}
+P\left( { B }_{ j }| A \right) = { b }_{ j }/{ A }
+\tag{1.3}
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li><em>¿Qué porción de <span class="math inline">\(B_j\)</span> ocupa <span class="math inline">\(a_j\)</span>?</em>, o lo que es lo mismo, <em>¿Cuánto de <span class="math inline">\(B_j\)</span> está ocupando <span class="math inline">\(A\)</span>?</em>, y en términos de probabilidad:</li>
+</ol>
+<p><span class="math display" id="eq:A-rel-B">\[\begin{equation}
+P\left( { A } | { B }_{ j } \right) = { a }_{ j } /{ B }_{ j }
+\tag{1.4}
+\end{equation}\]</span></p>
+<div class="figure"><span id="fig:areas2"></span>
+<img src="images/Bayes2.png" alt="Relación de áreas: ¿qué porción de $A$ o de $B_j$ ocupa $b_j(=a_j)$?" width="60.8%" />
+<p class="caption">
+FIGURA 1.3: Relación de áreas: ¿qué porción de <span class="math inline">\(A\)</span> o de <span class="math inline">\(B_j\)</span> ocupa <span class="math inline">\(b_j(=a_j)\)</span>?
+</p>
+</div>
+</div>
+<div id="el-teorema-de-la-probabilidad-total" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> El teorema de la probabilidad total</h3>
+<p>De acuerdo con la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:bayes-venn1">1.1</a>, y como <span class="math inline">\(A \subseteq S\)</span>, se cumple que:</p>
+<p><span class="math display" id="eq:A-in-S">\[\begin{equation}
+A = A \cap S
+\tag{1.5}
+\end{equation}\]</span></p>
+<p>Como <span class="math inline">\(S = \bigcup _{ i=1 }^{ k }{ { B }_{ i } }\)</span>, se puede sustituir en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:A-in-S">(1.5)</a>, con lo que se obtiene:</p>
+<p><span class="math display" id="eq:A-in-Bi">\[\begin{equation}
+A=\left( A\cap { B }_{ 1 } \right) \cup \left( A\cap { B }_{ 2 } \right) \cup ...\left( A\cap { B }_{ k } \right)
+\tag{1.6}
+\end{equation}\]</span></p>
+<p>Si se toma la probabilidad en ambos lados de la ecuación y como los <span class="math inline">\(B_i\)</span> son disjuntos, se obtiene:</p>
+<p><span class="math display" id="eq:PA-in-Bi">\[\begin{equation}
+\begin{split}
+P\left( A \right) &amp;=P\left( A\cap { B }_{ 1 } \right) + P\left( A\cap { B }_{ 2 } \right) + ...+ P\left( A\cap { B }_{ k } \right) \\
+&amp;= \sum _{ i=1 }^{ k }{ P\left( A\cap { B }_{ i } \right)  }
+\end{split}
+\tag{1.7}
+\end{equation}\]</span></p>
+<p>El teorema del producto de probabilidades de eventos dependientes <span class="citation">(Walpole et al. <a href="#ref-Walpole2012">2012</a>, 66)</span>
+establece que</p>
+<p><span class="math display" id="eq:Tprod">\[\begin{equation}
+\begin{split}
+P\left( X\cap Y \right) &amp;=P\left( X \right) \cdot P\left( Y|X \right) \\
+                        &amp;=P\left( Y \right) \cdot P\left( X|Y \right)
+\end{split}
+\tag{1.8}
+\end{equation}\]</span></p>
+<p>Si se aplica esto a la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:PA-in-Bi">(1.7)</a>, se tiene el</p>
+
+<div class="theorem">
+<p><span id="thm:ptotal" class="theorem"><strong>Teorema 1.2  (Teorema de la probabilidad total)  </strong></span>Dados los conjuntos (eventos) <span class="math inline">\(B_1, B_2, ... B_k\)</span>, disjuntos, y los conjuntos <span class="math inline">\(S\)</span>, que representa el universo, y <span class="math inline">\(A\)</span>, tales que,</p>
+<p><span class="math display">\[\begin{align*}
+S &amp;= \bigcup _{ i=1 }^{ k }{ { B }_{ i } } \\
+A &amp;\subseteq S
+\end{align*}\]</span></p>
+<p>se cumple que,</p>
+<p><span class="math display" id="eq:TPtot">\[\begin{equation}
+P\left( A \right) = \sum _{ i=1 }^{ k }{ P\left( { B }_{ i } \right) \cdot P\left( A|{ B }_{ i } \right) } 
+\tag{1.9}
+\end{equation}\]</span></p>
+</div>
+
+<p>Gráficamente, si se toma como base la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:A-rel-B">(1.4)</a>, que representa la <em>relación de áreas</em> que se muestra en la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:areas2">1.3</a>, y se introduce en la Equación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TPtot">(1.9)</a>, se tendría que:</p>
+<p><span class="math display" id="eq:TAtot">\[\begin{equation}
+\begin{split}
+P\left( A \right) &amp;=\sum _{ i=1 }^{ k }{ \frac { B_{ i } }{ S } \frac { { a }_{ i } }{ { B }_{ i } }  }  \\
+&amp;=\frac { 1 }{ S } \sum _{ i=1 }^{ k }{  { a }_{ i } } = \frac { A }{ S } 
+\end{split}
+\tag{1.10}
+\end{equation}\]</span></p>
+</div>
+<div id="el-teorema-de-bayes-deduccion-y-explicacion-analitica" class="section level3">
+<h3><span class="header-section-number">1.2.3</span> El teorema de Bayes: deducción y explicación analítica</h3>
+<p>Para deducir el teorema de Bayes, enunciado en el Teorema <a href="1-1-el-teorema-de-bayes.html#thm:bayes0">1.1</a> al principio de este capítulo, se parte del teorema del producto de probabilidades de eventos dependientes, dado en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:Tprod">(1.8)</a>. En este caso, se aplica a los eventos <span class="math inline">\(A\)</span> y uno, cualquiera, de los <span class="math inline">\(B_j\)</span>, así:</p>
+<p><span class="math display" id="eq:ABj">\[\begin{equation}
+ P\left( A \right) \cdot P\left( { B }_{ j } | A \right) = P\left( A\cap { B }_{ j } \right) = 
+ P\left( { B }_{ j } \right) \cdot P\left( A | { B }_{ j } \right)
+\tag{1.11}
+\end{equation}\]</span></p>
+<p>Si se despeja, se obtiene:</p>
+<p><span class="math display" id="eq:ABj-frac">\[\begin{equation}
+ P\left( { B }_{ j } | A \right) = 
+ \frac { P\left( { B }_{ j } \right) \cdot P\left( A | { B }_{ j } \right) }{ P\left( A \right) }
+\tag{1.12}
+\end{equation}\]</span></p>
+<p>Finalmente se sustituye <span class="math inline">\(P(A)\)</span>, haciendo uso del Teorema de la probabilidad total (<a href="1-2-explicacion-grafica-del-teorema.html#thm:ptotal">1.2</a>), dado en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TPtot">(1.9)</a>, y se llega al teorema de Bayes:</p>
+<p><span class="math display" id="eq:TBayes0">\[\begin{equation}
+ P\left( { B }_{ j } | A \right) = 
+ \frac { P\left( { B }_{ j } \right) \cdot P\left( A | { B }_{ j } \right) }{ \sum _{ i=1 }^{ k }{ P\left( { B }_{ i } \right) \cdot P\left( A|{ B }_{ i } \right) } }
+\tag{1.13}
+\end{equation}\]</span></p>
+<p>Para explicar el significado del teorema, se recurrirá a la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>. La parte (1) de la figura representa el lado izquierdo de la igualdad en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TBayes0">(1.13)</a>, las partes (2) y (3), representan el numerador del cociente en el lado derecho de igualdad en la ecuación, y la parte (4) representa el denominador.</p>
+<div class="figure"><span id="fig:Bayes0"></span>
+<img src="images/Bayes0.png" alt="Explicación gráfica del teorema de Bayes" width="90.8%" />
+<p class="caption">
+FIGURA 1.4: Explicación gráfica del teorema de Bayes
+</p>
+</div>
+<p>A continuación se explica cada una de las partes de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>.</p>
+<div id="objetivo" class="section level4">
+<h4><span class="header-section-number">1.2.3.1</span> Parte (1): Lado izquierdo y <em>objetivo</em> del teorema</h4>
+<p>El lado izquierdo de la igualdad en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TBayes0">(1.13)</a>, establece el <em>objetivo</em>, por así decirlo, del teorema; esto es, lo que se quiere obtener. En este caso es, <span class="math inline">\(P\left( { B }_{ j } | A \right)\)</span>, lo que gráficamente, como se muestra en la parte (1) de Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>, es la porción que <span class="math inline">\(B_j\)</span> ocupa del área <span class="math inline">\(A\)</span>. En términos estadísticos, es la probabilidad de que ocurra <span class="math inline">\(B_j\)</span> dado que ocurrió <span class="math inline">\(A\)</span>. Gráficamente, y en términos de relaciones de áreas esto es:</p>
+<p><span class="math display" id="eq:objetivo">\[\begin{equation}
+P\left( { B }_{ j } | A \right) = \frac { { b }_{ j } }{ A }
+\tag{1.14}
+\end{equation}\]</span></p>
+</div>
+<div id="metodo" class="section level4">
+<h4><span class="header-section-number">1.2.3.2</span> Partes (2) y (4): Lado derecho, el <em>método</em> del teorema</h4>
+<p>El lado derecho de la igualdad en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TBayes0">(1.13)</a>, establece el <em>método</em>, esto es, la forma o manera de obtener lo que se ha establecido en el <em>objetivo</em>. En este caso, se trata de un cociente compuesto de dos partes, el numerador y el denominador.</p>
+<p>Es importante notar que, en la fórmula del teorema, dada en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TBayes0">(1.13)</a>, la estructura del numerador y el denominador es semejante: incluye un producto del tipo <span class="math inline">\(P\left( { B }_{ r } \right) \cdot P\left( A | { B }_{ r } \right)\)</span>, donde, ya sea, <span class="math inline">\(r=j\)</span>, o <span class="math inline">\(r=i\)</span>, salvo que en el caso del numerador sólo se trata de uno de estos productos, mientras que en el caso del denominador se trata de una suma de los productos, de tal manera que, lo que se diga acerca del producto registrado en el numerador, aplica a cada uno de los productos de la suma registrada en el denominador.</p>
+</div>
+<div id="numerador" class="section level4">
+<h4><span class="header-section-number">1.2.3.3</span> Parte (2): El numerador</h4>
+<p>El numerador es un producto compuesto de dos factores: <span class="math inline">\(P\left( { B }_{ j } \right)\)</span> y <span class="math inline">\(P\left( A | { B }_{ j } \right)\)</span>, que corresponden respectivamente a cada una de las dos gráficas en la parte (2) de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>. El primer factor, y la correspondiente primera gráfica, representan la porción que ocupa <span class="math inline">\(B_j\)</span> del <em>universo</em>, <span class="math inline">\(S\)</span>, esto es, la relación de áreas,</p>
+<p><span class="math display" id="eq:Bj-en-S">\[\begin{equation}
+P\left( { B }_{ j } \right) = \frac { { B }_{ j } }{ S }
+\tag{1.15}
+\end{equation}\]</span></p>
+<p>El segundo factor, y la correspondiente segunda gráfica, representan la porción que ocupa <span class="math inline">\(A\)</span> de <span class="math inline">\(B_j\)</span>, esto es, la relación de áreas,</p>
+<p><span class="math display" id="eq:A-en-Bj">\[\begin{equation}
+P\left( A | { B }_{ j } \right) = \frac { { a }_{ j } }{ { B }_{ j } }
+\tag{1.16}
+\end{equation}\]</span></p>
+</div>
+<div id="aj-En-S" class="section level4">
+<h4><span class="header-section-number">1.2.3.4</span> Parte (3): El numerador</h4>
+<p>Si se procede a desarrollar el producto de los lados derechos de la Ecuaciones <a href="1-2-explicacion-grafica-del-teorema.html#eq:Bj-en-S">(1.15)</a> y <a href="1-2-explicacion-grafica-del-teorema.html#eq:A-en-Bj">(1.16)</a>, se obtiene:</p>
+<p><span class="math display" id="eq:aj-en-S">\[\begin{equation}
+\frac { { B }_{ j } }{ S } \cdot \frac { { a }_{ j } }{ { B }_{ j } } =  \frac { { a }_{ j } }{ S }
+\tag{1.17}
+\end{equation}\]</span></p>
+<p>Que es la porción que ocupa <span class="math inline">\(a_j\)</span>, resultado de la intersección entre <span class="math inline">\(A\)</span> y <span class="math inline">\(B_j\)</span>, del <em>universo</em>, <span class="math inline">\(S\)</span>, y que es precisamente lo que registra la gráfica de la parte (3) de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>.</p>
+</div>
+<div id="denominador" class="section level4">
+<h4><span class="header-section-number">1.2.3.5</span> Parte (4): El denominador</h4>
+<p>Como se ha mencionado en la Sección <a href="1-2-explicacion-grafica-del-teorema.html#metodo">1.2.3.2</a>, el denominador es la sumatoria de productos del tipo <span class="math inline">\(P\left( { B }_{ r } \right) \cdot P\left( A | { B }_{ r } \right)\)</span>, y, por consiguiente, para cada uno de éstos aplica lo desarrollado en las dos secciones anteriores (<a href="1-2-explicacion-grafica-del-teorema.html#numerador">1.2.3.3</a> y <a href="1-2-explicacion-grafica-del-teorema.html#aj-En-S">1.2.3.4</a>). Esto es, para cada elemento del tipo <span class="math inline">\(B_i\)</span>, se tendría un resultado similar al expresado por la gráfica de la parte (3) de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>. Al sumar todos esos resultados, se obtiene justamente lo expresado por la gŕafica de la parte (4) de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>, que representa la reconstrucción del área <span class="math inline">\(A\)</span> en relación con el área que representa el <em>universo</em>, <span class="math inline">\(S\)</span>. Vale decir que esta reconstrucción es propiamente lo que establece el Teorema <a href="1-2-explicacion-grafica-del-teorema.html#thm:ptotal">1.2</a> de la probabilidad total. Esta sumatoria resulta entonces en</p>
+<p><span class="math display" id="eq:TAtotV2">\[\begin{equation}
+\begin{split}
+\sum _{ i=1 }^{ k }{ P\left( { B }_{ i } \right) \cdot P\left( A|{ B }_{ i } \right) } &amp;=  \frac { { A } }{ S } \\
+&amp;= P\left(A | S \right) =  P\left(A \right)
+\end{split}
+\tag{1.18}
+\end{equation}\]</span></p>
+</div>
+<div id="el-cociente" class="section level4">
+<h4><span class="header-section-number">1.2.3.6</span> El cociente</h4>
+<p>Al dividir el numerador establecido en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:aj-en-S">(1.17)</a>, entre el denominador, tal como se establece en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:TAtotV2">(1.18)</a>, se llega al siguiente resultado:</p>
+<p><span class="math display" id="eq:cociente">\[\begin{equation}
+\frac { \frac { { a }_{ j } }{ S } }{ \frac { A }{ S } } = \frac { { a }_{ j } }{ A }
+\tag{1.19}
+\end{equation}\]</span></p>
+<p>Este resultado coincide con el <em>objetivo</em> establecido en la Sección <a href="1-2-explicacion-grafica-del-teorema.html#objetivo">1.2.3.1</a>, en la Ecuación <a href="1-2-explicacion-grafica-del-teorema.html#eq:objetivo">(1.14)</a> y con la parte (1) de la Figura <a href="1-2-explicacion-grafica-del-teorema.html#fig:Bayes0">1.4</a>, ya que <span class="math inline">\(a_j = b_j\)</span>.</p>
+</div>
+<div id="colofon" class="section level4">
+<h4><span class="header-section-number">1.2.3.7</span> Colofón</h4>
+<p>En la Sección <a href="1-2-explicacion-grafica-del-teorema.html#objetivo">1.2.3.1</a> se estableció el <em>objetivo</em> del teorema, que es obtener <span class="math inline">\(P\left( { B }_{ j } | A \right)\)</span> y, a partir de ahí, en las siguientes secciones se analizó el método para llegar a ese objetivo que es a través del cálculo de un conjunto de productos del tipo <span class="math inline">\(P\left( { B }_{ i } \right) \cdot P\left( A | { B }_{ i } \right)\)</span>. Cabe notar que, uno de estos productos es precisamente el que figura en el numerador del teorema, a saber, <span class="math inline">\(P\left( { B }_{ j } \right) \cdot P\left( A | { B }_{ j } \right)\)</span>, que corresponde al evento <span class="math inline">\(B_j\)</span> del <em>objetivo</em> del teorema. El denominador, por su parte, es la suma de todos los productos calculados.</p>
+
+</div>
+</div>
+</div>
+<!-- </div> -->
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Walpole2012">
+<p>Walpole, Ronald E., Raymond H. Myers, Sharon L. Myers, and Keying Ye. 2012. <em>Probability &amp; Statistics for Engineers &amp; Scientists</em>. 9th ed. Boston, MA: Prentice Hall / Pearson Education, Inc.</p>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="1-1-el-teorema-de-bayes.html"><button class="btn btn-default">Previous</button></a>
+<a href="2-ejemplos.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Sergio Santana" />
 
 
-<meta name="date" content="2019-06-20" />
+<meta name="date" content="2019-06-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -170,114 +170,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Capítulo 2</span> Ejemplos</h1>
 <div id="ejemplo-1" class="section level2">
 <h2><span class="header-section-number">2.1</span> Ejemplo 1</h2>
-<p>Por razones de pagos en publicidad, un piloto de autos usa un Corvette en el 50% de las carreras en las que participa, un Jaguar, en el 30% de esas carreras y un Alfa Romeo, en el 20% de las mismas. De 25 carreras en las que ha participado con el Corvette, ha ganado 5; de 15, en las que ha participado con el Jaguar, ha ganado 4; y de 10, en las que ha participado con el Alfa Romeo, ha ganado 4.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Haciendo uso de esa información para estimar las probabilidades, indique cuál es la probabilidad de que el piloto gane la reciente carrera en la que participará en Le Mans.</li>
-<li>Suponiendo que llega la notificación de que, en efecto, ganó la carrera, ¿cuál es la probabilidad de que haya manejado el Corvette?</li>
-</ol>
-<p>NOTA: Este ejemplo fue tomado de los ejercicios del libro de <span class="citation">Miller and Freund (<a href="#ref-Miller65">1965</a>)</span> pp. 32-34.</p>
-<div id="solucion" class="section level3 unnumbered">
-<h3>Solución</h3>
-<p>La Figura <a href="ejemplos.html#fig:Autos1">2.1</a> representa esquemáticamente algunos de los elementos del problema, en esta figura:</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(S\)</span> representa el conjunto de todas las carreras que ha corrido el piloto.</li>
-<li><span class="math inline">\(B_c\)</span> son las carreras en las que ha usado el Corvette.</li>
-<li><span class="math inline">\(B_j\)</span> son las carreras en las que ha usado el Jaguar.</li>
-<li><span class="math inline">\(B_a\)</span> son las carreras en las que ha usado el Alfa Romeo.</li>
-<li><span class="math inline">\(A\)</span> representa el conjunto de carreras en las que ha ganado.</li>
-</ol>
-<div class="figure"><span id="fig:Autos1"></span>
-<img src="images/Autos1.png" alt="Diagrama de Venn para el problema del piloto de autos" width="60.8%" />
-<p class="caption">
-FIGURA 2.1: Diagrama de Venn para el problema del piloto de autos
-</p>
-</div>
-<p>Para resolver el problema se usará el lenguaje de programación R <span class="citation">(Santana and Mateos Farfán <a href="#ref-Santana2014">2014</a>)</span>. El primer paso es la construcción de una tabla con la información</p>
-<pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
-  <span class="co">#                 Corvette    Jaguar    Alfa_Romeo</span>
-  <span class="dt">P.B         =</span>  <span class="kw">c</span>(    <span class="fl">0.5</span>   ,    <span class="fl">0.3</span>   ,    <span class="fl">0.2</span>      ), <span class="co"># P(B)</span>
-  <span class="dt">P.A_B       =</span>  <span class="kw">c</span>(   <span class="dv">5</span><span class="op">/</span><span class="dv">25</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">15</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">10</span>      ), <span class="co"># P(A|B)</span>
-  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;Corvette&quot;</span>, <span class="st">&quot;Jaguar&quot;</span> , <span class="st">&quot;Alfa_Romeo&quot;</span>)
-)
-<span class="kw">print</span>(datos)</code></pre>
-<pre><code>##            P.B     P.A_B
-## Corvette   0.5 0.2000000
-## Jaguar     0.3 0.2666667
-## Alfa_Romeo 0.2 0.4000000</code></pre>
-<p>Esta misma información se puede ver en la Tabla <a href="ejemplos.html#tab:tabla-info">2.1</a>, donde la columna <strong>P.B</strong> representa la probabilidad del conjunto <span class="math inline">\(B\)</span> en el renglón correspondiente, y la columna <strong>P.A_B</strong> es la probabilidad de que se ganó la carrera dado que se usó el auto en el renglón correspondiente.</p>
-<table>
-<caption><span id="tab:tabla-info">Tabla 2.1: </span>Información del piloto de autos</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">P.B</th>
-<th align="right">P.A_B</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Corvette</td>
-<td align="right">0.5</td>
-<td align="right">0.2000000</td>
-</tr>
-<tr class="even">
-<td>Jaguar</td>
-<td align="right">0.3</td>
-<td align="right">0.2666667</td>
-</tr>
-<tr class="odd">
-<td>Alfa_Romeo</td>
-<td align="right">0.2</td>
-<td align="right">0.4000000</td>
-</tr>
-</tbody>
-</table>
-<p>La solución del inciso <strong>a</strong> del problema se obtiene por medio de la aplicación del Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la tabla anterior y sumar todos los resultados.</p>
-<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B</code></pre>
-<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.2</a></p>
-<table>
-<caption><span id="tab:tabla-c-prod">Tabla 2.2: </span>Productos de probabilidades</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">P.B</th>
-<th align="right">P.A_B</th>
-<th align="right">Prod</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Corvette</td>
-<td align="right">0.5</td>
-<td align="right">0.2000000</td>
-<td align="right">0.10</td>
-</tr>
-<tr class="even">
-<td>Jaguar</td>
-<td align="right">0.3</td>
-<td align="right">0.2666667</td>
-<td align="right">0.08</td>
-</tr>
-<tr class="odd">
-<td>Alfa_Romeo</td>
-<td align="right">0.2</td>
-<td align="right">0.4000000</td>
-<td align="right">0.08</td>
-</tr>
-</tbody>
-</table>
-<p>Ahora se procede a hacer la suma de los valores en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.2</a> con</p>
-<pre class="sourceCode r"><code class="sourceCode r">(Prob.A &lt;-<span class="st"> </span><span class="kw">sum</span>(datos<span class="op">$</span>Prod))</code></pre>
-<pre><code>## [1] 0.26</code></pre>
-<p>Asi entonces, la <strong>probabilidad de que el piloto gane su carrera</strong> es del 26%.</p>
-<p>Para resolver el inciso <strong>b</strong> del problema se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. En este caso es simplemente dividir el producto en el renglón correspondiente al auto “Corvette” entre la probabilidad recien obtenida, así:</p>
-<pre class="sourceCode r"><code class="sourceCode r">(Prob.Corvette &lt;-<span class="st"> </span>datos[<span class="st">&quot;Corvette&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>Prob.A)</code></pre>
-<pre><code>## [1] 0.3846154</code></pre>
-<p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
-</div>
-</div>
-<div id="ejemplo-2" class="section level2">
-<h2><span class="header-section-number">2.2</span> Ejemplo 2</h2>
 <p>Una empresa utiliza filtros procedentes de dos marcas de <em>software</em> para detectar correo <em>spam</em>: la marca <strong>Ms</strong>
 y la marca <strong>G</strong>. Estadísticamente se ha determinado a nivel mundial que <strong>Ms</strong> clasifica correctamente
 sólo el 70% de los correos como <em>spam</em> o <em>no-spam</em>, mientras que <strong>G</strong> alcanza el 98%. Sin embargo,
@@ -288,7 +180,7 @@ filtrados por el <em>software</em> de <strong>Ms</strong>, mientras que el resto
 a la junta directiva de cambiar su política de asignación y para ello se ha propuesto responder a la
 pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea como <em>spam</em> o <em>no-spam</em>, proceda de <strong>Ms</strong>?</li>
 </ol>
-<div id="solucion-1" class="section level3 unnumbered">
+<div id="solucion" class="section level3 unnumbered">
 <h3>Solución</h3>
 <p>Primeramente se procede a identificar los distintos eventos del problema.</p>
 <ol style="list-style-type: decimal">
@@ -296,18 +188,18 @@ pregunta: ¿Cuál es la probabilidad de que un correo bien detectado, ya sea com
 <li><span class="math inline">\(B_{Ms}=\)</span> se ha asignado al <em>software</em> de la marca <strong>Ms</strong> para filtrar el correo.</li>
 <li><span class="math inline">\(B_{G}=\)</span> se ha asignado al <em>software</em> de la marca <strong>G</strong> para filtrar el correo.</li>
 </ol>
-<p>La asignación total del volumen de correos por marca de <em>software</em> se muestra en la Figura <a href="ejemplos.html#fig:Correos1">2.2</a>.</p>
+<p>La asignación total del volumen de correos por marca de <em>software</em> se muestra en la Figura <a href="ejemplos.html#fig:Correos1">2.1</a>.</p>
 <div class="figure"><span id="fig:Correos1"></span>
 <img src="images/Pcorreos1.png" alt="Diagrama de Venn que muestra la asignación de correos por marca de software" width="60.8%" />
 <p class="caption">
-FIGURA 2.2: Diagrama de Venn que muestra la asignación de correos por marca de software
+FIGURA 2.1: Diagrama de Venn que muestra la asignación de correos por marca de software
 </p>
 </div>
-<p>Por otra parte, el evento <em>A</em> que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura <a href="ejemplos.html#fig:Correos2">2.3</a>.</p>
+<p>Por otra parte, el evento <em>A</em> que consiste en haber clasificado correctamente el correo, se muestra en relación con el universo de correos en la Figura <a href="ejemplos.html#fig:Correos2">2.2</a>.</p>
 <div class="figure"><span id="fig:Correos2"></span>
 <img src="images/Pcorreos2.png" alt="Diagrama de Venn que muestra el evento $A$: el correo ha sido clasificado correctamente" width="60.8%" />
 <p class="caption">
-FIGURA 2.3: Diagrama de Venn que muestra el evento <span class="math inline">\(A\)</span>: el correo ha sido clasificado correctamente
+FIGURA 2.2: Diagrama de Venn que muestra el evento <span class="math inline">\(A\)</span>: el correo ha sido clasificado correctamente
 </p>
 </div>
 <p>Se hará una tabla (<em>data.frame</em>) para capturar toda la información del problema:</p>
@@ -321,9 +213,9 @@ FIGURA 2.3: Diagrama de Venn que muestra el evento <span class="math inline">\(A
 <pre><code>##           P.B P.A_B
 ## marca.Ms 0.65  0.70
 ## marca.G  0.35  0.98</code></pre>
-<p>Esta información se muestra en la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.3</a> a continuación.</p>
+<p>Esta información se muestra en la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.1</a> a continuación.</p>
 <table>
-<caption><span id="tab:tabla-correos1">Tabla 2.3: </span>Información distribución de correos</caption>
+<caption><span id="tab:tabla-correos1">Tabla 2.1: </span>Información distribución de correos</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -344,22 +236,22 @@ FIGURA 2.3: Diagrama de Venn que muestra el evento <span class="math inline">\(A
 </tr>
 </tbody>
 </table>
-<p>En la tabla anterior, la columna P.A_B, es <span class="math inline">\(P\left( A | B \right)\)</span>, o sea la probabilidad de que se haya clasificado bien el correo, dado que la clasificación se hizo con el <em>software</em> correspondiente al renglón de la tabla. Esto es, en términos de <em>relaciones de áreas</em>, la porción que ocupa <em>A</em> del conjunto <em>B</em> correspondiente. Esta situación se muestra gráficamente en la Figura <a href="ejemplos.html#fig:Correos3">2.4</a></p>
+<p>En la tabla anterior, la columna P.A_B, es <span class="math inline">\(P\left( A | B \right)\)</span>, o sea la probabilidad de que se haya clasificado bien el correo, dado que la clasificación se hizo con el <em>software</em> correspondiente al renglón de la tabla. Esto es, en términos de <em>relaciones de áreas</em>, la porción que ocupa <em>A</em> del conjunto <em>B</em> correspondiente. Esta situación se muestra gráficamente en la Figura <a href="ejemplos.html#fig:Correos3">2.3</a></p>
 <div class="figure"><span id="fig:Correos3"></span>
 <img src="images/Pcorreos3.png" alt="Diagrama de Venn que muestra la porción que ocupa $A$: de cada una de las áreas $B$" width="60.8%" />
 <p class="caption">
-FIGURA 2.4: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(A\)</span>: de cada una de las áreas <span class="math inline">\(B\)</span>
+FIGURA 2.3: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(A\)</span>: de cada una de las áreas <span class="math inline">\(B\)</span>
 </p>
 </div>
-<p>A continuación se procede a aplicar el Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.3</a> y sumar todos los resultados.</p>
+<p>A continuación se procede a aplicar el Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la Tabla <a href="ejemplos.html#tab:tabla-correos1">2.1</a> y sumar todos los resultados.</p>
 <pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B
 <span class="co"># La suma de las columnas</span>
 sumas &lt;-<span class="st"> </span><span class="kw">apply</span>(datos, <span class="dv">2</span>, sum)
 <span class="co"># Se agrega el resultado como un renglón al final:</span>
 datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span>sumas</code></pre>
-<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-correos-prod">2.4</a></p>
+<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-correos-prod">2.2</a></p>
 <table>
-<caption><span id="tab:tabla-correos-prod">Tabla 2.4: </span>Productos de probabilidades en el caso de correos</caption>
+<caption><span id="tab:tabla-correos-prod">Tabla 2.2: </span>Productos de probabilidades en el caso de correos</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -395,29 +287,29 @@ del 79.8%.</p>
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
 <pre><code>## [1] 0.5701754</code></pre>
 <p>Esto es, dado que se clasificó correctamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 57.02%.</p>
-<p>Después de presentar estos resultados a la junta directiva de la empresa, la respuesta que Roberto recibió no fue muy amable, como se puede ver en la ilustración de la Figura <a href="ejemplos.html#fig:Caricat1">2.5</a>.</p>
+<p>Después de presentar estos resultados a la junta directiva de la empresa, la respuesta que Roberto recibió no fue muy amable, como se puede ver en la ilustración de la Figura <a href="ejemplos.html#fig:Caricat1">2.4</a>.</p>
 <div class="figure"><span id="fig:Caricat1"></span>
 <img src="images/Prob2Caric1.png" alt="Respuesta de los directivos de la empresa" width="80.8%" />
 <p class="caption">
-FIGURA 2.5: Respuesta de los directivos de la empresa
+FIGURA 2.4: Respuesta de los directivos de la empresa
 </p>
 </div>
-<p>Aunque en un principio la respuesta lo tomó por sorpresa, en vez de desanimarse, Roberto trató de replantear el problema desde una prespectiva diferente, tal como se ilustra en la Figura <a href="ejemplos.html#fig:Caricat2">2.6</a>.</p>
+<p>Aunque en un principio la respuesta lo tomó por sorpresa, en vez de desanimarse, Roberto trató de replantear el problema desde una prespectiva diferente, tal como se ilustra en la Figura <a href="ejemplos.html#fig:Caricat2">2.5</a>.</p>
 <div class="figure"><span id="fig:Caricat2"></span>
 <img src="images/Prob2Caric2.png" alt="El problema visto desde otra perspectiva" width="80.8%" />
 <p class="caption">
-FIGURA 2.6: El problema visto desde otra perspectiva
+FIGURA 2.5: El problema visto desde otra perspectiva
 </p>
 </div>
 <p>Esto da lugar a la segunda parte de este problema, cuya descripción se hace en seguida:</p>
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Determinar la probabilidad que que un correo mal clasificado, ya sea como <em>spam</em> o <em>no-spam</em>, provenga del <em>software</em> provisto por <strong>Ms</strong>.</li>
 </ol>
-<p>Con el propósito de responder a esta pregunta, debe notarse que ahora el tema ya no es el evento <span class="math inline">\(A\)</span> sino su complemento, <span class="math inline">\(\bar{A}\)</span>. Para resolver el problema, solamente es necesario modificar la columna “P.A_B”, de la tabla anterior, de acuerdo con los nuevos datos mostrados en la Figura <a href="ejemplos.html#fig:Correos4">2.7</a> y proceder a los cálculos correspondientes.</p>
+<p>Con el propósito de responder a esta pregunta, debe notarse que ahora el tema ya no es el evento <span class="math inline">\(A\)</span> sino su complemento, <span class="math inline">\(\bar{A}\)</span>. Para resolver el problema, solamente es necesario modificar la columna “P.A_B”, de la tabla anterior, de acuerdo con los nuevos datos mostrados en la Figura <a href="ejemplos.html#fig:Correos4">2.6</a> y proceder a los cálculos correspondientes.</p>
 <div class="figure"><span id="fig:Correos4"></span>
 <img src="images/Pcorreos4.png" alt="Diagrama de Venn que muestra la porción que ocupa $\bar { A }$ : de cada una de las áreas $B$" width="60.8%" />
 <p class="caption">
-FIGURA 2.7: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(\bar { A }\)</span> : de cada una de las áreas <span class="math inline">\(B\)</span>
+FIGURA 2.6: Diagrama de Venn que muestra la porción que ocupa <span class="math inline">\(\bar { A }\)</span> : de cada una de las áreas <span class="math inline">\(B\)</span>
 </p>
 </div>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co">#                 marca.Ms      marca.G  SUMA</span>
@@ -427,9 +319,9 @@ datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span clas
 
 <span class="co"># Se agregan las sumas corregidas como el renglón final:</span>
 datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span><span class="kw">apply</span>(datos[<span class="op">-</span><span class="dv">3</span>, ], <span class="dv">2</span>, sum)</code></pre>
-<p>En la Tabla <a href="ejemplos.html#tab:tabla-correos-final">2.5</a> se pueden ver los resultados de estas operaciones.</p>
+<p>En la Tabla <a href="ejemplos.html#tab:tabla-correos-final">2.3</a> se pueden ver los resultados de estas operaciones.</p>
 <table>
-<caption><span id="tab:tabla-correos-final">Tabla 2.5: </span>Productos de probabilidades en el caso de correos mal clasificados</caption>
+<caption><span id="tab:tabla-correos-final">Tabla 2.3: </span>Productos de probabilidades en el caso de correos mal clasificados</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -463,6 +355,114 @@ datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.Ms &lt;-<span class="st"> </span>datos[<span class="st">&quot;marca.Ms&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>datos[<span class="st">&quot;SUMAS&quot;</span>,<span class="st">&quot;Prod&quot;</span>])</code></pre>
 <pre><code>## [1] 0.9653465</code></pre>
 <p>Esto es, dado que se clasificó incorrectamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de <em>software</em>.</p>
+</div>
+</div>
+<div id="ejemplo-2" class="section level2">
+<h2><span class="header-section-number">2.2</span> Ejemplo 2</h2>
+<p>Por razones de pagos en publicidad, un piloto de autos usa un Corvette en el 50% de las carreras en las que participa, un Jaguar, en el 30% de esas carreras y un Alfa Romeo, en el 20% de las mismas. De 25 carreras en las que ha participado con el Corvette, ha ganado 5; de 15, en las que ha participado con el Jaguar, ha ganado 4; y de 10, en las que ha participado con el Alfa Romeo, ha ganado 4.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Haciendo uso de esa información para estimar las probabilidades, indique cuál es la probabilidad de que el piloto gane la reciente carrera en la que participará en Le Mans.</li>
+<li>Suponiendo que llega la notificación de que, en efecto, ganó la carrera, ¿cuál es la probabilidad de que haya manejado el Corvette?</li>
+</ol>
+<p>NOTA: Este ejemplo fue tomado de los ejercicios del libro de <span class="citation">Miller and Freund (<a href="#ref-Miller65">1965</a>)</span> pp. 32-34.</p>
+<div id="solucion-1" class="section level3 unnumbered">
+<h3>Solución</h3>
+<p>La Figura <a href="ejemplos.html#fig:Autos1">2.7</a> representa esquemáticamente algunos de los elementos del problema, en esta figura:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(S\)</span> representa el conjunto de todas las carreras que ha corrido el piloto.</li>
+<li><span class="math inline">\(B_c\)</span> son las carreras en las que ha usado el Corvette.</li>
+<li><span class="math inline">\(B_j\)</span> son las carreras en las que ha usado el Jaguar.</li>
+<li><span class="math inline">\(B_a\)</span> son las carreras en las que ha usado el Alfa Romeo.</li>
+<li><span class="math inline">\(A\)</span> representa el conjunto de carreras en las que ha ganado.</li>
+</ol>
+<div class="figure"><span id="fig:Autos1"></span>
+<img src="images/Autos1.png" alt="Diagrama de Venn para el problema del piloto de autos" width="60.8%" />
+<p class="caption">
+FIGURA 2.7: Diagrama de Venn para el problema del piloto de autos
+</p>
+</div>
+<p>Para resolver el problema se usará el lenguaje de programación R <span class="citation">(Santana and Mateos Farfán <a href="#ref-Santana2014">2014</a>)</span>. El primer paso es la construcción de una tabla con la información</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos &lt;-<span class="st"> </span><span class="kw">data.frame</span>(
+  <span class="co">#                 Corvette    Jaguar    Alfa_Romeo</span>
+  <span class="dt">P.B         =</span>  <span class="kw">c</span>(    <span class="fl">0.5</span>   ,    <span class="fl">0.3</span>   ,    <span class="fl">0.2</span>      ), <span class="co"># P(B)</span>
+  <span class="dt">P.A_B       =</span>  <span class="kw">c</span>(   <span class="dv">5</span><span class="op">/</span><span class="dv">25</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">15</span>   ,   <span class="dv">4</span><span class="op">/</span><span class="dv">10</span>      ), <span class="co"># P(A|B)</span>
+  <span class="dt">row.names   =</span>  <span class="kw">c</span>(<span class="st">&quot;Corvette&quot;</span>, <span class="st">&quot;Jaguar&quot;</span> , <span class="st">&quot;Alfa_Romeo&quot;</span>)
+)
+<span class="kw">print</span>(datos)</code></pre>
+<pre><code>##            P.B     P.A_B
+## Corvette   0.5 0.2000000
+## Jaguar     0.3 0.2666667
+## Alfa_Romeo 0.2 0.4000000</code></pre>
+<p>Esta misma información se puede ver en la Tabla <a href="ejemplos.html#tab:tabla-info">2.4</a>, donde la columna <strong>P.B</strong> representa la probabilidad del conjunto <span class="math inline">\(B\)</span> en el renglón correspondiente, y la columna <strong>P.A_B</strong> es la probabilidad de que se ganó la carrera dado que se usó el auto en el renglón correspondiente.</p>
+<table>
+<caption><span id="tab:tabla-info">Tabla 2.4: </span>Información del piloto de autos</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Corvette</td>
+<td align="right">0.5</td>
+<td align="right">0.2000000</td>
+</tr>
+<tr class="even">
+<td>Jaguar</td>
+<td align="right">0.3</td>
+<td align="right">0.2666667</td>
+</tr>
+<tr class="odd">
+<td>Alfa_Romeo</td>
+<td align="right">0.2</td>
+<td align="right">0.4000000</td>
+</tr>
+</tbody>
+</table>
+<p>La solución del inciso <strong>a</strong> del problema se obtiene por medio de la aplicación del Teorema <a href="teorema-de-bayes-explicado.html#thm:ptotal">1.2</a> de la probabilidad total. Esto es multiplicar las columnas “P.B” y “P.A_B” de la tabla anterior y sumar todos los resultados.</p>
+<pre class="sourceCode r"><code class="sourceCode r">datos<span class="op">$</span>Prod &lt;-<span class="st"> </span>datos<span class="op">$</span>P.B <span class="op">*</span><span class="st"> </span>datos<span class="op">$</span>P.A_B</code></pre>
+<p>El resultado de este producto se puede ver en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.5</a></p>
+<table>
+<caption><span id="tab:tabla-c-prod">Tabla 2.5: </span>Productos de probabilidades</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">P.B</th>
+<th align="right">P.A_B</th>
+<th align="right">Prod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Corvette</td>
+<td align="right">0.5</td>
+<td align="right">0.2000000</td>
+<td align="right">0.10</td>
+</tr>
+<tr class="even">
+<td>Jaguar</td>
+<td align="right">0.3</td>
+<td align="right">0.2666667</td>
+<td align="right">0.08</td>
+</tr>
+<tr class="odd">
+<td>Alfa_Romeo</td>
+<td align="right">0.2</td>
+<td align="right">0.4000000</td>
+<td align="right">0.08</td>
+</tr>
+</tbody>
+</table>
+<p>Ahora se procede a hacer la suma de los valores en la columna <strong>Prod</strong> de la Tabla <a href="ejemplos.html#tab:tabla-c-prod">2.5</a> con</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.A &lt;-<span class="st"> </span><span class="kw">sum</span>(datos<span class="op">$</span>Prod))</code></pre>
+<pre><code>## [1] 0.26</code></pre>
+<p>Asi entonces, la <strong>probabilidad de que el piloto gane su carrera</strong> es del 26%.</p>
+<p>Para resolver el inciso <strong>b</strong> del problema se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. En este caso es simplemente dividir el producto en el renglón correspondiente al auto “Corvette” entre la probabilidad recien obtenida, así:</p>
+<pre class="sourceCode r"><code class="sourceCode r">(Prob.Corvette &lt;-<span class="st"> </span>datos[<span class="st">&quot;Corvette&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>Prob.A)</code></pre>
+<pre><code>## [1] 0.3846154</code></pre>
+<p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
 
 <div id="refs" class="references">
 <div>

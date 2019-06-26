@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  20 JUN 2019 16:56
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  26 JUN 2019 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,44 +810,43 @@ LaTeX Info: Redefining \. on input line 429.
 LaTeX Info: Redefining \% on input line 429.
 [14]
 Capítulo 2.
-File: images/Autos1.png Graphic file (type bmp)
-<images/Autos1.png>
-[15
-
-]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 476.
-LaTeX Info: Redefining \. on input line 512.
-LaTeX Info: Redefining \% on input line 512.
-[16]
-LaTeX Info: Redefining \. on input line 579.
-LaTeX Info: Redefining \% on input line 579.
-[17]
 File: images/Pcorreos1.png Graphic file (type bmp)
 <images/Pcorreos1.png>
 File: images/Pcorreos2.png Graphic file (type bmp)
 <images/Pcorreos2.png>
-LaTeX Info: Redefining \. on input line 628.
-LaTeX Info: Redefining \% on input line 628.
-[18]
+[15
+
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 482.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
+[16]
 File: images/Pcorreos3.png Graphic file (type bmp)
 <images/Pcorreos3.png>
-LaTeX Info: Redefining \. on input line 685.
-LaTeX Info: Redefining \% on input line 685.
-[19]
+LaTeX Info: Redefining \. on input line 554.
+LaTeX Info: Redefining \% on input line 554.
+[17]
 File: images/Prob2Caric1.png Graphic file (type bmp)
 <images/Prob2Caric1.png>
 File: images/Prob2Caric2.png Graphic file (type bmp)
 <images/Prob2Caric2.png>
-LaTeX Info: Redefining \. on input line 721.
-LaTeX Info: Redefining \% on input line 721.
-[20]
+LaTeX Info: Redefining \. on input line 586.
+LaTeX Info: Redefining \% on input line 586.
+[18]
 File: images/Pcorreos4.png Graphic file (type bmp)
 <images/Pcorreos4.png>
-(./Bayes_con_Venn.bbl
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[21]
+LaTeX Info: Redefining \. on input line 625.
+LaTeX Info: Redefining \% on input line 625.
+[19]
+File: images/Autos1.png Graphic file (type bmp)
+<images/Autos1.png>
+LaTeX Info: Redefining \. on input line 690.
+LaTeX Info: Redefining \% on input line 690.
+[20]
+LaTeX Info: Redefining \. on input line 718.
+LaTeX Info: Redefining \% on input line 718.
+[21] (./Bayes_con_Venn.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 [22])
@@ -872,6 +871,6 @@ Here is how much of TeX's memory you used:
  27566 multiletter control sequences out of 15000+600000
  545089 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 46i,17n,47p,906b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,17n,47p,906b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Bayes_con_Venn.pdf (23 pages).

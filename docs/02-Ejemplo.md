@@ -169,16 +169,7 @@ Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de 
 
 ¿**Qué hubiera pasado si las estadísticas del problema fueran diferentes**? Intrigado por esta pregunta, Roberto decidió resolver el problema de una manera más general. A continuación se muestra una aplicación que permite jugar con los valores de las distintas variables del problema.
 
-
-
-
-```
-## 
-## Listening on http://127.0.0.1:3079
-```
-
-![](02-Ejemplo_files/figure-epub3/unnamed-chunk-7-1.png)<!-- -->
-
+[![](02-Ejemplo_files/figure-epub3/unnamed-chunk-6-1.png)](http://localhost:3838/users/checo/miniBayes/)<!-- -->
 
 ## Ejemplo 2
 

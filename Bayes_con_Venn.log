@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  26 JUN 2019 18:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.6.14)  27 JUN 2019 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,42 +839,42 @@ File: images/Pcorreos4.png Graphic file (type bmp)
 LaTeX Info: Redefining \. on input line 625.
 LaTeX Info: Redefining \% on input line 625.
 [19]
-File: 02-Ejemplo_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pd
+File: 02-Ejemplo_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pd
 f)
-<use 02-Ejemplo_files/figure-latex/unnamed-chunk-7-1.pdf>
+<use 02-Ejemplo_files/figure-latex/unnamed-chunk-6-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 647.
-LaTeX Info: Redefining \% on input line 647.
+LaTeX Info: Redefining \. on input line 642.
+LaTeX Info: Redefining \% on input line 642.
 [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 650.
-LaTeX Info: Redefining \% on input line 650.
+LaTeX Info: Redefining \. on input line 645.
+LaTeX Info: Redefining \% on input line 645.
 [21]
 File: images/Autos1.png Graphic file (type bmp)
 <images/Autos1.png>
-LaTeX Info: Redefining \. on input line 689.
-LaTeX Info: Redefining \% on input line 689.
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
 [22]
-LaTeX Info: Redefining \. on input line 765.
-LaTeX Info: Redefining \% on input line 765.
+LaTeX Info: Redefining \. on input line 760.
+LaTeX Info: Redefining \% on input line 760.
 [23] (./Bayes_con_Venn.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 [24])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 781.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 776.
 [25
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 781.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 776.
 (./Bayes_con_Venn.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 781.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 781.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 776.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 776.
 Package rerunfilecheck Info: File `Bayes_con_Venn.out' has not changed.
 (rerunfilecheck)             Checksum: 61288610D2D0928E17431A1FE20FDDC2.
  ) 

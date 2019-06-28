@@ -136,14 +136,9 @@ Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de 
 ```{r, echo=F}
 # shiny::shinyAppFile("shinyApp/app.R",
 #                    options = list(width = "100%")) #, height = 700))
-knitr::read_chunk("shinyApp/app.R")
+knitr::include_app("http://localhost:3838/users/checo/miniBayes/",
+                     height = "700px")
 ```
-
-```{r, echo=F}
-<<DECLARACIONES>>
-<<APLICACION>>
-```
-
 
 ## Ejemplo 2
 

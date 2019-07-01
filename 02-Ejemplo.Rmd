@@ -116,7 +116,7 @@ datos$Prod <- datos$P.B * datos$P.A_B
 # Se agregan las sumas corregidas como el renglón final:
 datos["SUMAS", ] <- apply(datos[-3, ], 2, sum)
 ```
-En la Tabla \@ref(tab:tabla-correos-final) se pueden ver los resultados de estas operaciones.
+En la Tabla \@ref(tab:tabla-correos-final) se pueden apreciar los resultados de estas operaciones.
 
 ```{r tabla-correos-final, echo=FALSE}
 knitr::kable(datos, caption = "Productos de probabilidades en el caso de correos mal clasificados",

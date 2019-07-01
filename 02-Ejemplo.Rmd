@@ -136,7 +136,7 @@ Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de 
 ```{r, echo=F}
 # shiny::shinyAppFile("shinyApp/app.R",
 #                    options = list(width = "100%")) #, height = 700))
-knitr::include_app("http://localhost:3838/users/checo/miniBayes/",
+knitr::include_app("http://172.16.150.158:3838/users/checo/miniBayes/",
                      height = "700px")
 ```
 

@@ -356,7 +356,7 @@ datos[<span class="st">&quot;SUMAS&quot;</span>, ] &lt;-<span class="st"> </span
 <pre><code>## [1] 0.9653465</code></pre>
 <p>Esto es, dado que se clasificó incorrectamente el correo, la <strong>probabilidad de que para esta operación se haya usado el <em>software</em> de Ms</strong> es de 96.53%. Con este contundente resultado, Roberto pudo convencer a la junta directiva de cambiar las proporciones de asignación de correos a las distintas marcas de <em>software</em>.</p>
 <p>¿<strong>Qué hubiera pasado si las estadísticas del problema fueran diferentes</strong>? Intrigado por esta pregunta, Roberto decidió resolver el problema de una manera más general. A continuación se muestra una aplicación que permite jugar con los valores de las distintas variables del problema.</p>
-<iframe src="http://172.16.150.158:3838/users/checo/miniBayes/?showcase=0" width="672" height="700px">
+<iframe src="http://172.16.19.27:3838/users/checo/miniBayes/?showcase=0" width="672" height="700px">
 </iframe>
 </div>
 </div>
@@ -465,7 +465,7 @@ FIGURA 2.7: Diagrama de Venn para el problema del piloto de autos
 <p>Para resolver el inciso <strong>b</strong> del problema se aplica el Teorema <a href="teorema-de-bayes-explicado.html#thm:bayes0">1.1</a> de Bayes. En este caso es simplemente dividir el producto en el renglón correspondiente al auto “Corvette” entre la probabilidad recien obtenida, así:</p>
 <pre class="sourceCode r"><code class="sourceCode r">(Prob.Corvette &lt;-<span class="st"> </span>datos[<span class="st">&quot;Corvette&quot;</span>,<span class="st">&quot;Prod&quot;</span>]<span class="op">/</span>Prob.A)</code></pre>
 <pre><code>## [1] 0.3846154</code></pre>
-<p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.4615385%.</p>
+<p>Esto es, dado que el piloto en efecto ganó la carrera, la <strong>probabilidad de que haya usado el Corvette</strong> es de 38.46%.</p>
 
 <div id="refs" class="references">
 <div>

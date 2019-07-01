@@ -169,7 +169,7 @@ Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de 
 
 ¿**Qué hubiera pasado si las estadísticas del problema fueran diferentes**? Intrigado por esta pregunta, Roberto decidió resolver el problema de una manera más general. A continuación se muestra una aplicación que permite jugar con los valores de las distintas variables del problema.
 
-[![](02-Ejemplo_files/figure-epub3/unnamed-chunk-6-1.png)](http://172.16.150.158:3838/users/checo/miniBayes/)<!-- -->
+[![](02-Ejemplo_files/figure-epub3/unnamed-chunk-6-1.png)](http://172.16.19.27:3838/users/checo/miniBayes/)<!-- -->
 
 ## Ejemplo 2
 
@@ -267,7 +267,7 @@ Para resolver el inciso **b** del problema se aplica el Teorema \@ref(thm:bayes0
 ```
 ## [1] 0.3846154
 ```
-Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que haya usado el Corvette** es de 38.4615385%.
+Esto es, dado que el piloto en efecto ganó la carrera, la **probabilidad de que haya usado el Corvette** es de 38.46%.
 
 
 

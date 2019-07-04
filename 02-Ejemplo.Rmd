@@ -1,5 +1,7 @@
 # Ejemplos
 
+A continuación se muestran algunos ejemplos para clarificar el uso del teorema y para mostrar su utilidad. Para resolver los problemas dados en los ejemplos, se usará el lenguaje de programación R [@Santana2014].
+
 ## Ejemplo 1
 
 Una empresa utiliza filtros procedentes de dos marcas de *software* para detectar correo *spam*: la marca **Ms**
@@ -137,7 +139,7 @@ Esto es, dado que se clasificó incorrectamente el correo, la **probabilidad de 
 # shiny::shinyAppFile("shinyApp/app.R",
 #                    options = list(width = "100%")) #, height = 700))
 knitr::include_app("http://172.16.19.27:3838/users/checo/miniBayes/",
-                     height = "700px")
+                     height = "600px")
 ```
 
 ## Ejemplo 2

@@ -6,6 +6,7 @@
 ## @knitr DECLARACIONES
 
 library(shiny)
+library(miniUI)
 
 datos <- data.frame(
   #               marca.Ms      marca.G
@@ -30,47 +31,49 @@ operateDatos <- function() {
 }
 
 # Define UI for slider demo app ----
-ui <- fluidPage(
+ui <- miniPage(
   
   # App title ----
-  titlePanel("Asignación de Correos para Filtar Spam"),
+  gadgetTitleBar("Asignación de Correos para Filtar Spam"),
   
-  # Sidebar layout with input and output definitions ----
-  sidebarLayout(
-    
-    # Sidebar to demonstrate various slider options ----
-    sidebarPanel(
-      
-      # Input: P(B) ----
-      sliderInput("asignaMs.G", "Asignación Ms(/G):",
-                  min = 0, max = 1,
-                  value = 0.65, step = 0.05),
-      
-      wellPanel(
-        h4("% de Correos mal detectados"),
-        tags$hr(),
-        # Input: Correos mal detectados por Ms ----
-        sliderInput("P.A_Bm", "Ms:",
+  miniTabstripPanel(
+    miniTabPanel(
+      "Parametros", icon = icon("sliders"),
+      miniContentPanel(
+        sliderInput("asignaMs.G", "Asignación de correos a Ms:",
                     min = 0, max = 1,
-                    value = 0.30, step = 0.01),
+                    value = 0.65, step = 0.05),
         
-        # Input: Custom currency format for with basic animation ----
-        sliderInput("P.A_Bg", "G:",
-                    min = 0, max = 1,
-                    value = 0.02, step = 0.01)
-      ) #,
-        # wellPanel(actionButton("go", "Ejecuta operación")) 
-    ),
-    
-    # Main panel for displaying outputs ----
-    mainPanel(
-      h4("DATOS:"),
-      # Output: Table summarizing the values entered ----
-      tableOutput("valores"),
-      tags$hr(),
-      wellPanel(
-        h4("RESULTADOS:"),
-        tableOutput("datos"),
+        wellPanel(
+          h4("% de Correos mal detectados"),
+          tags$hr(),
+          # Input: Correos mal detectados por Ms ----
+          sliderInput("P.A_Bm", "Ms:",
+                      min = 0, max = 1,
+                      value = 0.30, step = 0.01),
+          
+          # Input: Custom currency format for with basic animation ----
+          sliderInput("P.A_Bg", "G:",
+                      min = 0, max = 1,
+                      value = 0.02, step = 0.01)
+        ) #,
+      ) # miniContentPanel
+    ), # miniTabPanel: Parametros
+    miniTabPanel(
+      "Datos", icon = icon("table"),
+      miniContentPanel(
+        tableOutput("valores")
+      )
+    ), # miniTabPanel: Datos
+    miniTabPanel(
+      "Resultados", icon = icon("check-square"),
+      miniContentPanel(
+        tableOutput("datos")
+      )
+    ), # miniTabPanel: Resultados
+    miniTabPanel(
+      "Visualiza", icon = icon("chart-pie"),
+      miniContentPanel(
         plotOutput("pie")
       )
     )
@@ -139,11 +142,11 @@ server <- function(input, output, session) {
       main = "Responsabilidad por\n mala clasificación de correos")
     
   })
-
 }
 
 ## @knitr APLICACION
 
 # Create Shiny app ----
 shinyApp(ui, server)
+# runGadget(shinyApp(ui, server), viewer = paneViewer())
 
